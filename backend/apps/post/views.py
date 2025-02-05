@@ -54,7 +54,24 @@ class PostRetrieveUpdateDestroyView(RetrieveUpdateDestroyAPIView):
         if user.is_authenticated and self.request.user.id == post.user_id.id:
             serializer = self.get_serializer(data=request.data, partial=True)
             serializer.is_valid(raise_exception=True)
-            serializer.save()
+            res = ProfanityChecker.check_profanity(self, data=serializer.data)
+            if not res:
+                if post.profanity_edit_count > 4:
+                    serializer.save(is_active=False, is_visible=False)
+                    # надсилається лист менеджерові, щоб перевірив допис todo
+                    return Response(
+                        {
+                            "Message": "Because your post contains profanity words, it has been sent to the manager "
+                                       "for review. Expect a response within 24 hours",
+                        },
+                        status.HTTP_202_ACCEPTED)
+                else:
+                    post.profanity_edit_count += 1
+                    serializer.save(is_active=False)
+                    raise ProfanityCheckException
+            else:
+                serializer.save(profanity_edit_count=0, is_active=True)
+
             return Response(serializer.data, status=status.HTTP_200_OK)
         else:
             raise PropertyCheckException

@@ -8,7 +8,7 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from apps.auth.serializers import EmailSerializer, PasswordSerializer
 from apps.user.serializers import UserModelSerializer
 from core.services.email_service import EmailService
-from core.services.jwt_service import ActivateToken, JWTService, RecoveryToken, SocketToken
+from core.services.jwt_service import ActivateToken, JWTService, RecoveryToken
 
 
 UserModel = get_user_model()
