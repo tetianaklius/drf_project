@@ -29,7 +29,7 @@ class ProfileModel(BaseModel):
     surname = models.CharField(max_length=20)
     age = models.IntegerField()
     phone = models.CharField(max_length=20, unique=True, blank=True)  # todo
-    city = models.CharField(max_length=30)  # todo model
+    city = models.CharField(max_length=30, blank=True)  # todo model
     profession = models.CharField(max_length=40, blank=True)
     interests = models.CharField(max_length=150, blank=True)
 

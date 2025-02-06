@@ -44,9 +44,10 @@ class PostRetrieveUpdateDestroyView(RetrieveUpdateDestroyAPIView):
     queryset = PostModel.objects.all()
     serializer_class = PostUpdateSerializer
     http_method_names = ["get", "patch", "delete"]
+    permission_classes = (IsAuthenticated,)
 
-    def get(self, request, *args, **kwargs):
-        permission_classes = (AllowAny,)
+    # def get(self, request, *args, **kwargs):
+    #     pass
 
     def update(self, request, *args, **kwargs):
         user = self.request.user

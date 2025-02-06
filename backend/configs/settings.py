@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     "core",
     "apps.auth",
     "apps.user",
-    "apps.post"
+    "apps.post",
+    "apps.post_label",
 
 ]
 
