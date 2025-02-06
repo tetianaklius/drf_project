@@ -1,0 +1,26 @@
+
+.form_wrap {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: left;
+    margin: 10px;
+}
+
+.input_wrap {
+    display: flex;
+    margin: 3px;
+    padding: 2px;
+    background:cornflowerblue;
+}
+
+.select_wrap {
+
+    display: flex;
+
+    margin: 10px;
+    background:cornflowerblue;
+}
+.selects_wrap{
+    display: flex;
+}

@@ -1,0 +1,7 @@
+.menu_wrap {
+    display: flex;
+    justify-content: space-around;
+    margin: 3px;
+    padding: 2px;
+    background: antiquewhite;
+}
