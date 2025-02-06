@@ -6,18 +6,23 @@ from rest_framework.response import Response
 
 from apps.user.filters import UsersFilter
 from apps.user.models import ProfileModel
-from apps.user.serializers import UserModelSerializer
+from apps.user.serializers import UserModelSerializer, ProfileModelSerializer
 from core.pagination import CustomPagePagination
 
 UserModel = get_user_model()
 
 
 class UsersListView(ListAPIView):
-    queryset = ProfileModel.objects.all()
+    queryset = UserModel.objects.all()
     serializer_class = UserModelSerializer
     pagination_class = CustomPagePagination
     permission_classes = (IsAuthenticated,)
-    filterset_class = UsersFilter
+
+    def get_queryset(self, *args, **kwargs):
+        print(self.queryset.select_related("profile"))
+        return super().get_queryset()
+
+    # filterset_class = UsersFilter
 
 
 class UserCreateView(CreateAPIView):
@@ -28,7 +33,6 @@ class UserCreateView(CreateAPIView):
 
 class UserRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
     queryset = UserModel.objects.all()
-    serializer_class = UserModelSerializer
     permission_classes = (IsAuthenticated,)
 
     def get(self, request, *args, **kwargs):
@@ -36,14 +40,14 @@ class UserRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
             searched_id = self.kwargs["pk"]
             user = UserModel.objects.filter(id=searched_id).first()
             if user:
-                return Response(self.get_serializer(user).data, status=status.HTTP_200_OK)
+                return Response(UserModelSerializer(user).data, status=status.HTTP_200_OK)
             else:
                 return Response("User not found", status=status.HTTP_404_NOT_FOUND)
         if self.kwargs["email"]:
             searched_email = self.kwargs["email"]
             user = UserModel.objects.filter(email=searched_email).first()
             if user:
-                return Response(self.get_serializer(user).data, status=status.HTTP_200_OK)
+                return Response(UserModelSerializer(user).data, status=status.HTTP_200_OK)
             else:
                 return Response("User not found", status=status.HTTP_404_NOT_FOUND)
         else:
@@ -53,8 +57,10 @@ class UserRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
     def patch(self, request, *args, **kwargs):
         user = self.request.user
         user_to_update = self.get_object()
+        profile = ProfileModel.objects.get(user=user_to_update)
+
         if user.is_authenticated and user.id == user_to_update.id:
-            serializer = self.get_serializer(user_to_update, data=request.data, partial=True)
+            serializer = ProfileModelSerializer(profile, data=request.data, partial=True)
             serializer.is_valid(raise_exception=True)
             serializer.save()
             return Response(serializer.data, status=status.HTTP_200_OK)

@@ -1,11 +1,13 @@
-from rest_framework.generics import ListAPIView, CreateAPIView, RetrieveUpdateDestroyAPIView
-from rest_framework.permissions import AllowAny, IsAuthenticated
+from django.shortcuts import get_object_or_404
 from rest_framework import status
+from rest_framework.generics import ListAPIView, CreateAPIView, RetrieveUpdateDestroyAPIView, UpdateAPIView
+from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 
 from apps.post.filters import PostsFilter
 from apps.post.models import PostModel
-from apps.post.serializers import PostCreateListSerializer, PostUpdateSerializer
+from apps.post.serializers import PostCreateListSerializer, PostUpdateSerializer, PostImageSerializer
+from apps.post_label.models import PostLabelModel
 from core.checkers.profanity_checker import ProfanityChecker
 from core.exceptions.profanity_check_exception import ProfanityCheckException
 from core.exceptions.property_check_exception import PropertyCheckException
@@ -19,9 +21,15 @@ class PostCreateView(CreateAPIView):
 
     def post(self, request, *args, **kwargs):
         user = request.user
-        serializer = self.get_serializer(data=request.data)
+        data = request.data
+
+        context_ = {"value": data["title"]}
+        if "value" in data:
+            post_label_obj = get_object_or_404(PostLabelModel, value=data["value"])
+            context_["label"] = post_label_obj
+
+        serializer = self.get_serializer(data=request.data, context=context_)
         serializer.is_valid(raise_exception=True)
-        serializer.save(user_id=user, is_active=False)
 
         res = ProfanityChecker.check_profanity(self, data=serializer.validated_data)
         if res:
@@ -46,15 +54,20 @@ class PostRetrieveUpdateDestroyView(RetrieveUpdateDestroyAPIView):
     http_method_names = ["get", "patch", "delete"]
     permission_classes = (IsAuthenticated,)
 
-    # def get(self, request, *args, **kwargs):
-    #     pass
-
-    def update(self, request, *args, **kwargs):
+    def patch(self, request, *args, **kwargs):
         user = self.request.user
         post = self.get_object()
-        if user.is_authenticated and self.request.user.id == post.user_id.id:
-            serializer = self.get_serializer(data=request.data, partial=True)
+        data = request.data
+        if user.is_authenticated and user.id == post.user_id.id:
+
+            context_ = {"value": data["title"]}
+            if "value" in data:
+                post_label_obj = get_object_or_404(PostLabelModel, value=data["value"])
+                context_["label"] = post_label_obj
+
+            serializer = self.get_serializer(data=data, context=context_)
             serializer.is_valid(raise_exception=True)
+
             res = ProfanityChecker.check_profanity(self, data=serializer.data)
             if not res:
                 if post.profanity_edit_count > 4:
@@ -96,3 +109,19 @@ class PostsListByUserIdView(ListAPIView):
         posts = self.queryset.filter(user_id=kwargs["pk"])
         serializer = self.get_serializer(posts, many=True)
         return Response(serializer.data, status.HTTP_200_OK)
+
+
+class PostAddImageView(UpdateAPIView):
+    serializer_class = PostImageSerializer
+    queryset = PostModel.objects.all()
+    permission_classes = (IsAuthenticated,)
+    http_method_names = ["put"]
+
+    def perform_update(self, serializer):
+        post = self.get_object()
+        if self.request.user.id == post.user_id.id:
+            post = self.get_object()
+            post.image.delete()
+            super().perform_update(serializer)
+        else:
+            raise PropertyCheckException

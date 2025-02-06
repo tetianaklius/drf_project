@@ -5,7 +5,7 @@ from apps.user.models import UserModel, ProfileModel
 from core.services.email_service import EmailService
 
 
-class ProfileSerializer(serializers.ModelSerializer):
+class ProfileModelSerializer(serializers.ModelSerializer):
     class Meta:
         model = ProfileModel
         fields = (
@@ -23,9 +23,8 @@ class ProfileSerializer(serializers.ModelSerializer):
         read_only_fields = ("id", "created_at", "updated_at")
 
 
-
 class UserModelSerializer(serializers.ModelSerializer):
-    profile = ProfileSerializer()
+    profile = ProfileModelSerializer()
 
     class Meta:
         model = UserModel
@@ -42,7 +41,8 @@ class UserModelSerializer(serializers.ModelSerializer):
             "profile"
         )
 
-        read_only_fields = ("id", "is_active", "is_staff", "is_superuser", "last_login", "created_at", "updated_at")
+        read_only_fields = (
+        "id", "is_active", "is_staff", "is_superuser", "last_login", "created_at", "updated_at")
         extra_kwargs = {
             "password": {
                 "write_only": True,

@@ -1,15 +1,17 @@
-from rest_framework.response import Response
 from rest_framework import status
-from rest_framework.generics import GenericAPIView
+from rest_framework.generics import ListCreateAPIView
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.response import Response
 
 from apps.post_label.models import PostLabelModel
 from apps.post_label.serializers import PostLabelModelSerializer
 
 
-class PostLabelListCreateView(GenericAPIView):
+class PostLabelListCreateView(ListCreateAPIView):
     queryset = PostLabelModel.objects.all()
     permission_classes = (IsAuthenticated,)
+    serializer_class = PostLabelModelSerializer
+    http_method_names = ["post", "get"]
 
     def post(self, *args, **kwargs):
         data = self.request.data

@@ -7,4 +7,5 @@ class PostLabelModel(BaseModel):
     class Meta:
         db_table = "post_labels"
 
-    name = models.CharField(max_length=20)
+    name = models.CharField(max_length=20, unique=True)
+    value = models.IntegerField()
