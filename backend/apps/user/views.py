@@ -31,24 +31,24 @@ class UserRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
     queryset = UserModel.objects.all()
     permission_classes = (IsAuthenticated,)
 
-    def get(self, request, *args, **kwargs):
-        if self.kwargs["pk"]:
-            searched_id = self.kwargs["pk"]
-            user = UserModel.objects.filter(id=searched_id).first()
-            if user:
-                return Response(UserModelSerializer(user).data, status=status.HTTP_200_OK)
-            else:
-                return Response("User not found", status=status.HTTP_404_NOT_FOUND)
-        if self.kwargs["email"]:
-            searched_email = self.kwargs["email"]
-            user = UserModel.objects.filter(email=searched_email).first()
-            if user:
-                return Response(UserModelSerializer(user).data, status=status.HTTP_200_OK)
-            else:
-                return Response("User not found", status=status.HTTP_404_NOT_FOUND)
-        else:
-            return Response("To search user you should write user id or user email.",
-                            status=status.HTTP_400_BAD_REQUEST)
+    # def get(self, request, *args, **kwargs):
+    #     if self.kwargs["pk"]:
+    #         searched_id = self.kwargs["pk"]
+    #         user = UserModel.objects.filter(id=searched_id).first()
+    #         if user:
+    #             return Response(UserModelSerializer(user).data, status=status.HTTP_200_OK)
+    #         else:
+    #             return Response("User not found", status=status.HTTP_404_NOT_FOUND)
+    #     if self.kwargs["email"]:
+    #         searched_email = self.kwargs["email"]
+    #         user = UserModel.objects.filter(email=searched_email).first()
+    #         if user:
+    #             return Response(UserModelSerializer(user).data, status=status.HTTP_200_OK)
+    #         else:
+    #             return Response("User not found", status=status.HTTP_404_NOT_FOUND)
+    #     else:
+    #         return Response("To search user you should write user id or user email.",
+    #                         status=status.HTTP_400_BAD_REQUEST)
 
     def patch(self, request, *args, **kwargs):
         user = self.request.user

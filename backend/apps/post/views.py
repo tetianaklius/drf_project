@@ -23,7 +23,7 @@ class PostCreateView(CreateAPIView):
         user = request.user
         data = request.data
 
-        context_ = {"value": data["title"]}
+        context_ = {}
         if "value" in data:
             post_label_obj = get_object_or_404(PostLabelModel, value=data["value"])
             context_["label"] = post_label_obj
