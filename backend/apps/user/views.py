@@ -13,6 +13,10 @@ UserModel = get_user_model()
 
 
 class UsersListView(ListAPIView):
+    """
+    get:
+        get all users;
+    """
     queryset = UserModel.objects.all()
     serializer_class = UserModelSerializer
     pagination_class = CustomPagePagination
@@ -39,20 +43,37 @@ class UsersListView(ListAPIView):
                 return Response(UserModelSerializer(user).data, status=status.HTTP_200_OK)
             else:
                 return Response("User not found", status=status.HTTP_404_NOT_FOUND)
-        else:
-            return Response("To search user you should write user id or user email.",
-                            status=status.HTTP_400_BAD_REQUEST)
+        if not request.query_params:
+            users = UsersFilter(data=self.queryset, request=request)
+            return Response(users, status=status.HTTP_200_OK)
+
+            # return Response("To search user you should write user id or user email.",
+            #                 status=status.HTTP_400_BAD_REQUEST)
+
 
 
 class UserCreateView(CreateAPIView):
+    """
+    post:
+        create new user;
+    """
     queryset = UserModel.objects.all()
     serializer_class = UserModelSerializer
     permission_classes = (AllowAny,)
 
 
 class UserRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
+    """
+    get:
+        get user by id;
+    patch:
+        partial update user profile by id;
+    delete:
+        delete user by id;
+    """
     queryset = UserModel.objects.all()
     permission_classes = (IsAuthenticated,)
+    http_method_names = ["get", "patch", "delete"]
 
     def patch(self, request, *args, **kwargs):
         user = self.request.user
@@ -87,6 +108,11 @@ class UserRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
 
 
 class BlockUserView(GenericAPIView):
+    """
+    patch:
+        block user by id; user become inactive (is_active=False);
+    """
+
     def get_queryset(self):
         return UserModel.objects.exclude(id=self.request.user.id)
 
@@ -100,6 +126,10 @@ class BlockUserView(GenericAPIView):
 
 
 class UnBlockUserView(GenericAPIView):
+    """
+    patch:
+        unblock user by id; user become active (is_active=True);
+    """
 
     def get_queryset(self):
         return UserModel.objects.exclude(id=self.request.user.id)

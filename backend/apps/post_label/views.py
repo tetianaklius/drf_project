@@ -8,6 +8,12 @@ from apps.post_label.serializers import PostLabelModelSerializer
 
 
 class PostLabelListCreateView(ListCreateAPIView):
+    """
+    post:
+        create post label(s);
+    get:
+        get all post labels;
+    """
     queryset = PostLabelModel.objects.all()
     permission_classes = (IsAuthenticated,)
     serializer_class = PostLabelModelSerializer

@@ -3,9 +3,7 @@ import {useEffect, useState} from "react";
 import {authService} from "../../services/authService";
 
 
-
-
-export const RegisterPage = () => {
+const RegisterPage = () => {
     const {register, handleSubmit} = useForm();
 
     const [error, setError] = useState(null);
@@ -42,3 +40,4 @@ export const RegisterPage = () => {
     );
 };
 
+export {RegisterPage};

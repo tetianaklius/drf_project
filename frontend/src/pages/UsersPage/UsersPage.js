@@ -1,11 +1,12 @@
-import React from 'react';
-import {UsersComponent} from "../../components/UsersComponent/UsersComponent";
+import React from "react";
+import {UsersSearchComponent} from "../../components/UsersSearchComponent/UsersSearchComponent";
 
-
-export const UsersPage = () => {
+const UsersPage = () => {
     return (
         <div>
-            <UsersComponent/>
+            <UsersSearchComponent/>
         </div>
     );
 };
+
+export {UsersPage};

@@ -15,6 +15,10 @@ from core.pagination import CustomPagePagination
 
 
 class PostCreateView(CreateAPIView):
+    """
+    post:
+        create a new post;
+    """
     serializer_class = PostCreateListSerializer
     queryset = PostModel.objects.all()
     permission_classes = (IsAuthenticated,)
@@ -28,7 +32,7 @@ class PostCreateView(CreateAPIView):
             post_label_obj = get_object_or_404(PostLabelModel, value=data["value"])
             context_["label"] = post_label_obj
 
-        serializer = self.get_serializer(data=request.data, context=context_)
+        serializer = self.get_serializer(data=data, context=context_)
         serializer.is_valid(raise_exception=True)
 
         res = ProfanityChecker.check_profanity(self, data=serializer.validated_data)
@@ -41,6 +45,10 @@ class PostCreateView(CreateAPIView):
 
 
 class PostsListView(ListAPIView):
+    """
+    get:
+        get all posts;
+    """
     serializer_class = PostCreateListSerializer
     queryset = PostModel.objects.filter(is_active=True)
     filterset_class = PostsFilter
@@ -49,18 +57,23 @@ class PostsListView(ListAPIView):
 
 
 class PostRetrieveUpdateDestroyView(RetrieveUpdateDestroyAPIView):
+    """
+    get:
+        get post by id;
+    patch:
+        update post by id;
+    delete:
+        delete post by id;
+    """
     queryset = PostModel.objects.all()
     serializer_class = PostUpdateSerializer
     http_method_names = ["get", "patch", "delete"]
-    permission_classes = (IsAuthenticated,)
+    permission_classes = (AllowAny, IsAuthenticated,)  # todo
 
     def patch(self, request, *args, **kwargs):
         user = self.request.user
         post = self.get_object()
         data = request.data
-        print(data)
-        print(post.user_id.id)
-        print(user.id)
 
         if user.is_authenticated and user.id == post.user_id.id:
 
@@ -76,7 +89,6 @@ class PostRetrieveUpdateDestroyView(RetrieveUpdateDestroyAPIView):
             if not res:
                 if post.profanity_edit_count > 4:
                     serializer.save(is_active=False, is_visible=False)
-                    # надсилається лист менеджерові, щоб перевірив допис todo
                     return Response(
                         {
                             "Message": "Because your post contains profanity words, it has been sent to the manager "
@@ -104,6 +116,10 @@ class PostRetrieveUpdateDestroyView(RetrieveUpdateDestroyAPIView):
 
 
 class PostsListByUserIdView(ListAPIView):
+    """
+    get:
+        get all posts by some user id;
+    """
     queryset = PostModel.objects.filter(is_active=True)
     serializer_class = PostCreateListSerializer
     permission_classes = (AllowAny,)
@@ -116,6 +132,10 @@ class PostsListByUserIdView(ListAPIView):
 
 
 class PostAddImageView(UpdateAPIView):
+    """
+    put:
+        add (or replace) image to post by post id;
+    """
     serializer_class = PostImageSerializer
     queryset = PostModel.objects.all()
     permission_classes = (IsAuthenticated,)

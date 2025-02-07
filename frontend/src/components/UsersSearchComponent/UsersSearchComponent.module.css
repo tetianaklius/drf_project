@@ -1,0 +1,44 @@
+.form_wrap {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: left;
+    margin: 10px;
+}
+
+.input_wrap {
+    display: flex;
+    margin: 3px;
+    padding: 2px;
+    background:cornflowerblue;
+}
+
+.select_wrap {
+    display: flex;
+    margin: 10px;
+    background:cornflowerblue;
+}
+
+.selects_wrap{
+    display: flex;
+}
+
+.users_wrap{
+    background: antiquewhite;
+    padding: 10px;
+}
+
+.search_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vh;
+
+    cursor: pointer;
+    font-size: larger;
+
+    background: linear-gradient(to right, rgb(31, 23, 56), rgba(56, 44, 93, 0.2));
+    height: 6vh;
+    width: 15vw;
+    color: white;
+}

@@ -9,6 +9,7 @@ export const urls = {
     },
     users: {
         all: "/users",
+        search: (params) => `/users${params}`,
         byId: (id) => `/users/${id}`,
         block: (id) => `/users/${id}/block`,
         unblock: (id) => `/users/${id}/unblock`,
@@ -21,6 +22,13 @@ export const urls = {
     },
     post_label:{
         all: "/post_labels",
+    },
+    regions:{
+        all: "/regions",
+        create: "/regions"
+    },
+    cities:{
+        all: (id) => `/cities/region/${id}`,
+        create: (id) => `cities/region/${id}`
     }
-
 }

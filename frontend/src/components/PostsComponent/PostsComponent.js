@@ -1,17 +1,18 @@
 import {useEffect, useState} from "react";
 
+import {useNavigate} from "react-router-dom";
 import styles from "./PostsComponent.module.css";
 
-
+import {refreshService} from "../../services/authService";
 import {PostComponent} from "../PostComponent/PostComponent";
 import {PostFormComponent} from "../PostFormComponent/PostFormComponent";
 import {postService} from "../../services/postService";
-import {authService} from "../../services/authService";
 
 export const PostsComponent = () => {
+    const navigate = useNavigate();
 
     const [formVisible, setFormVisible] = useState(false)
-    const [error, setError] = useState('')
+    const [error, setError] = useState(false)
     const [token, setToken] = useState(true)
     const [posts, setPosts] = useState()
 
@@ -31,8 +32,7 @@ export const PostsComponent = () => {
                         setPosts(data)
                     }
                     if (status === 401) {
-                        console.log('refresh');
-                        authService.refresh().then(data => {
+                        refreshService.refresh().then(data => {
                             console.log(data);
                             setToken(prevState => !prevState)
                         })

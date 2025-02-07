@@ -14,10 +14,10 @@ export const router = createBrowserRouter([
         children: [
             {index: true, element: <Navigate to={"login"}/>},
             {path: "login", element: <LoginPage/>},
-            {path: "registration", element: <RegisterPage/>},
+            {path: "register", element: <RegisterPage/>},
             {path: "activate/:token", element: <ActivatePage/>},
 
-            {path: 'users', element: <UsersPage/>},
+            {path: "users", element: <UsersPage/>},
 
             {path: "posts", element: <PostsPage/>},
             {path: "posts/post_details/:id", element: <PostDetailsPage/>},

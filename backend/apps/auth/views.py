@@ -15,6 +15,10 @@ UserModel = get_user_model()
 
 
 class ActivateUserView(GenericAPIView):
+    """
+    patch:
+        update user status to is_active = True by activate token;
+    """
     permission_classes = (AllowAny,)
 
     def patch(self, *args, **kwargs):

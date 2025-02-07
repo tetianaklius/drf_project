@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
 import {postService} from "../../services/postService";
 import {PostFormComponent} from "../PostFormComponent/PostFormComponent";
-import styles from "./PostDetailsComponent.module.css"
+import styles from "../PostsComponent/PostsComponent.module.css";
 
 export const PostDetailsComponent = () => {
     const {id} = useParams();
@@ -12,16 +12,13 @@ export const PostDetailsComponent = () => {
     const [error, setError] = useState(false)
 
     useEffect(() => {
-    }, [formVisible]);
-
-    useEffect(() => {
         postService.getById(id).then((data) => {
             setPost(data);
         })
     }, []);
 
     const data_props = {
-        "form_visible": setFormVisible, "set_error": setError, "post": post, "set_post": setPost
+        "form_visible": setFormVisible, "set_error": setError, "post": post
     }
 
     return (
@@ -35,7 +32,7 @@ export const PostDetailsComponent = () => {
                         {post.title}
                     </div>
                     <div>
-                        {post.label?.name}
+                        {post.label}
                     </div>
                 </div>
                 <div>
@@ -47,7 +44,7 @@ export const PostDetailsComponent = () => {
                 </div>
 
                 <button onClick={() => {
-                    setFormVisible(true)
+                        setFormVisible(true)
                 }}>post update {post.id}
                 </button>
             </div>
