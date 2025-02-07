@@ -65,9 +65,9 @@ class PostRetrieveUpdateDestroyView(RetrieveUpdateDestroyAPIView):
         if user.is_authenticated and user.id == post.user_id.id:
 
             context_ = {}
-            if 'label' in data:
-                label_obj = get_object_or_404(PostLabelModel, value=data['label'])
-                context_['label'] = label_obj
+            if "label" in data:
+                label_obj = get_object_or_404(PostLabelModel, value=data["label"])
+                context_["label"] = label_obj
 
             serializer = self.get_serializer(post, data=data, context=context_)
             serializer.is_valid(raise_exception=True)

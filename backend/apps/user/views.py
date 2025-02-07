@@ -1,5 +1,4 @@
 from django.contrib.auth import get_user_model
-from redis.commands.search.querystring import querystring
 from rest_framework import status
 from rest_framework.generics import GenericAPIView, ListAPIView, CreateAPIView, RetrieveUpdateDestroyAPIView
 from rest_framework.permissions import AllowAny, IsAuthenticated
@@ -20,6 +19,30 @@ class UsersListView(ListAPIView):
     permission_classes = (IsAuthenticated,)
     filterset_class = UsersFilter
 
+    def get(self, request, *args, **kwargs):
+        if request.query_params.get("pk"):
+            searched_id = request.query_params.get("pk")
+            if searched_id.isdigit():
+                user = UserModel.objects.filter(id=searched_id).first()
+                if user:
+                    return Response(UserModelSerializer(user).data, status=status.HTTP_200_OK)
+                else:
+                    return Response("User not found", status=status.HTTP_404_NOT_FOUND)
+            else:
+                return Response("ID must be a number", status=status.HTTP_400_BAD_REQUEST)
+
+        if request.query_params.get("email"):
+            searched_email = request.query_params.get("email")
+            # search serializer todo
+            user = UserModel.objects.filter(email=searched_email).first()
+            if user:
+                return Response(UserModelSerializer(user).data, status=status.HTTP_200_OK)
+            else:
+                return Response("User not found", status=status.HTTP_404_NOT_FOUND)
+        else:
+            return Response("To search user you should write user id or user email.",
+                            status=status.HTTP_400_BAD_REQUEST)
+
 
 class UserCreateView(CreateAPIView):
     queryset = UserModel.objects.all()
@@ -30,25 +53,6 @@ class UserCreateView(CreateAPIView):
 class UserRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
     queryset = UserModel.objects.all()
     permission_classes = (IsAuthenticated,)
-
-    # def get(self, request, *args, **kwargs):
-    #     if self.kwargs["pk"]:
-    #         searched_id = self.kwargs["pk"]
-    #         user = UserModel.objects.filter(id=searched_id).first()
-    #         if user:
-    #             return Response(UserModelSerializer(user).data, status=status.HTTP_200_OK)
-    #         else:
-    #             return Response("User not found", status=status.HTTP_404_NOT_FOUND)
-    #     if self.kwargs["email"]:
-    #         searched_email = self.kwargs["email"]
-    #         user = UserModel.objects.filter(email=searched_email).first()
-    #         if user:
-    #             return Response(UserModelSerializer(user).data, status=status.HTTP_200_OK)
-    #         else:
-    #             return Response("User not found", status=status.HTTP_404_NOT_FOUND)
-    #     else:
-    #         return Response("To search user you should write user id or user email.",
-    #                         status=status.HTTP_400_BAD_REQUEST)
 
     def patch(self, request, *args, **kwargs):
         user = self.request.user
