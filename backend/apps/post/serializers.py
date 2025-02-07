@@ -32,12 +32,15 @@ class PostUpdateSerializer(serializers.ModelSerializer):
             "label",
         )
         read_only_fields = ["id"]
+        depth = 1
+
 
     def validate(self, attrs):
         attrs = super().validate(attrs)
         if "label" in self.context:
             attrs["label"] = self.context["label"]
         return attrs
+
 
 class PostImageSerializer(serializers.ModelSerializer):
     class Meta:

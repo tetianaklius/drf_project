@@ -20,9 +20,9 @@ const authService = {
         this._setTokens(data);
     },
 
-
     logout() {
         this.deleteTokens()
+
     },
 
     async refresh() {

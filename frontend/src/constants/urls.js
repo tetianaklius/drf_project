@@ -18,5 +18,9 @@ export const urls = {
         create: "/posts/create",
         byId: (id) => `/posts/${id}`,
         byUserId: (id) => `/posts/user/${id}`,
+    },
+    post_label:{
+        all: "/post_labels",
     }
+
 }

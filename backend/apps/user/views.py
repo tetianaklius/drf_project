@@ -1,4 +1,5 @@
 from django.contrib.auth import get_user_model
+from redis.commands.search.querystring import querystring
 from rest_framework import status
 from rest_framework.generics import GenericAPIView, ListAPIView, CreateAPIView, RetrieveUpdateDestroyAPIView
 from rest_framework.permissions import AllowAny, IsAuthenticated
@@ -17,12 +18,7 @@ class UsersListView(ListAPIView):
     serializer_class = UserModelSerializer
     pagination_class = CustomPagePagination
     permission_classes = (IsAuthenticated,)
-
-    def get_queryset(self, *args, **kwargs):
-        print(self.queryset.select_related("profile"))
-        return super().get_queryset()
-
-    # filterset_class = UsersFilter
+    filterset_class = UsersFilter
 
 
 class UserCreateView(CreateAPIView):

@@ -35,7 +35,7 @@ export const PostDetailsComponent = () => {
                         {post.title}
                     </div>
                     <div>
-                        {post.label}
+                        {post.label?.name}
                     </div>
                 </div>
                 <div>
