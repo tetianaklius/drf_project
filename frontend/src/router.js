@@ -5,8 +5,7 @@ import {PostDetailsPage} from "./pages/PostDetailsPage/PostDetailsPage";
 import {LoginPage} from "./pages/LoginPage/LoginPage";
 import {RegisterPage} from "./pages/RegisterPage/RegisterPage";
 import {ActivatePage} from "./pages/ActivatePage/ActivatePage";
-import {PostFormComponent} from "./components/PostFormComponent/PostFormComponent";
-
+import {UsersPage} from "./pages/UsersPage/UsersPage";
 
 
 export const router = createBrowserRouter([
@@ -18,13 +17,10 @@ export const router = createBrowserRouter([
             {path: "registration", element: <RegisterPage/>},
             {path: "activate/:token", element: <ActivatePage/>},
 
+            {path: 'users', element: <UsersPage/>},
+
             {path: "posts", element: <PostsPage/>},
             {path: "posts/post_details/:id", element: <PostDetailsPage/>},
-
-            {path: "posts/post_update", element: <PostFormComponent/>},
-            {path: "posts/post_add", element: <PostFormComponent/>},
-
-
         ]
     }
 ])

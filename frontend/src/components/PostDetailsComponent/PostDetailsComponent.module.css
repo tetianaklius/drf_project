@@ -1,0 +1,7 @@
+.component_wrap {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: left;
+    margin: 10px;
+}

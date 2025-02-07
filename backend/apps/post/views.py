@@ -58,17 +58,21 @@ class PostRetrieveUpdateDestroyView(RetrieveUpdateDestroyAPIView):
         user = self.request.user
         post = self.get_object()
         data = request.data
+        print(data)
+        print(post.user_id.id)
+        print(user.id)
+
         if user.is_authenticated and user.id == post.user_id.id:
 
-            context_ = {"value": data["title"]}
-            if "value" in data:
-                post_label_obj = get_object_or_404(PostLabelModel, value=data["value"])
-                context_["label"] = post_label_obj
+            context_ = {}
+            if 'label' in data:
+                label_obj = get_object_or_404(PostLabelModel, value=data['label'])
+                context_['label'] = label_obj
 
-            serializer = self.get_serializer(data=data, context=context_)
+            serializer = self.get_serializer(post, data=data, context=context_)
             serializer.is_valid(raise_exception=True)
 
-            res = ProfanityChecker.check_profanity(self, data=serializer.data)
+            res = ProfanityChecker.check_profanity(self, data=serializer.validated_data)
             if not res:
                 if post.profanity_edit_count > 4:
                     serializer.save(is_active=False, is_visible=False)

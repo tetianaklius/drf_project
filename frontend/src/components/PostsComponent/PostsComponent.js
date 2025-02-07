@@ -1,31 +1,74 @@
-import React, {useEffect, useState} from 'react';
-import {useNavigate} from "react-router-dom";
-import {postService as advertService} from "../../services/PostService";
+import {useEffect, useState} from "react";
+
+import styles from "./PostsComponent.module.css";
+
+
 import {PostComponent} from "../PostComponent/PostComponent";
+import {PostFormComponent} from "../PostFormComponent/PostFormComponent";
+import {postService} from "../../services/postService";
+import {authService} from "../../services/authService";
 
 export const PostsComponent = () => {
-    const navigate = useNavigate();
 
-    const [posts, setPosts] = useState([])
-    const [trigger, setTrigger] = useState(null)
+    const [formVisible, setFormVisible] = useState(false)
+    const [error, setError] = useState('')
+    const [token, setToken] = useState(true)
+    const [posts, setPosts] = useState()
+
 
     useEffect(() => {
-        advertService.getAll().then(({data}) => setPosts(data))
-    }, [trigger]);
+
+    }, [formVisible]);
+
+    useEffect(() => {
+
+            try {
+                postService.getAll().then((response) => {
+                    const data = response?.data
+                    const status = response["status"]
+
+                    if (!status) {
+                        setPosts(data)
+                    }
+                    if (status === 401) {
+                        console.log('refresh');
+                        authService.refresh().then(data => {
+                            console.log(data);
+                            setToken(prevState => !prevState)
+                        })
+                    }
+                })
+            } catch (err) {
+                setError(JSON.stringify([{"err_message": err.message}]))
+            }
+
+        },
+        [token]
+    );
+
+    const data_props = {
+        "form_visible": setFormVisible, "set_error": setError
+    }
 
     return (
         <div>
-            <button onClick={() => {
-                navigate("post_add")
-            }}>Create post
-            </button>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <div>
-                {posts?.map(post => <PostComponent key={post.id} post={post}/>)}
+            <div className={styles.component_wrap}>
+
+                {formVisible ? (<PostFormComponent data={data_props}/>) : <div></div>}
+                <div>{error}</div>
+                <hr/>
+                <button className={styles.add_button}
+                        onClick={() => {
+                            setFormVisible(true)
+                        }}>Додати оголошення
+                </button>
+                <hr/>
+                <div>
+                    {posts?.map(post => <PostComponent key={post.id} post={post}/>)}
+                </div>
+
             </div>
         </div>
+
     );
 };

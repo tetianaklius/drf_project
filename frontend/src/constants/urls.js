@@ -5,6 +5,7 @@ export const urls = {
         register: "/users/create",
         activate: "/auth/activate/",
         login: "/auth",
+        refresh:"/auth/refresh"
     },
     users: {
         all: "/users",
@@ -17,6 +18,5 @@ export const urls = {
         create: "/posts/create",
         byId: (id) => `/posts/${id}`,
         byUserId: (id) => `/posts/user/${id}`,
-        update: (id) => `/post/update/${id}`,
     }
 }

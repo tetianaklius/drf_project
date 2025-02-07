@@ -13,10 +13,6 @@ export const PostComponent = ({post}) => {
                 navigate(`post_details/${post.id}`)
             }}>Post details
             </button>
-            <button onClick={() => {
-                navigate(`post_update/${post.id}`, {state: post})
-            }}>post update {post.id}
-            </button>
         </div>
     );
 };

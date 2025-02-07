@@ -33,6 +33,7 @@ export const RegisterPage = () => {
                 <input type="text" placeholder={'password'} {...register('password')}/>
                 <input type="text" placeholder={'username'} {...register('profile.name')}/>
                 <input type="text" placeholder={'surname'} {...register('profile.surname')}/>
+                <input type="text" placeholder={'age'} {...register('profile.age')}/>
                 <button>Register</button>
                 {/*{error && <div>error! - {error}</div>}*/}
                 <div>{error}</div>

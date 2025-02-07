@@ -9,7 +9,8 @@ export const HeaderComponent = () => {
                 <Link to="/registration"> Registration </Link>
                 <Link to="/login"> Login </Link>
                 <Link to="/posts"> Posts </Link>
-                <Link to="/post_details/2"> Post Details </Link>
+                <Link to="/users"> Users </Link>
+                <Link to="/logout"> LogOut </Link>
             </header>
         </div>
     );
