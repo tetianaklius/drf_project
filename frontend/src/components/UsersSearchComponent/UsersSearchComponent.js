@@ -29,7 +29,7 @@ export const UsersSearchComponent = () => {
                     if (data.data.length > 1) {
                         console.log(typeof data.data, data.data.length)
                     }
-
+                    console.log(data)
                     setUsers(data)
                 }
                 if (status === 401) {
