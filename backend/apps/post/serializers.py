@@ -20,6 +20,7 @@ class PostCreateListSerializer(serializers.ModelSerializer):
         )
         read_only_fields = ["id", "is_visible", "is_active", "user_id", "profanity_edit_count", "created_at",
                             "updated_at"]
+        ordering = ["-id"]
 
     def validate(self, attrs):
         attrs = super().validate(attrs)

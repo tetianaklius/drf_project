@@ -11,6 +11,7 @@ UserModel = get_user_model()
 class PostModel(BaseModel):
     class Meta:
         db_table = "posts"
+        ordering = ["-id"]
 
     is_active = models.BooleanField(default=True)
     is_visible = models.BooleanField(default=True)

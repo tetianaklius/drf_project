@@ -31,6 +31,10 @@ class ActivateUserView(GenericAPIView):
 
 
 class RecoveryRequestView(GenericAPIView):
+    """
+    post:
+        receives user email and send recovery token to this email to recover current user password;
+    """
     permission_classes = (AllowAny,)
 
     def post(self, *args, **kwargs):
@@ -43,6 +47,10 @@ class RecoveryRequestView(GenericAPIView):
 
 
 class RecoveryPasswordView(GenericAPIView):
+    """
+    post:
+        receives new password from user and set it to user if recovery token is valid;
+    """
     permission_classes = (AllowAny,)
 
     def post(self, *args, **kwargs):

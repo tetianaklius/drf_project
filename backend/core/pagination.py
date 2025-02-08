@@ -3,7 +3,7 @@ from rest_framework.response import Response
 
 
 class CustomPagePagination(PageNumberPagination):
-    page_size = 5
+    page_size = 10
     max_page_size = 20
     page_size_query_param = "per_page"
 

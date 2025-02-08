@@ -38,7 +38,6 @@ class UsersListView(ListAPIView):
 
         if request.query_params.get("email"):
             searched_email = request.query_params.get("email")
-            # search serializer todo
             user = UserModel.objects.filter(email=searched_email).first()
             if user:
                 return Response(UserModelSerializer(user).data, status=status.HTTP_200_OK)
@@ -80,7 +79,7 @@ class UserRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
             try:
                 profile = ProfileModel.objects.get(user=user_to_update)
             except ProfileModel.DoesNotExist:
-                return Response({'details': 'Not found'}, status=status.HTTP_404_NOT_FOUND)
+                return Response({"details": "Not found"}, status=status.HTTP_404_NOT_FOUND)
 
             serializer = ProfileModelSerializer(profile, data=request.data, partial=True)
             serializer.is_valid(raise_exception=True)

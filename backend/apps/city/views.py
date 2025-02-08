@@ -1,7 +1,6 @@
 from rest_framework import status
-from django.shortcuts import get_object_or_404
-from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
-from rest_framework.permissions import IsAuthenticated, AllowAny
+from rest_framework.generics import ListCreateAPIView
+from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 
 from apps.city.models import CityModel
@@ -28,13 +27,6 @@ class CityListCreateView(ListCreateAPIView):
     def post(self, *args, **kwargs):
         data = self.request.data
         pk = self.kwargs["pk"]
-
-        # context_ = {}
-        # if "value" in data:
-        #     region_obj = get_object_or_404(RegionModel, value=data["value"])
-        #     context_["region"] = region_obj
-
-        # serializer = self.get_serializer(data=data, context=context_, many=True)
 
         serializer = self.get_serializer(data=data, many=True)
         serializer.is_valid(raise_exception=True)
