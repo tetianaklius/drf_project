@@ -21,6 +21,7 @@ class UsersListView(ListAPIView):
     serializer_class = UserModelSerializer
     pagination_class = CustomPagePagination
     permission_classes = (IsAuthenticated,)
+
     filterset_class = UsersFilter
 
     def get(self, request, *args, **kwargs):
@@ -43,13 +44,8 @@ class UsersListView(ListAPIView):
                 return Response(UserModelSerializer(user).data, status=status.HTTP_200_OK)
             else:
                 return Response("User not found", status=status.HTTP_404_NOT_FOUND)
-        if not request.query_params:
-            users = UsersFilter(data=self.queryset, request=request)
-            return Response(users, status=status.HTTP_200_OK)
 
-            # return Response("To search user you should write user id or user email.",
-            #                 status=status.HTTP_400_BAD_REQUEST)
-
+        return super().get(request, *args, **kwargs)
 
 
 class UserCreateView(CreateAPIView):
@@ -72,15 +68,20 @@ class UserRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
         delete user by id;
     """
     queryset = UserModel.objects.all()
+    serializer_class = UserModelSerializer
     permission_classes = (IsAuthenticated,)
     http_method_names = ["get", "patch", "delete"]
 
     def patch(self, request, *args, **kwargs):
         user = self.request.user
         user_to_update = self.get_object()
-        profile = ProfileModel.objects.get(user=user_to_update)
 
         if user.is_authenticated and user.id == user_to_update.id:
+            try:
+                profile = ProfileModel.objects.get(user=user_to_update)
+            except ProfileModel.DoesNotExist:
+                return Response({'details': 'Not found'}, status=status.HTTP_404_NOT_FOUND)
+
             serializer = ProfileModelSerializer(profile, data=request.data, partial=True)
             serializer.is_valid(raise_exception=True)
             serializer.save()
@@ -97,7 +98,7 @@ class UserRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
         user = self.request.user
         user_to_delete = self.get_object()
         if user.is_authenticated and user.id == user_to_delete.id:
-            user_to_delete.destroy()
+            user_to_delete.delete()
             return Response(status=status.HTTP_204_NO_CONTENT)
         return Response(
             {
