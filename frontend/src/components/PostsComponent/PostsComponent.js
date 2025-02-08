@@ -60,9 +60,9 @@ export const PostsComponent = () => {
                 <button className={styles.add_button}
                         onClick={() => {
                             setFormVisible(true)
-                        }}>Додати оголошення
+                        }}>Add Post
                 </button>
-                <hr/>
+
                 <div>
                     {posts?.map(post => <PostComponent key={post.id} post={post}/>)}
                 </div>

@@ -1,0 +1,9 @@
+.post_wrap{
+    display: flex;
+    margin: 10px;
+    background: cornsilk;
+}
+
+.btn_details{
+    margin-left: 20px;
+}

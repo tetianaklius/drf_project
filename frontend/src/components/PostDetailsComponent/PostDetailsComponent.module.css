@@ -5,3 +5,18 @@
     justify-content: left;
     margin: 10px;
 }
+
+.update_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+
+    cursor: pointer;
+    font-size: larger;
+
+    background: linear-gradient(to right, rgb(31, 23, 56), rgba(56, 44, 93, 0.2));
+    height: 6vh;
+    width: 15vw;
+    color: white;
+}
