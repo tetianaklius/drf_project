@@ -1,6 +1,7 @@
 import {urls} from "../constants/urls";
 import {apiService} from "./apiService";
 
+
 export const postService = {
 
     getAll: async () => {
@@ -11,12 +12,10 @@ export const postService = {
             return err.response
         }
     },
-
     create: async (data) => {
-            const response = await apiService.post(urls.posts.create, data)
-            return response.data
+        const response = await apiService.post(urls.posts.create, data)
+        return response.data
     },
-
     update: async (id, data) => {
         const response = await apiService.patch(urls.posts.byId(+id), data)
         return response.data
@@ -29,6 +28,4 @@ export const postService = {
         const response = await apiService.get(urls.posts.byUserId(+id));
         return response.data;
     },
-}
-
-
+};

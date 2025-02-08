@@ -1,4 +1,5 @@
 import React from "react";
+
 import {RegisterComponent} from "../../components/RegisterComponent/RegisterComponent";
 
 

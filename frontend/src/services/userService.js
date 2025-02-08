@@ -1,12 +1,12 @@
 import {apiService} from "./apiService";
 import {urls} from "../constants/urls";
 
+
 const userService = {
     getAll: async () => {
         const response = await apiService.get(urls.users.all)
         return response.data;
     },
-
     search: async (params) => {
         try {
             const response = await apiService.get(urls.users.search(params))
@@ -14,7 +14,6 @@ const userService = {
         } catch (err) {
             return err.response
         }
-
     }
 };
 

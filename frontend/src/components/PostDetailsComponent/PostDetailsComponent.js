@@ -1,8 +1,10 @@
 import {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
+
 import {postService} from "../../services/postService";
 import {PostFormComponent} from "../PostFormComponent/PostFormComponent";
 import styles from "./PostDetailsComponent.module.css"
+
 
 export const PostDetailsComponent = () => {
     const {id} = useParams();

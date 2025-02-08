@@ -1,9 +1,9 @@
-import {apiService, apiServiceAllowAny, apiServiceRefresh} from "./apiService";
+import {apiServiceAllowAny, apiServiceRefresh} from "./apiService";
 import {urls} from "../constants/urls";
+
 
 const _accessTokenKey = "access";
 const _refreshTokenKey = "refresh";
-
 
 const refreshService = {
     refresh: async () => {
@@ -16,7 +16,6 @@ const refreshService = {
         }
     }
 }
-
 
 const authService = {
     async register(user) {
@@ -39,7 +38,6 @@ const authService = {
         localStorage.removeItem(_refreshTokenKey)
     },
 
-
     setTokens({refresh, access}) {
         localStorage.setItem(_accessTokenKey, access);
         localStorage.setItem(_refreshTokenKey, refresh);
@@ -52,14 +50,9 @@ const authService = {
     getRefreshToken() {
         return localStorage.getItem(_refreshTokenKey);
     },
-
-    getSocketToken() {
-        return apiService.get(urls.auth.socket)
-    },
-
-}
+};
 
 export {
     authService,
     refreshService,
-}
+};

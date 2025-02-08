@@ -1,5 +1,6 @@
-import React from 'react';
+import React from "react";
 import {Link, useNavigate} from "react-router-dom";
+
 import styles from "./HeaderComponent.module.css"
 import {authService} from "../../services/authService";
 
@@ -10,7 +11,7 @@ export const HeaderComponent = () => {
 
     const logOut = () => {
         authService.logout();
-        navigate('/login')
+        navigate("/login")
     }
 
     return (
