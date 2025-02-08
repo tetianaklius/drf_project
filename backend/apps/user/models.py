@@ -4,6 +4,7 @@ from django.db import models
 
 from apps.city.models import CityModel
 from apps.user.managers import UserManager
+from core.enums.regex_enum import RegexEnum
 from core.models import BaseModel
 
 
@@ -27,12 +28,13 @@ class ProfileModel(BaseModel):
 
     user = models.OneToOneField(UserModel, on_delete=models.CASCADE, related_name="profile")
 
-    name = models.CharField(max_length=30, validators=[v.MinLengthValidator(1)])
-    surname = models.CharField(max_length=30, validators=[v.MinLengthValidator(1)])
+    name = models.CharField(max_length=30, validators=[v.MinLengthValidator(1),
+                                                       v.RegexValidator(RegexEnum.NAME.pattern, RegexEnum.NAME.msg)])
+    surname = models.CharField(max_length=30, validators=[v.MinLengthValidator(1),
+                                                          v.RegexValidator(RegexEnum.NAME.pattern, RegexEnum.NAME.msg)])
     age = models.IntegerField(validators=[v.MaxValueValidator(130), v.MinValueValidator(14)])
-    phone = models.CharField(max_length=20, blank=True)  # todo
+    phone = models.CharField(max_length=20, validators=[v.RegexValidator(RegexEnum.PHONE.pattern, RegexEnum.PHONE.msg)],
+                             blank=True)
     city = models.ForeignKey(CityModel, on_delete=models.SET_NULL, related_name="profiles", blank=True, null=True)
     profession = models.CharField(max_length=60, blank=True)
     interests = models.CharField(max_length=150, blank=True)
-
-    # objects = models.Manager()
