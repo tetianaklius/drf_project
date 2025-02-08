@@ -1,9 +1,35 @@
-.post_wrap{
+.post_box {
+    height: 35%;
+    min-height: 150px;
+    width: 19%;
     display: flex;
-    margin: 10px;
-    background: cornsilk;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(rgba(199,171,138, 0.6), 80%, rgb(255, 255, 255, 0.1));
 }
 
-.btn_details{
-    margin-left: 20px;
+.post_box:hover {
+    transform: scale(1.1);
+    -webkit-transition: transform 0.6s;
+}
+
+.btn_details {
+    border: none;
+    border-radius: 3px;
+    background: rgba(89, 62, 32, 0.2);
+    height: 50px;
+    width: 100px;
+    max-height: 200px;
+    cursor: pointer;
+}
+
+.post_title {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: x-large;
+    overflow: clip;
 }

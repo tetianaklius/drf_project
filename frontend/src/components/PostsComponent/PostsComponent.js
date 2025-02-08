@@ -36,6 +36,7 @@ export const PostsComponent = () => {
                 })
             } catch (err) {
                 setError(JSON.stringify([{"err_message": err.message}]))
+                console.log(err.message)
             }
 
         },
@@ -47,23 +48,26 @@ export const PostsComponent = () => {
     }
 
     return (
-        <div>
-            <div className={styles.component_wrap}>
+        <div className={styles.component_wrap}>
 
-                {formVisible ? (<PostFormComponent data={data_props}/>) : <div></div>}
-                <div>{error}</div>
-                <hr/>
+            <div className={styles.form_box}>
+                <div className={styles.form}>
+                    {formVisible ? (<PostFormComponent data={data_props}/>) : <div></div>}
+                </div>
+                <div className={styles.error_msg}>
+                    {error}
+                </div>
                 <button className={styles.add_button}
                         onClick={() => {
                             setFormVisible(true)
-                        }}>Add Post
+                        }} disabled={formVisible} >Add post
                 </button>
-
-                <div>
-                    {posts?.map(post => <PostComponent key={post.id} post={post}/>)}
-                </div>
-
             </div>
+
+            <div className={styles.posts_box}>
+                {posts?.map(post => <PostComponent key={post.id} post={post}/>)}
+            </div>
+
         </div>
     );
 };

@@ -52,7 +52,6 @@ class UserModelSerializer(serializers.ModelSerializer):
             }
         }
 
-
     @atomic
     def create(self, validated_data: dict):
         profile = validated_data.pop("profile")
@@ -60,3 +59,19 @@ class UserModelSerializer(serializers.ModelSerializer):
         ProfileModel.objects.create(**profile, user=user)
         EmailService.registration(user)
         return user
+
+#
+# class ProfileNameSerializer(serializers.Serializer):
+#     class Meta:
+#         model = ProfileModel
+#         fields = ("name", "surname",)
+#
+#
+# class UserNameSerializer(serializers.ModelSerializer):
+#     profile = ProfileNameSerializer()
+#
+#     class Meta:
+#         model = UserModel
+#         fields = (
+#             "profile", "id",
+#         )

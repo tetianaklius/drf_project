@@ -40,31 +40,29 @@ export const PostFormComponent = ({data}) => {
             }
 
         } catch (err) {
-            set_error(JSON.stringify([{"err_message": err.message}]))
+            set_error(JSON.stringify([{"err_message": err.message}]) + JSON.stringify([{"err_message": err.response.data}]))
             form_visible(false)
         }
     }
 
     return (<div>
-        <div>
-            <div className={styles.selects_wrap}>
-                <div>
-                    <form className={styles.form_wrap} onSubmit={handleSubmit(save)}>
-                        <label className={styles.select_wrap}>Label
-                            <select onChange={onChangePostLabel} size={10} value={getValuePostLabel()?.name}>
-                                {postLabels.map((opts, i) => <option key={i}>{opts.name}</option>)}
-                            </select>
-                        </label>
-                        <label className={styles.input_wrap}>Текст
-                            <input type="text" placeholder={"text"}
-                                   defaultValue={post?.text || "my text"} {...register("text")}/>
-                        </label>
-                        <input type="text" placeholder={"title"}
-                               defaultValue={post?.title || "Title"} {...register("title")}/>
-                        {(post) ? <button>змінити</button> : <button>створтити</button>}
-                    </form>
-                </div>
+        <form className={styles.form_wrap} onSubmit={handleSubmit(save)}>
+            <label className={styles.select_wrap}>Topic
+                <select onChange={onChangePostLabel} size={10} value={getValuePostLabel()?.name}>
+                    {postLabels.map((opts, i) => <option key={i}>{opts.name}</option>)}
+                </select>
+            </label>
+            <label className={styles.input_wrap}>Title
+                <input type="text" placeholder={"title"} required
+                       defaultValue={post?.title || ""} {...register("title")}/>
+            </label>
+            <label className={styles.input_wrap}>Text
+                <input type="text" placeholder={"text"} required
+                       defaultValue={post?.text || ""} {...register("text")}/>
+            </label>
+            <div>
+                {(post) ? <button>Update</button> : <button className={styles.add_button}>Add</button>}
             </div>
-        </div>
+        </form>
     </div>);
 };

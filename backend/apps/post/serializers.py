@@ -1,9 +1,12 @@
 from rest_framework import serializers
 
 from apps.post.models import PostModel
+# from apps.user.serializers import UserNameSerializer
 
 
 class PostCreateListSerializer(serializers.ModelSerializer):
+    # user_id = UserNameSerializer()
+
     class Meta:
         model = PostModel
         fields = (

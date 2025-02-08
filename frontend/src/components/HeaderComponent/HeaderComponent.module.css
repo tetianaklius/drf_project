@@ -1,7 +1,17 @@
-.menu_wrap {
+.main {
+    margin: 0;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    margin: 3px;
-    padding: 2px;
-    background: antiquewhite;
+    align-items: center;
+    background: rgba(89, 62, 32, 0.3);
+    /*margin: 3px;*/
+    /*padding: 2px;*/
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import {Link, useNavigate} from "react-router-dom";
 
-import styles from "./HeaderComponent.module.css"
 import {authService} from "../../services/authService";
+import styles from "./HeaderComponent.module.css"
 
 
 export const HeaderComponent = () => {
@@ -15,15 +15,14 @@ export const HeaderComponent = () => {
     }
 
     return (
-        <div>
-            <header className={styles.menu_wrap}>
+        <div className={styles.main}>
+            <header className={styles.navbar}>
                 <Link to="/register"> RegisterPage </Link>
                 <Link to="/login"> LoginPage </Link>
                 <Link to="/posts"> Posts </Link>
                 <Link to="/users"> UsersPage </Link>
                 <button onClick={logOut}> LogOut</button>
             </header>
-            <br/>
         </div>
     );
 };

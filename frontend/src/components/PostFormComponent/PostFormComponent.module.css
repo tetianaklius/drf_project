@@ -1,26 +1,42 @@
-
 .form_wrap {
     display: flex;
-    flex-direction: column;
-
-    justify-content: left;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     margin: 10px;
+    font-size: large;
 }
 
 .input_wrap {
     display: flex;
-    margin: 3px;
-    padding: 2px;
-    background:cornflowerblue;
+}
+
+.input_wrap input {
+    margin-left: 1vw;
+    height: 20vh;
+    width: 20vw;
+    font-size: large;
+    color: #525560;
+    text-align: start;
+}
+
+.select_wrap select {
+    margin-left: 1vw;
 }
 
 .select_wrap {
-
     display: flex;
-
-    margin: 10px;
-    background:cornflowerblue;
+    height: 20vh;
 }
-.selects_wrap{
-    display: flex;
+
+.add_button {
+    font-size: large;
+    border: none;
+    border-radius: 3px;
+    background: rgba(89, 62, 32, 0.2);
+    height: 80px;
+    width: 100px;
+    max-height: 200px;
+    cursor: pointer;
 }

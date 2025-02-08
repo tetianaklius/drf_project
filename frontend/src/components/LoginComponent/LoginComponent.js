@@ -3,6 +3,7 @@ import {useLocation, useNavigate} from "react-router-dom";
 import {useEffect, useState} from "react";
 
 import {authService} from "../../services/authService";
+import styles from "./LoginComponent.module.css";
 
 
 export const LoginComponent = () => {
@@ -24,15 +25,15 @@ export const LoginComponent = () => {
     };
 
     return (
-        <div>
+        <div className={styles.login_box}>
             <h2>Login</h2>
-            <form onSubmit={handleSubmit(onSubmit)}>
-                <input type="text" defaultValue={location.state?.email}
+            <form onSubmit={handleSubmit(onSubmit)} className={styles.login_form}>
+                <input type="text" id={styles.input_1} defaultValue={location.state?.email}
                        placeholder={"email"} {...register("email")}/>
-                <input type="text"
+                <input type="text" id={styles.input_2}
                        placeholder={"password"} {...register("password")}/>
-                <button>login</button>
-                <div>{error}</div>
+                <button className={styles.login_button}>login</button>
+                <div className={styles.error_msg}>{error}</div>
             </form>
         </div>
     );
