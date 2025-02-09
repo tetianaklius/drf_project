@@ -109,6 +109,10 @@ class UserRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
 
 
 class GetAuthUserView(GenericAPIView):
+    """
+    get:
+        get own user profile;
+    """
     permission_classes = (IsAuthenticated,)
 
     def get(self, *args, **kwargs):
