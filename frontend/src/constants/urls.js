@@ -5,7 +5,7 @@ export const urls = {
         register: "/users/create",
         activate: "/auth/activate/",
         login: "/auth",
-        refresh:"/auth/refresh"
+        refresh: "/auth/refresh"
     },
     users: {
         all: "/users",
@@ -20,15 +20,16 @@ export const urls = {
         byId: (id) => `/posts/${id}`,
         byUserId: (id) => `/posts/user/${id}`,
     },
-    post_label:{
+    post_label: {
         all: "/post_labels",
     },
-    regions:{
+    regions: {
         all: "/regions",
         create: "/regions"
     },
-    cities:{
-        all: (id) => `/cities/region/${id}`,
+    cities: {
+        all: "/cities",
+        byRegion: (id) => `/cities/region/${id}`,
         create: (id) => `cities/region/${id}`
     }
 }

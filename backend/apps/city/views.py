@@ -1,5 +1,5 @@
 from rest_framework import status
-from rest_framework.generics import ListCreateAPIView
+from rest_framework.generics import ListCreateAPIView, ListAPIView
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 
@@ -34,3 +34,9 @@ class CityListCreateView(ListCreateAPIView):
         serializer.save(region=region_obj)
 
         return Response(serializer.validated_data, status.HTTP_201_CREATED)
+
+
+class CitiesListView(ListAPIView):
+    queryset = CityModel.objects.all().order_by("name")
+    serializer_class = CityModelSerializer
+    permission_classes = (AllowAny,)

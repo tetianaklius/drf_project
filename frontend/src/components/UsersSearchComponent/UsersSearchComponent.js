@@ -73,7 +73,7 @@ export const UsersSearchComponent = () => {
     const onChangeCity = (e) => setSelectedCity(e.target.value)
     useEffect(() => {
         if (getValueRegion()?.value) {
-            cityService.getById(getValueRegion()?.value).then(values => setCities([{name: "--"}, ...values]))
+            cityService.getByRegionId(getValueRegion()?.value).then(values => setCities([{name: "--"}, ...values]))
         } else {
             setCities([])
             setSelectedCity(null)

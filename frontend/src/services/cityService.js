@@ -3,8 +3,12 @@ import {apiServiceAllowAny} from "./apiService";
 
 
 export const cityService = {
-    getById: async (id) => {
-        const response = await apiServiceAllowAny.get(urls.cities.all(+id))
+    getByRegionId: async (id) => {
+        const response = await apiServiceAllowAny.get(urls.cities.byRegion(+id))
+        return response.data;
+    },
+    getAll: async () => {
+        const response = await apiServiceAllowAny.get(urls.cities.all)
         return response.data;
     }
 };
