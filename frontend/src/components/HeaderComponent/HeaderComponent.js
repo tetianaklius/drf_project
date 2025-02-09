@@ -21,6 +21,7 @@ export const HeaderComponent = () => {
                 <Link to="/login"> LoginPage </Link>
                 <Link to="/posts"> Posts </Link>
                 <Link to="/users"> UsersPage </Link>
+                <Link to="/profile"> Profile </Link>
                 <button onClick={logOut}> LogOut</button>
             </header>
         </div>

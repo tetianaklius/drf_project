@@ -7,6 +7,7 @@ import {LoginPage} from "./pages/LoginPage/LoginPage";
 import {RegisterPage} from "./pages/RegisterPage/RegisterPage";
 import {ActivatePage} from "./pages/ActivatePage/ActivatePage";
 import {UsersPage} from "./pages/UsersPage/UsersPage";
+import {ProfilePage} from "./pages/ProfilePage/ProfilePage";
 
 
 export const router = createBrowserRouter([
@@ -19,6 +20,7 @@ export const router = createBrowserRouter([
             {path: "activate/:token", element: <ActivatePage/>},
 
             {path: "users", element: <UsersPage/>},
+            {path: "profile", element: <ProfilePage/>},
 
             {path: "posts", element: <PostsPage/>},
             {path: "posts/post_details/:id", element: <PostDetailsPage/>},

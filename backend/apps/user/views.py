@@ -6,7 +6,7 @@ from rest_framework.response import Response
 
 from apps.user.filters import UsersFilter
 from apps.user.models import ProfileModel
-from apps.user.serializers import UserModelSerializer, ProfileModelSerializer
+from apps.user.serializers import UserModelSerializer, ProfileModelSerializer, AuthUserSerializer
 from core.pagination import CustomPagePagination
 
 UserModel = get_user_model()
@@ -71,8 +71,9 @@ class UserRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
     permission_classes = (IsAuthenticated,)
     http_method_names = ["get", "patch", "delete"]
 
-    def patch(self, request, *args, **kwargs):
+    def patch(self, *args, **kwargs):
         user = self.request.user
+        data = self.request.data
         user_to_update = self.get_object()
 
         if user.is_authenticated and user.id == user_to_update.id:
@@ -81,7 +82,7 @@ class UserRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
             except ProfileModel.DoesNotExist:
                 return Response({"details": "Not found"}, status=status.HTTP_404_NOT_FOUND)
 
-            serializer = ProfileModelSerializer(profile, data=request.data, partial=True)
+            serializer = ProfileModelSerializer(profile, data=data, partial=True)
             serializer.is_valid(raise_exception=True)
             serializer.save()
             return Response(serializer.data, status=status.HTTP_200_OK)
@@ -105,6 +106,15 @@ class UserRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
             },
             status.HTTP_403_FORBIDDEN
         )
+
+
+class GetAuthUserView(GenericAPIView):
+    permission_classes = (IsAuthenticated,)
+
+    def get(self, *args, **kwargs):
+        user = UserModel.objects.get(id=self.request.user.id)
+        serializer = AuthUserSerializer(user)
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
 
 class BlockUserView(GenericAPIView):

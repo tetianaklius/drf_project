@@ -27,30 +27,35 @@ export const PostDetailsComponent = () => {
     }
 
     return (
-        <div>
-            <div className={styles.component_wrap}>
+        <div className={styles.post_box}>
+            <div className={styles.post_form}>
                 {formVisible ? (<PostFormComponent data={data_props}/>) : <div></div>}
-                <div>{error}</div>
-                <hr/>
-                <div>
-                    <div>
-                        {post.title}
+                <div className={styles.error_msg}>
+                    {error}
+                </div>
+            </div>
+            <hr/>
+            <div className={styles.post}>
+                <div className={styles.post_upper}>
+                    <div className={styles.post_title}>
+                        <h3>{post.title}</h3>
                     </div>
-                    <div>
+                    <div className={styles.post_label}>
                         {post.label?.name}
                     </div>
                 </div>
-                <div>
+                <div className={styles.post_author}>
                     post id: {post.id}
                     by user: {post.user_id}
                 </div>
-                <div>
+                <div className={styles.post_text}>
                     {post.text}
                 </div>
-
-                <button className={styles.update_button} onClick={() => {
+            </div>
+            <div>
+                <button className={styles.update_button} disabled={formVisible} onClick={() => {
                     setFormVisible(true)
-                }}>post update {post.id}
+                }}>Update post
                 </button>
             </div>
         </div>

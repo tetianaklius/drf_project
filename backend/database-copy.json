@@ -1,0 +1,7273 @@
+[
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add blacklisted token",
+        "content_type": [
+            "token_blacklist",
+            "blacklistedtoken"
+        ],
+        "codename": "add_blacklistedtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change blacklisted token",
+        "content_type": [
+            "token_blacklist",
+            "blacklistedtoken"
+        ],
+        "codename": "change_blacklistedtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete blacklisted token",
+        "content_type": [
+            "token_blacklist",
+            "blacklistedtoken"
+        ],
+        "codename": "delete_blacklistedtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view blacklisted token",
+        "content_type": [
+            "token_blacklist",
+            "blacklistedtoken"
+        ],
+        "codename": "view_blacklistedtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add outstanding token",
+        "content_type": [
+            "token_blacklist",
+            "outstandingtoken"
+        ],
+        "codename": "add_outstandingtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change outstanding token",
+        "content_type": [
+            "token_blacklist",
+            "outstandingtoken"
+        ],
+        "codename": "change_outstandingtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete outstanding token",
+        "content_type": [
+            "token_blacklist",
+            "outstandingtoken"
+        ],
+        "codename": "delete_outstandingtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view outstanding token",
+        "content_type": [
+            "token_blacklist",
+            "outstandingtoken"
+        ],
+        "codename": "view_outstandingtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add crontab",
+        "content_type": [
+            "django_celery_beat",
+            "crontabschedule"
+        ],
+        "codename": "add_crontabschedule"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change crontab",
+        "content_type": [
+            "django_celery_beat",
+            "crontabschedule"
+        ],
+        "codename": "change_crontabschedule"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete crontab",
+        "content_type": [
+            "django_celery_beat",
+            "crontabschedule"
+        ],
+        "codename": "delete_crontabschedule"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view crontab",
+        "content_type": [
+            "django_celery_beat",
+            "crontabschedule"
+        ],
+        "codename": "view_crontabschedule"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add interval",
+        "content_type": [
+            "django_celery_beat",
+            "intervalschedule"
+        ],
+        "codename": "add_intervalschedule"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change interval",
+        "content_type": [
+            "django_celery_beat",
+            "intervalschedule"
+        ],
+        "codename": "change_intervalschedule"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete interval",
+        "content_type": [
+            "django_celery_beat",
+            "intervalschedule"
+        ],
+        "codename": "delete_intervalschedule"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view interval",
+        "content_type": [
+            "django_celery_beat",
+            "intervalschedule"
+        ],
+        "codename": "view_intervalschedule"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add periodic task",
+        "content_type": [
+            "django_celery_beat",
+            "periodictask"
+        ],
+        "codename": "add_periodictask"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change periodic task",
+        "content_type": [
+            "django_celery_beat",
+            "periodictask"
+        ],
+        "codename": "change_periodictask"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete periodic task",
+        "content_type": [
+            "django_celery_beat",
+            "periodictask"
+        ],
+        "codename": "delete_periodictask"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view periodic task",
+        "content_type": [
+            "django_celery_beat",
+            "periodictask"
+        ],
+        "codename": "view_periodictask"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add periodic task track",
+        "content_type": [
+            "django_celery_beat",
+            "periodictasks"
+        ],
+        "codename": "add_periodictasks"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change periodic task track",
+        "content_type": [
+            "django_celery_beat",
+            "periodictasks"
+        ],
+        "codename": "change_periodictasks"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete periodic task track",
+        "content_type": [
+            "django_celery_beat",
+            "periodictasks"
+        ],
+        "codename": "delete_periodictasks"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view periodic task track",
+        "content_type": [
+            "django_celery_beat",
+            "periodictasks"
+        ],
+        "codename": "view_periodictasks"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add solar event",
+        "content_type": [
+            "django_celery_beat",
+            "solarschedule"
+        ],
+        "codename": "add_solarschedule"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change solar event",
+        "content_type": [
+            "django_celery_beat",
+            "solarschedule"
+        ],
+        "codename": "change_solarschedule"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete solar event",
+        "content_type": [
+            "django_celery_beat",
+            "solarschedule"
+        ],
+        "codename": "delete_solarschedule"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view solar event",
+        "content_type": [
+            "django_celery_beat",
+            "solarschedule"
+        ],
+        "codename": "view_solarschedule"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add clocked",
+        "content_type": [
+            "django_celery_beat",
+            "clockedschedule"
+        ],
+        "codename": "add_clockedschedule"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change clocked",
+        "content_type": [
+            "django_celery_beat",
+            "clockedschedule"
+        ],
+        "codename": "change_clockedschedule"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete clocked",
+        "content_type": [
+            "django_celery_beat",
+            "clockedschedule"
+        ],
+        "codename": "delete_clockedschedule"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view clocked",
+        "content_type": [
+            "django_celery_beat",
+            "clockedschedule"
+        ],
+        "codename": "view_clockedschedule"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add task result",
+        "content_type": [
+            "django_celery_results",
+            "taskresult"
+        ],
+        "codename": "add_taskresult"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change task result",
+        "content_type": [
+            "django_celery_results",
+            "taskresult"
+        ],
+        "codename": "change_taskresult"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete task result",
+        "content_type": [
+            "django_celery_results",
+            "taskresult"
+        ],
+        "codename": "delete_taskresult"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view task result",
+        "content_type": [
+            "django_celery_results",
+            "taskresult"
+        ],
+        "codename": "view_taskresult"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add chord counter",
+        "content_type": [
+            "django_celery_results",
+            "chordcounter"
+        ],
+        "codename": "add_chordcounter"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change chord counter",
+        "content_type": [
+            "django_celery_results",
+            "chordcounter"
+        ],
+        "codename": "change_chordcounter"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete chord counter",
+        "content_type": [
+            "django_celery_results",
+            "chordcounter"
+        ],
+        "codename": "delete_chordcounter"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view chord counter",
+        "content_type": [
+            "django_celery_results",
+            "chordcounter"
+        ],
+        "codename": "view_chordcounter"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add group result",
+        "content_type": [
+            "django_celery_results",
+            "groupresult"
+        ],
+        "codename": "add_groupresult"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change group result",
+        "content_type": [
+            "django_celery_results",
+            "groupresult"
+        ],
+        "codename": "change_groupresult"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete group result",
+        "content_type": [
+            "django_celery_results",
+            "groupresult"
+        ],
+        "codename": "delete_groupresult"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view group result",
+        "content_type": [
+            "django_celery_results",
+            "groupresult"
+        ],
+        "codename": "view_groupresult"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add user model",
+        "content_type": [
+            "user",
+            "usermodel"
+        ],
+        "codename": "add_usermodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change user model",
+        "content_type": [
+            "user",
+            "usermodel"
+        ],
+        "codename": "change_usermodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete user model",
+        "content_type": [
+            "user",
+            "usermodel"
+        ],
+        "codename": "delete_usermodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view user model",
+        "content_type": [
+            "user",
+            "usermodel"
+        ],
+        "codename": "view_usermodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add profile model",
+        "content_type": [
+            "user",
+            "profilemodel"
+        ],
+        "codename": "add_profilemodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change profile model",
+        "content_type": [
+            "user",
+            "profilemodel"
+        ],
+        "codename": "change_profilemodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete profile model",
+        "content_type": [
+            "user",
+            "profilemodel"
+        ],
+        "codename": "delete_profilemodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view profile model",
+        "content_type": [
+            "user",
+            "profilemodel"
+        ],
+        "codename": "view_profilemodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add post model",
+        "content_type": [
+            "post",
+            "postmodel"
+        ],
+        "codename": "add_postmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change post model",
+        "content_type": [
+            "post",
+            "postmodel"
+        ],
+        "codename": "change_postmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete post model",
+        "content_type": [
+            "post",
+            "postmodel"
+        ],
+        "codename": "delete_postmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view post model",
+        "content_type": [
+            "post",
+            "postmodel"
+        ],
+        "codename": "view_postmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add post label model",
+        "content_type": [
+            "post_label",
+            "postlabelmodel"
+        ],
+        "codename": "add_postlabelmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change post label model",
+        "content_type": [
+            "post_label",
+            "postlabelmodel"
+        ],
+        "codename": "change_postlabelmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete post label model",
+        "content_type": [
+            "post_label",
+            "postlabelmodel"
+        ],
+        "codename": "delete_postlabelmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view post label model",
+        "content_type": [
+            "post_label",
+            "postlabelmodel"
+        ],
+        "codename": "view_postlabelmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add city model",
+        "content_type": [
+            "city",
+            "citymodel"
+        ],
+        "codename": "add_citymodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change city model",
+        "content_type": [
+            "city",
+            "citymodel"
+        ],
+        "codename": "change_citymodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete city model",
+        "content_type": [
+            "city",
+            "citymodel"
+        ],
+        "codename": "delete_citymodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view city model",
+        "content_type": [
+            "city",
+            "citymodel"
+        ],
+        "codename": "view_citymodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add region model",
+        "content_type": [
+            "region",
+            "regionmodel"
+        ],
+        "codename": "add_regionmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change region model",
+        "content_type": [
+            "region",
+            "regionmodel"
+        ],
+        "codename": "change_regionmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete region model",
+        "content_type": [
+            "region",
+            "regionmodel"
+        ],
+        "codename": "delete_regionmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view region model",
+        "content_type": [
+            "region",
+            "regionmodel"
+        ],
+        "codename": "view_regionmodel"
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$qZKa1WWaEh50OA2gabdVjL$dPaZVQgSGXzYa8YAzN3mXf1pPOBd+XS/BjC5kN5n20k=",
+        "last_login": "2025-02-08T07:57:58.475Z",
+        "is_superuser": true,
+        "created_at": "2025-02-07T18:18:03.568Z",
+        "updated_at": "2025-02-07T18:18:03.568Z",
+        "email": "tetyanaklyus@gmail.com",
+        "is_active": true,
+        "is_staff": true,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$rqeZCQNdabupVgcyztAOf8$lM7Dmp0w00gmuLnnwGiu/Sj+q9nnsNmN2z1yF3f05UY=",
+        "last_login": "2025-02-08T11:20:47.338Z",
+        "is_superuser": false,
+        "created_at": "2025-02-07T19:52:15.105Z",
+        "updated_at": "2025-02-07T19:52:15.105Z",
+        "email": "1234567@gmail.com",
+        "is_active": true,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$uY8DYzml6skCHGVdD6dvxG$A2Tvh2kpjePFXS8u+MX4Vdspe7e9oxnSt/+Q83Q3ZRY=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-07T19:52:24.528Z",
+        "updated_at": "2025-02-07T19:52:24.528Z",
+        "email": "1234567890@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$Jdbihr213eo8Vw5F9GJ7Q8$tZ8GoO+OxqwMBUlutVaq50TE8zhdLCfGTrvrOFsF960=",
+        "last_login": "2025-02-09T13:06:15.506Z",
+        "is_superuser": false,
+        "created_at": "2025-02-07T21:04:08.515Z",
+        "updated_at": "2025-02-07T21:04:08.515Z",
+        "email": "olexa@gmail.com",
+        "is_active": true,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$mXhx6bOuuKT68s2knHbovu$Odks5yMknVByL4iJO4jWwVesF8b2ew3pxkIUM8vgbS8=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-07T21:15:35.673Z",
+        "updated_at": "2025-02-07T21:15:35.673Z",
+        "email": "olexawereewrw@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$cElFTZyEcz2aupHyZ2IaDl$rDDGUxQVauFaSYKcjFzV7WymmFMHkNSMu1RvayNNdmk=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-07T22:08:11.099Z",
+        "updated_at": "2025-02-08T08:15:23.437Z",
+        "email": "12345678901@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$XNUkzjJP5Cs6ly0MPQ97jB$IEO1NI7JFT5Fxt18avSqS1NoG4piXF6oIob3hy4amAc=",
+        "last_login": "2025-02-08T08:54:10.395Z",
+        "is_superuser": false,
+        "created_at": "2025-02-08T08:27:42.096Z",
+        "updated_at": "2025-02-08T08:27:42.096Z",
+        "email": "123@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$tGEKuIMCKZFx47EqPA0QlI$fH8LTHTp8+YD6ilakZFi4YI3RaOfv6483KRmiQ6MF4Y=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-08T10:23:28.503Z",
+        "updated_at": "2025-02-08T10:23:28.503Z",
+        "email": "hthrhfhf@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$V3sBlApb1szzJzOAt2Nn1M$4KguqiM/AewExyFJYZ6Fsq6Ul3yS7F4EPFLrVipkxC4=",
+        "last_login": "2025-02-09T13:10:34.726Z",
+        "is_superuser": false,
+        "created_at": "2025-02-08T10:45:39.809Z",
+        "updated_at": "2025-02-08T10:45:39.809Z",
+        "email": "tetianaklius@gmail.com",
+        "is_active": true,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$5OiB3nDkiF9qtlSfEI5DdC$uiLxS2uigZBQ9tf/yK5QksTP+pjVycCgiZwscyB9GUs=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-08T13:36:44.273Z",
+        "updated_at": "2025-02-08T13:36:44.273Z",
+        "email": "tetianaklius@hgf.hgkgy",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$8qTa1yiPY0XBMwK42vKc2g$SQUmaa8sE5UCQP20NHumKipUINVcx1CpIKjgdkJXNk8=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-08T14:53:34.312Z",
+        "updated_at": "2025-02-08T14:53:34.313Z",
+        "email": "tetiana@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$6dwpuadEo3TvgqOrq0bZAU$eZ6L08bU2RmxL2VpKfAe7mlhD0zYP4jqJOv5Pb6+6Q0=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-08T14:53:57.104Z",
+        "updated_at": "2025-02-08T14:53:57.104Z",
+        "email": "hanna@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$V50hVf9SEswIs7wo6lV96i$hdjBY4ufyjX90hBv9WVUkRaoLhm1Gw0zHgvLs5POD64=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-08T14:54:29.040Z",
+        "updated_at": "2025-02-08T14:54:29.040Z",
+        "email": "hann7a@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$FshmsLI6zoOcOcOmmP6E9K$FYyTJCaI/SJB+WyurlGBCqzP/9EKqpZ6mWhrOKbzLWg=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-08T14:55:21.568Z",
+        "updated_at": "2025-02-08T14:55:21.568Z",
+        "email": "hann77a@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$dTaYglUSWVZhluBi7FOFv3$rJ4eBd/PuFKZlmdZ/ErN2cPds6Wvl8+Iy3P2l1WbSJM=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-09T08:03:29.869Z",
+        "updated_at": "2025-02-09T08:03:29.869Z",
+        "email": "user1@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$4zJaQNSyVnJKks1khqNbBK$W9ELkDBsNqjCbtxBg2FxrKIjnFMMkioTDz4OfVW05KM=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-09T08:05:03.981Z",
+        "updated_at": "2025-02-09T08:05:03.981Z",
+        "email": "user2@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$oOXqXPYjuHukLO94MhJSqm$WHAVB4NZlqiBDo0p3jHVdbNrR/0i4rwD1KV0k+x98hM=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-09T08:39:38.124Z",
+        "updated_at": "2025-02-09T08:39:38.124Z",
+        "email": "user3@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$jR7UfIa7Z0ZZ3MzsTqkwKa$X3Tgqdtzt1MjU+TVK4nf/4TK9ZtqaO07ajcpgfNAem4=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-09T08:41:32.473Z",
+        "updated_at": "2025-02-09T08:41:32.473Z",
+        "email": "user4@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$36lYClP6Ggcp2xnPRbC25W$dgd93rLtVY0PUOnWmfudEAmpM5qU9cIqU6tBHUlJuq0=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-09T08:43:56.407Z",
+        "updated_at": "2025-02-09T08:43:56.407Z",
+        "email": "user5@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$6QvjP0BAM7Rk66y8CaWZzv$vJ8rWnxJdzUvZCjH1BcgCd1HQ2pRdTXp0gzSWTv23Dc=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-09T10:06:12.300Z",
+        "updated_at": "2025-02-09T10:06:12.300Z",
+        "email": "eewgew@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$gkZhwq4Z03mL44RQRt3PDx$gSeG9IyHE+VdgKcEOUG226h69CBV72/dtWLwUpfmQIE=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-09T10:08:45.138Z",
+        "updated_at": "2025-02-09T10:08:45.138Z",
+        "email": "olexahjkhgg@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$3zeiatmJuvpFLerwt0D3Zr$WTwMXgeNnZPMVzmVBQfas2gIwBdm8veTLNtn3awFItQ=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-09T10:09:50.112Z",
+        "updated_at": "2025-02-09T10:09:50.112Z",
+        "email": "tetianakliusFSFSS@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$uG5oHAJMVTI3bLQfblIzTV$S83TE17mVMmq2mERkjfn/NdKWVQKWv2kBT5TEdxCzfU=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-09T10:11:13.405Z",
+        "updated_at": "2025-02-09T10:11:13.405Z",
+        "email": "user2fffff@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$81ZKjdB6XPxcUiwMbpeQUf$7R5lckTAPh9EBuPJjoMO89FiMVTSo0OswsIxN00Eusg=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-09T10:11:32.039Z",
+        "updated_at": "2025-02-09T10:11:32.039Z",
+        "email": "user2ssssss@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$T2Cq4HnEZca3m0QCwiX7NE$AA4VN9jp7wkvwVV6P1eySzLHQa1reWn6mOQh7Xdfm9w=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-09T10:16:57.648Z",
+        "updated_at": "2025-02-09T10:16:57.648Z",
+        "email": "olexdssa@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$5c6Z2szaHi3Rj1Yxi7gfH0$lqusKipSzQsm/1tyI84bWoafuUdruhukrnb0DQki9iE=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-09T10:18:23.161Z",
+        "updated_at": "2025-02-09T10:18:23.161Z",
+        "email": "olexdssaaaaaaaaaaa@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$tUQrLnwXhktsRZATMYQvja$Hd2vgStBZZOawKQrhuWiRxCtAbbG54/QwDVZv2tK6uE=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-09T10:18:57.707Z",
+        "updated_at": "2025-02-09T10:18:57.707Z",
+        "email": "user2ffff@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$vYIkwjzwprcUavJi19bzcK$ENbjf8yE42GLDoqScD5+/E7pFSNLLMwX8b/cX3yKuGs=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-09T10:21:22.602Z",
+        "updated_at": "2025-02-09T10:21:22.602Z",
+        "email": "tetianakliurrrrrrrs@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$JBv2TfV1aLz5j5xCZ2HF2N$7YwYYFvrDZ0E72Aq/zmE6OTFd9IlPxQy1V8hnqJ1lw0=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-09T10:22:16.883Z",
+        "updated_at": "2025-02-09T10:22:16.883Z",
+        "email": "user2ff@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$et3lQC3JFu9RO4GuZERxeQ$NO3d6sr1bf0iYyWaFsVywPXfig1BsVyL4rgo78qHiJs=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-09T10:22:26.783Z",
+        "updated_at": "2025-02-09T10:22:26.784Z",
+        "email": "user2ffrr@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$5sOuFCFttUzsBQ0dKreTnR$oSexsLMXqJ9rlFJyV1f93gQnZgwaPJDwvrD5Y5cxdYg=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-09T10:22:36.752Z",
+        "updated_at": "2025-02-09T10:22:36.752Z",
+        "email": "user2ffrdsdr@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$f1TjeMNU13RhTzOzmRyFEW$PHxkdvWPekI/Jmqd2kP3AIzK8zrUYEOJY8DIFjNqZOs=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-09T10:22:44.533Z",
+        "updated_at": "2025-02-09T10:22:44.533Z",
+        "email": "user2ffrdssdr@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$VJzBtUiSyKtiEil5Ra6WJ3$fbsP7/8hidj4Gc6trtnknWm8YZ/FT42V3MaD305qH58=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-09T11:12:48.980Z",
+        "updated_at": "2025-02-09T11:12:48.980Z",
+        "email": "olexag@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$88fybUlcs705FyfYDUMGTj$aKxk73cc6J/FXIQ7g5nk5IDE3ZHSF1Z4M70jLKb21hU=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-09T11:14:13.892Z",
+        "updated_at": "2025-02-09T11:14:13.892Z",
+        "email": "olexgrgag@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$MUyiruBLqzG8ek8mDRLyFJ$aP53BCrGnzdQ7/kBSDB71ZkQ+qxU1KdLA6Pxre550+c=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-02-09T11:14:27.923Z",
+        "updated_at": "2025-02-09T11:14:27.923Z",
+        "email": "usfggfer1@gmail.com",
+        "is_active": false,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.usermodel",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$TnBroybWpvUbgcDIyeEFEL$j0T3UPq3qJTV4LR0OVjuDREYM9jbfSU8fct8rAtIWkU=",
+        "last_login": "2025-02-09T13:08:46.967Z",
+        "is_superuser": false,
+        "created_at": "2025-02-09T13:08:02.433Z",
+        "updated_at": "2025-02-09T13:08:02.433Z",
+        "email": "user8@gmail.com",
+        "is_active": true,
+        "is_staff": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 2,
+    "fields": {
+        "created_at": "2025-02-07T19:52:15.107Z",
+        "updated_at": "2025-02-07T19:52:15.107Z",
+        "user": [
+            "1234567@gmail.com"
+        ],
+        "name": "Hanna",
+        "surname": "Soika",
+        "age": 25,
+        "phone": "534957395737897",
+        "city": 5,
+        "profession": "",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 3,
+    "fields": {
+        "created_at": "2025-02-07T19:52:24.529Z",
+        "updated_at": "2025-02-07T19:52:24.529Z",
+        "user": [
+            "1234567890@gmail.com"
+        ],
+        "name": "Hanna",
+        "surname": "Soika",
+        "age": 25,
+        "phone": "534957395737897",
+        "city": 5,
+        "profession": "",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 4,
+    "fields": {
+        "created_at": "2025-02-07T21:04:08.625Z",
+        "updated_at": "2025-02-07T21:04:08.625Z",
+        "user": [
+            "olexa@gmail.com"
+        ],
+        "name": "Olexa",
+        "surname": "Olexa",
+        "age": 30,
+        "phone": "",
+        "city": null,
+        "profession": "",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 5,
+    "fields": {
+        "created_at": "2025-02-07T21:15:35.727Z",
+        "updated_at": "2025-02-07T21:15:35.727Z",
+        "user": [
+            "olexawereewrw@gmail.com"
+        ],
+        "name": "Olexa",
+        "surname": "Olexa",
+        "age": 30,
+        "phone": "",
+        "city": null,
+        "profession": "",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 6,
+    "fields": {
+        "created_at": "2025-02-07T22:08:11.168Z",
+        "updated_at": "2025-02-07T22:08:11.168Z",
+        "user": [
+            "12345678901@gmail.com"
+        ],
+        "name": "Hanna",
+        "surname": "Soika",
+        "age": 25,
+        "phone": "534957395737897",
+        "city": 5,
+        "profession": "",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 9,
+    "fields": {
+        "created_at": "2025-02-08T08:27:42.119Z",
+        "updated_at": "2025-02-08T08:29:12.654Z",
+        "user": [
+            "123@gmail.com"
+        ],
+        "name": "Hanna 3333333333k",
+        "surname": "Soika",
+        "age": 26,
+        "phone": "534957395737897",
+        "city": 5,
+        "profession": "",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 14,
+    "fields": {
+        "created_at": "2025-02-08T10:45:39.839Z",
+        "updated_at": "2025-02-08T14:26:50.064Z",
+        "user": [
+            "tetianaklius@gmail.com"
+        ],
+        "name": "Hanna",
+        "surname": "Soika",
+        "age": 25,
+        "phone": "+380985635887",
+        "city": 5,
+        "profession": "",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 15,
+    "fields": {
+        "created_at": "2025-02-08T13:36:44.383Z",
+        "updated_at": "2025-02-08T13:36:44.383Z",
+        "user": [
+            "tetianaklius@hgf.hgkgy"
+        ],
+        "name": "Hanna",
+        "surname": "Soika",
+        "age": 25,
+        "phone": "534957395737897",
+        "city": 5,
+        "profession": "",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 16,
+    "fields": {
+        "created_at": "2025-02-08T14:53:34.368Z",
+        "updated_at": "2025-02-08T14:53:34.368Z",
+        "user": [
+            "tetiana@gmail.com"
+        ],
+        "name": "Hanna",
+        "surname": "Soika",
+        "age": 25,
+        "phone": "0989573957",
+        "city": 5,
+        "profession": "",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 17,
+    "fields": {
+        "created_at": "2025-02-08T14:53:57.105Z",
+        "updated_at": "2025-02-08T14:53:57.105Z",
+        "user": [
+            "hanna@gmail.com"
+        ],
+        "name": "Hanna",
+        "surname": "Soika",
+        "age": 25,
+        "phone": "0989573957",
+        "city": 5,
+        "profession": "",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 18,
+    "fields": {
+        "created_at": "2025-02-08T14:54:29.041Z",
+        "updated_at": "2025-02-08T14:54:29.041Z",
+        "user": [
+            "hann7a@gmail.com"
+        ],
+        "name": "Heee",
+        "surname": "Soika",
+        "age": 25,
+        "phone": "0989573957",
+        "city": 5,
+        "profession": "",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 19,
+    "fields": {
+        "created_at": "2025-02-08T14:55:21.569Z",
+        "updated_at": "2025-02-08T14:55:21.569Z",
+        "user": [
+            "hann77a@gmail.com"
+        ],
+        "name": "Heee",
+        "surname": "Soika",
+        "age": 25,
+        "phone": "0989573957",
+        "city": 5,
+        "profession": "doctor",
+        "interests": "something"
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 20,
+    "fields": {
+        "created_at": "2025-02-09T08:03:29.943Z",
+        "updated_at": "2025-02-09T08:03:29.943Z",
+        "user": [
+            "user1@gmail.com"
+        ],
+        "name": "User",
+        "surname": "User",
+        "age": 50,
+        "phone": "",
+        "city": null,
+        "profession": "wwwwwwwwwww",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 21,
+    "fields": {
+        "created_at": "2025-02-09T08:05:03.982Z",
+        "updated_at": "2025-02-09T08:05:03.982Z",
+        "user": [
+            "user2@gmail.com"
+        ],
+        "name": "User",
+        "surname": "User",
+        "age": 60,
+        "phone": "",
+        "city": null,
+        "profession": "wwwwwwwwwww",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 22,
+    "fields": {
+        "created_at": "2025-02-09T08:39:38.125Z",
+        "updated_at": "2025-02-09T08:39:38.125Z",
+        "user": [
+            "user3@gmail.com"
+        ],
+        "name": "User",
+        "surname": "User",
+        "age": 60,
+        "phone": "",
+        "city": 5,
+        "profession": "wwwwwwwwwww",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 23,
+    "fields": {
+        "created_at": "2025-02-09T08:41:32.474Z",
+        "updated_at": "2025-02-09T08:41:32.474Z",
+        "user": [
+            "user4@gmail.com"
+        ],
+        "name": "User",
+        "surname": "User",
+        "age": 50,
+        "phone": "",
+        "city": null,
+        "profession": "wwwwwwwwwww",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 24,
+    "fields": {
+        "created_at": "2025-02-09T08:43:56.408Z",
+        "updated_at": "2025-02-09T08:43:56.408Z",
+        "user": [
+            "user5@gmail.com"
+        ],
+        "name": "Olexa",
+        "surname": "Olexa",
+        "age": 30,
+        "phone": "",
+        "city": null,
+        "profession": "wwwwwwwwwww",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 25,
+    "fields": {
+        "created_at": "2025-02-09T10:06:12.333Z",
+        "updated_at": "2025-02-09T10:06:12.333Z",
+        "user": [
+            "eewgew@gmail.com"
+        ],
+        "name": "Ajrtjttr",
+        "surname": "Krtujtrjutr",
+        "age": 31,
+        "phone": "",
+        "city": 131,
+        "profession": "fh",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 26,
+    "fields": {
+        "created_at": "2025-02-09T10:08:45.140Z",
+        "updated_at": "2025-02-09T10:08:45.140Z",
+        "user": [
+            "olexahjkhgg@gmail.com"
+        ],
+        "name": "Ajkhgjhgg",
+        "surname": "Sgfjfgjf",
+        "age": 14,
+        "phone": "",
+        "city": 131,
+        "profession": "hgkmghjhg",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 27,
+    "fields": {
+        "created_at": "2025-02-09T10:09:50.114Z",
+        "updated_at": "2025-02-09T10:09:50.114Z",
+        "user": [
+            "tetianakliusFSFSS@gmail.com"
+        ],
+        "name": "Whghfhgfh",
+        "surname": "Wgfhgffg",
+        "age": 17,
+        "phone": "",
+        "city": 131,
+        "profession": "njfgjfgjfgfg",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 28,
+    "fields": {
+        "created_at": "2025-02-09T10:11:13.459Z",
+        "updated_at": "2025-02-09T10:11:13.459Z",
+        "user": [
+            "user2fffff@gmail.com"
+        ],
+        "name": "gfddhd",
+        "surname": "dfhdhd",
+        "age": 17,
+        "phone": "",
+        "city": 131,
+        "profession": "hdhdhd",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 29,
+    "fields": {
+        "created_at": "2025-02-09T10:11:32.040Z",
+        "updated_at": "2025-02-09T10:11:32.040Z",
+        "user": [
+            "user2ssssss@gmail.com"
+        ],
+        "name": "JTRJTRJRJ",
+        "surname": "JTRJTRJTRJT",
+        "age": 17,
+        "phone": "",
+        "city": 131,
+        "profession": "",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 30,
+    "fields": {
+        "created_at": "2025-02-09T10:16:57.665Z",
+        "updated_at": "2025-02-09T10:16:57.665Z",
+        "user": [
+            "olexdssa@gmail.com"
+        ],
+        "name": "Оля",
+        "surname": "fjfgjfj",
+        "age": 16,
+        "phone": "",
+        "city": 131,
+        "profession": "",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 31,
+    "fields": {
+        "created_at": "2025-02-09T10:18:23.162Z",
+        "updated_at": "2025-02-09T10:18:23.162Z",
+        "user": [
+            "olexdssaaaaaaaaaaa@gmail.com"
+        ],
+        "name": "Оля ркокеокео",
+        "surname": "Їїїїїяюмтгушпукш",
+        "age": 16,
+        "phone": "",
+        "city": 131,
+        "profession": "окнокнок",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 32,
+    "fields": {
+        "created_at": "2025-02-09T10:18:57.708Z",
+        "updated_at": "2025-02-09T10:18:57.708Z",
+        "user": [
+            "user2ffff@gmail.com"
+        ],
+        "name": "Olecdsvfd fgnfg",
+        "surname": "ngfngf",
+        "age": 16,
+        "phone": "",
+        "city": null,
+        "profession": "",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 33,
+    "fields": {
+        "created_at": "2025-02-09T10:21:22.655Z",
+        "updated_at": "2025-02-09T10:21:22.655Z",
+        "user": [
+            "tetianakliurrrrrrrs@gmail.com"
+        ],
+        "name": "аваааааааааааааааааааааааааааа",
+        "surname": "ааааа",
+        "age": 16,
+        "phone": "",
+        "city": 131,
+        "profession": "",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 34,
+    "fields": {
+        "created_at": "2025-02-09T10:22:16.884Z",
+        "updated_at": "2025-02-09T10:22:16.884Z",
+        "user": [
+            "user2ff@gmail.com"
+        ],
+        "name": "santa-maria",
+        "surname": "fff",
+        "age": 16,
+        "phone": "",
+        "city": null,
+        "profession": "",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 35,
+    "fields": {
+        "created_at": "2025-02-09T10:22:26.785Z",
+        "updated_at": "2025-02-09T10:22:26.785Z",
+        "user": [
+            "user2ffrr@gmail.com"
+        ],
+        "name": "santa-maria dgdghd",
+        "surname": "fff",
+        "age": 16,
+        "phone": "",
+        "city": null,
+        "profession": "",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 36,
+    "fields": {
+        "created_at": "2025-02-09T10:22:36.753Z",
+        "updated_at": "2025-02-09T10:22:36.753Z",
+        "user": [
+            "user2ffrdsdr@gmail.com"
+        ],
+        "name": "santa-maria dgdghd",
+        "surname": "fff gggg gggg",
+        "age": 16,
+        "phone": "",
+        "city": null,
+        "profession": "",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 37,
+    "fields": {
+        "created_at": "2025-02-09T10:22:44.535Z",
+        "updated_at": "2025-02-09T10:22:44.535Z",
+        "user": [
+            "user2ffrdssdr@gmail.com"
+        ],
+        "name": "santa-maria dgdghd",
+        "surname": "fff gggg gggg -",
+        "age": 16,
+        "phone": "",
+        "city": null,
+        "profession": "",
+        "interests": ""
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 38,
+    "fields": {
+        "created_at": "2025-02-09T11:12:48.982Z",
+        "updated_at": "2025-02-09T11:12:48.982Z",
+        "user": [
+            "olexag@gmail.com"
+        ],
+        "name": "jrtjrt",
+        "surname": "rtjrtj",
+        "age": 15,
+        "phone": "",
+        "city": 131,
+        "profession": "jrtjrtjt",
+        "interests": "jrtjrtj"
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 39,
+    "fields": {
+        "created_at": "2025-02-09T11:14:13.893Z",
+        "updated_at": "2025-02-09T11:14:13.893Z",
+        "user": [
+            "olexgrgag@gmail.com"
+        ],
+        "name": "jrtjrt",
+        "surname": "rtjrtj",
+        "age": 15,
+        "phone": "",
+        "city": 131,
+        "profession": "jrtjrtjt",
+        "interests": "jrtjrtj"
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 40,
+    "fields": {
+        "created_at": "2025-02-09T11:14:27.924Z",
+        "updated_at": "2025-02-09T11:14:27.924Z",
+        "user": [
+            "usfggfer1@gmail.com"
+        ],
+        "name": "gf",
+        "surname": "fg",
+        "age": 14,
+        "phone": "",
+        "city": 131,
+        "profession": "fg",
+        "interests": "gf"
+    }
+},
+{
+    "model": "user.profilemodel",
+    "pk": 41,
+    "fields": {
+        "created_at": "2025-02-09T13:08:02.487Z",
+        "updated_at": "2025-02-09T13:08:02.487Z",
+        "user": [
+            "user8@gmail.com"
+        ],
+        "name": "Olexa",
+        "surname": "Olexa",
+        "age": 49,
+        "phone": "",
+        "city": null,
+        "profession": "wwwwwwwwwww",
+        "interests": "3"
+    }
+},
+{
+    "model": "post.postmodel",
+    "pk": 1,
+    "fields": {
+        "created_at": "2025-02-07T19:53:24.067Z",
+        "updated_at": "2025-02-07T22:10:10.098Z",
+        "is_active": true,
+        "is_visible": true,
+        "user_id": [
+            "tetyanaklyus@gmail.com"
+        ],
+        "title": "Hello!",
+        "text": "HelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHello",
+        "label": 1,
+        "image": "1/__7d895209-b83f-4820-a4b9-d466fec087dd.jpg",
+        "profanity_edit_count": 0
+    }
+},
+{
+    "model": "post.postmodel",
+    "pk": 2,
+    "fields": {
+        "created_at": "2025-02-07T22:09:19.054Z",
+        "updated_at": "2025-02-07T22:09:19.054Z",
+        "is_active": true,
+        "is_visible": true,
+        "user_id": [
+            "tetyanaklyus@gmail.com"
+        ],
+        "title": "Hello!",
+        "text": "HelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHello",
+        "label": 1,
+        "image": "",
+        "profanity_edit_count": 0
+    }
+},
+{
+    "model": "post.postmodel",
+    "pk": 3,
+    "fields": {
+        "created_at": "2025-02-08T04:57:53.440Z",
+        "updated_at": "2025-02-08T05:07:13.269Z",
+        "is_active": true,
+        "is_visible": true,
+        "user_id": [
+            "olexa@gmail.com"
+        ],
+        "title": "Title ghfgfgf",
+        "text": "my text lllllll",
+        "label": 9,
+        "image": "",
+        "profanity_edit_count": 0
+    }
+},
+{
+    "model": "post.postmodel",
+    "pk": 4,
+    "fields": {
+        "created_at": "2025-02-08T05:22:24.436Z",
+        "updated_at": "2025-02-08T05:22:24.436Z",
+        "is_active": true,
+        "is_visible": true,
+        "user_id": [
+            "olexa@gmail.com"
+        ],
+        "title": "Title6666666666",
+        "text": "my textffff yuyiyiuiyi",
+        "label": 5,
+        "image": "",
+        "profanity_edit_count": 0
+    }
+},
+{
+    "model": "post.postmodel",
+    "pk": 5,
+    "fields": {
+        "created_at": "2025-02-08T05:34:52.116Z",
+        "updated_at": "2025-02-08T05:34:52.116Z",
+        "is_active": true,
+        "is_visible": true,
+        "user_id": [
+            "olexa@gmail.com"
+        ],
+        "title": "Title 7777",
+        "text": "my text lllllll jjjjjjjjjjjjjj",
+        "label": 9,
+        "image": "",
+        "profanity_edit_count": 0
+    }
+},
+{
+    "model": "post.postmodel",
+    "pk": 6,
+    "fields": {
+        "created_at": "2025-02-08T08:41:34.754Z",
+        "updated_at": "2025-02-08T08:41:34.754Z",
+        "is_active": true,
+        "is_visible": true,
+        "user_id": [
+            "olexa@gmail.com"
+        ],
+        "title": "Title5555",
+        "text": "my textffff yuyiyiuiyi",
+        "label": 5,
+        "image": "",
+        "profanity_edit_count": 0
+    }
+},
+{
+    "model": "post.postmodel",
+    "pk": 7,
+    "fields": {
+        "created_at": "2025-02-08T08:42:24.094Z",
+        "updated_at": "2025-02-08T08:42:24.094Z",
+        "is_active": true,
+        "is_visible": true,
+        "user_id": [
+            "olexa@gmail.com"
+        ],
+        "title": "Title 00000",
+        "text": "my text",
+        "label": 3,
+        "image": "",
+        "profanity_edit_count": 0
+    }
+},
+{
+    "model": "post.postmodel",
+    "pk": 8,
+    "fields": {
+        "created_at": "2025-02-08T09:33:25.572Z",
+        "updated_at": "2025-02-08T09:33:25.572Z",
+        "is_active": true,
+        "is_visible": true,
+        "user_id": [
+            "olexa@gmail.com"
+        ],
+        "title": "Title1111111111",
+        "text": "my text111111111",
+        "label": 1,
+        "image": "",
+        "profanity_edit_count": 0
+    }
+},
+{
+    "model": "post.postmodel",
+    "pk": 9,
+    "fields": {
+        "created_at": "2025-02-08T09:33:37.960Z",
+        "updated_at": "2025-02-08T09:33:37.960Z",
+        "is_active": true,
+        "is_visible": true,
+        "user_id": [
+            "olexa@gmail.com"
+        ],
+        "title": "Title2222222222222222222222222222222222",
+        "text": "my text22222222222",
+        "label": 1,
+        "image": "",
+        "profanity_edit_count": 0
+    }
+},
+{
+    "model": "post.postmodel",
+    "pk": 10,
+    "fields": {
+        "created_at": "2025-02-08T10:36:35.073Z",
+        "updated_at": "2025-02-08T10:38:19.643Z",
+        "is_active": true,
+        "is_visible": true,
+        "user_id": [
+            "1234567@gmail.com"
+        ],
+        "title": "Hello!",
+        "text": "HelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHello",
+        "label": 1,
+        "image": "10/__322383ed-83b1-4c42-bfef-4c60e2f4c92d.jpg",
+        "profanity_edit_count": 0
+    }
+},
+{
+    "model": "post.postmodel",
+    "pk": 12,
+    "fields": {
+        "created_at": "2025-02-08T18:39:01.195Z",
+        "updated_at": "2025-02-08T18:39:01.195Z",
+        "is_active": true,
+        "is_visible": true,
+        "user_id": [
+            "olexa@gmail.com"
+        ],
+        "title": "Title",
+        "text": "my text",
+        "label": 1,
+        "image": "",
+        "profanity_edit_count": 0
+    }
+},
+{
+    "model": "post.postmodel",
+    "pk": 13,
+    "fields": {
+        "created_at": "2025-02-08T18:44:33.241Z",
+        "updated_at": "2025-02-08T18:44:33.241Z",
+        "is_active": true,
+        "is_visible": true,
+        "user_id": [
+            "olexa@gmail.com"
+        ],
+        "title": "Title",
+        "text": "my text",
+        "label": 1,
+        "image": "",
+        "profanity_edit_count": 0
+    }
+},
+{
+    "model": "post.postmodel",
+    "pk": 14,
+    "fields": {
+        "created_at": "2025-02-08T19:00:05.963Z",
+        "updated_at": "2025-02-08T19:00:05.963Z",
+        "is_active": true,
+        "is_visible": true,
+        "user_id": [
+            "olexa@gmail.com"
+        ],
+        "title": "Title",
+        "text": "my text",
+        "label": 1,
+        "image": "",
+        "profanity_edit_count": 0
+    }
+},
+{
+    "model": "post.postmodel",
+    "pk": 15,
+    "fields": {
+        "created_at": "2025-02-08T19:07:04.258Z",
+        "updated_at": "2025-02-08T19:07:04.258Z",
+        "is_active": true,
+        "is_visible": true,
+        "user_id": [
+            "olexa@gmail.com"
+        ],
+        "title": "Title",
+        "text": "my text",
+        "label": 1,
+        "image": "",
+        "profanity_edit_count": 0
+    }
+},
+{
+    "model": "post.postmodel",
+    "pk": 16,
+    "fields": {
+        "created_at": "2025-02-08T19:24:05.651Z",
+        "updated_at": "2025-02-08T19:24:05.651Z",
+        "is_active": true,
+        "is_visible": true,
+        "user_id": [
+            "olexa@gmail.com"
+        ],
+        "title": "arts",
+        "text": "artsartsartsartsarts",
+        "label": 15,
+        "image": "",
+        "profanity_edit_count": 0
+    }
+},
+{
+    "model": "post.postmodel",
+    "pk": 17,
+    "fields": {
+        "created_at": "2025-02-08T19:29:02.548Z",
+        "updated_at": "2025-02-08T19:29:02.548Z",
+        "is_active": true,
+        "is_visible": true,
+        "user_id": [
+            "olexa@gmail.com"
+        ],
+        "title": "Title",
+        "text": "my text",
+        "label": 1,
+        "image": "",
+        "profanity_edit_count": 0
+    }
+},
+{
+    "model": "post.postmodel",
+    "pk": 18,
+    "fields": {
+        "created_at": "2025-02-08T19:49:35.871Z",
+        "updated_at": "2025-02-08T19:49:35.871Z",
+        "is_active": true,
+        "is_visible": true,
+        "user_id": [
+            "olexa@gmail.com"
+        ],
+        "title": "Title",
+        "text": "my text",
+        "label": 1,
+        "image": "",
+        "profanity_edit_count": 0
+    }
+},
+{
+    "model": "post.postmodel",
+    "pk": 19,
+    "fields": {
+        "created_at": "2025-02-08T20:56:02.091Z",
+        "updated_at": "2025-02-08T20:56:02.091Z",
+        "is_active": true,
+        "is_visible": true,
+        "user_id": [
+            "olexa@gmail.com"
+        ],
+        "title": "ghghkgghk",
+        "text": "gkgkghkghkgh",
+        "label": 1,
+        "image": "",
+        "profanity_edit_count": 0
+    }
+},
+{
+    "model": "post.postmodel",
+    "pk": 20,
+    "fields": {
+        "created_at": "2025-02-08T21:06:23.838Z",
+        "updated_at": "2025-02-08T21:06:23.838Z",
+        "is_active": true,
+        "is_visible": true,
+        "user_id": [
+            "olexa@gmail.com"
+        ],
+        "title": "gfjfjfg",
+        "text": ",hj,jhhku",
+        "label": 1,
+        "image": "",
+        "profanity_edit_count": 0
+    }
+},
+{
+    "model": "post.postmodel",
+    "pk": 21,
+    "fields": {
+        "created_at": "2025-02-08T21:07:05.021Z",
+        "updated_at": "2025-02-08T21:07:05.021Z",
+        "is_active": true,
+        "is_visible": true,
+        "user_id": [
+            "olexa@gmail.com"
+        ],
+        "title": "jtjj",
+        "text": "gjgg",
+        "label": 1,
+        "image": "",
+        "profanity_edit_count": 0
+    }
+},
+{
+    "model": "post.postmodel",
+    "pk": 22,
+    "fields": {
+        "created_at": "2025-02-08T21:07:31.997Z",
+        "updated_at": "2025-02-08T21:07:31.997Z",
+        "is_active": true,
+        "is_visible": true,
+        "user_id": [
+            "olexa@gmail.com"
+        ],
+        "title": "mnhm",
+        "text": "hmhg",
+        "label": 1,
+        "image": "",
+        "profanity_edit_count": 0
+    }
+},
+{
+    "model": "post.postmodel",
+    "pk": 23,
+    "fields": {
+        "created_at": "2025-02-08T21:13:49.206Z",
+        "updated_at": "2025-02-09T12:42:47.478Z",
+        "is_active": true,
+        "is_visible": true,
+        "user_id": [
+            "olexa@gmail.com"
+        ],
+        "title": "fghgfvvvvvvvvv",
+        "text": "gfhgfvvvvvvvv",
+        "label": 1,
+        "image": "",
+        "profanity_edit_count": 0
+    }
+},
+{
+    "model": "post.postmodel",
+    "pk": 24,
+    "fields": {
+        "created_at": "2025-02-08T21:40:38.631Z",
+        "updated_at": "2025-02-09T12:42:37.874Z",
+        "is_active": true,
+        "is_visible": true,
+        "user_id": [
+            "olexa@gmail.com"
+        ],
+        "title": "uyuydfgddfcccccccccccccc",
+        "text": "uyuyu       rthtjjjjjjjjjjjjjjjjjjjjjjjjjjjjgdfcvvvvvvvvvvvvvv",
+        "label": 3,
+        "image": "",
+        "profanity_edit_count": 0
+    }
+},
+{
+    "model": "post.postmodel",
+    "pk": 25,
+    "fields": {
+        "created_at": "2025-02-09T09:58:48.436Z",
+        "updated_at": "2025-02-09T13:06:33.117Z",
+        "is_active": true,
+        "is_visible": true,
+        "user_id": [
+            "olexa@gmail.com"
+        ],
+        "title": "iyi111111111111111111111111",
+        "text": "yuiy333333333333333",
+        "label": 1,
+        "image": "",
+        "profanity_edit_count": 0
+    }
+},
+{
+    "model": "post_label.postlabelmodel",
+    "pk": 1,
+    "fields": {
+        "created_at": "2025-02-07T18:21:12.133Z",
+        "updated_at": "2025-02-07T18:21:12.133Z",
+        "name": "Travels",
+        "value": 1
+    }
+},
+{
+    "model": "post_label.postlabelmodel",
+    "pk": 2,
+    "fields": {
+        "created_at": "2025-02-07T18:21:12.177Z",
+        "updated_at": "2025-02-07T18:21:12.177Z",
+        "name": "Food",
+        "value": 2
+    }
+},
+{
+    "model": "post_label.postlabelmodel",
+    "pk": 3,
+    "fields": {
+        "created_at": "2025-02-07T18:21:12.183Z",
+        "updated_at": "2025-02-07T18:21:12.183Z",
+        "name": "Routine",
+        "value": 3
+    }
+},
+{
+    "model": "post_label.postlabelmodel",
+    "pk": 4,
+    "fields": {
+        "created_at": "2025-02-07T18:21:12.188Z",
+        "updated_at": "2025-02-07T18:21:12.188Z",
+        "name": "Technics",
+        "value": 4
+    }
+},
+{
+    "model": "post_label.postlabelmodel",
+    "pk": 5,
+    "fields": {
+        "created_at": "2025-02-07T18:21:12.201Z",
+        "updated_at": "2025-02-07T18:21:12.201Z",
+        "name": "Health",
+        "value": 5
+    }
+},
+{
+    "model": "post_label.postlabelmodel",
+    "pk": 6,
+    "fields": {
+        "created_at": "2025-02-07T18:21:12.207Z",
+        "updated_at": "2025-02-07T18:21:12.208Z",
+        "name": "Education",
+        "value": 6
+    }
+},
+{
+    "model": "post_label.postlabelmodel",
+    "pk": 7,
+    "fields": {
+        "created_at": "2025-02-07T18:21:12.212Z",
+        "updated_at": "2025-02-07T18:21:12.212Z",
+        "name": "Story Of The Day",
+        "value": 7
+    }
+},
+{
+    "model": "post_label.postlabelmodel",
+    "pk": 8,
+    "fields": {
+        "created_at": "2025-02-07T18:21:12.217Z",
+        "updated_at": "2025-02-07T18:21:12.217Z",
+        "name": "Work",
+        "value": 8
+    }
+},
+{
+    "model": "post_label.postlabelmodel",
+    "pk": 9,
+    "fields": {
+        "created_at": "2025-02-07T18:21:12.222Z",
+        "updated_at": "2025-02-07T18:21:12.223Z",
+        "name": "Home",
+        "value": 9
+    }
+},
+{
+    "model": "post_label.postlabelmodel",
+    "pk": 10,
+    "fields": {
+        "created_at": "2025-02-07T18:21:12.228Z",
+        "updated_at": "2025-02-07T18:21:12.228Z",
+        "name": "Presents",
+        "value": 10
+    }
+},
+{
+    "model": "post_label.postlabelmodel",
+    "pk": 11,
+    "fields": {
+        "created_at": "2025-02-07T18:21:12.232Z",
+        "updated_at": "2025-02-07T18:21:12.232Z",
+        "name": "Decor",
+        "value": 11
+    }
+},
+{
+    "model": "post_label.postlabelmodel",
+    "pk": 12,
+    "fields": {
+        "created_at": "2025-02-07T18:21:12.237Z",
+        "updated_at": "2025-02-07T18:21:12.237Z",
+        "name": "Handmade",
+        "value": 12
+    }
+},
+{
+    "model": "post_label.postlabelmodel",
+    "pk": 13,
+    "fields": {
+        "created_at": "2025-02-07T18:21:12.242Z",
+        "updated_at": "2025-02-07T18:21:12.242Z",
+        "name": "Social",
+        "value": 13
+    }
+},
+{
+    "model": "post_label.postlabelmodel",
+    "pk": 14,
+    "fields": {
+        "created_at": "2025-02-07T18:21:12.246Z",
+        "updated_at": "2025-02-07T18:21:12.246Z",
+        "name": "Politics",
+        "value": 14
+    }
+},
+{
+    "model": "post_label.postlabelmodel",
+    "pk": 15,
+    "fields": {
+        "created_at": "2025-02-07T18:21:12.251Z",
+        "updated_at": "2025-02-07T18:21:12.251Z",
+        "name": "Arts",
+        "value": 15
+    }
+},
+{
+    "model": "post_label.postlabelmodel",
+    "pk": 16,
+    "fields": {
+        "created_at": "2025-02-07T18:21:12.255Z",
+        "updated_at": "2025-02-07T18:21:12.255Z",
+        "name": "Literature",
+        "value": 16
+    }
+},
+{
+    "model": "post_label.postlabelmodel",
+    "pk": 17,
+    "fields": {
+        "created_at": "2025-02-07T18:21:12.260Z",
+        "updated_at": "2025-02-07T18:21:12.260Z",
+        "name": "Movies",
+        "value": 17
+    }
+},
+{
+    "model": "post_label.postlabelmodel",
+    "pk": 18,
+    "fields": {
+        "created_at": "2025-02-07T18:21:12.264Z",
+        "updated_at": "2025-02-07T18:21:12.265Z",
+        "name": "Hobby",
+        "value": 18
+    }
+},
+{
+    "model": "post_label.postlabelmodel",
+    "pk": 19,
+    "fields": {
+        "created_at": "2025-02-07T18:21:12.269Z",
+        "updated_at": "2025-02-07T18:21:12.269Z",
+        "name": "Self Development",
+        "value": 19
+    }
+},
+{
+    "model": "post_label.postlabelmodel",
+    "pk": 20,
+    "fields": {
+        "created_at": "2025-02-07T18:21:12.274Z",
+        "updated_at": "2025-02-07T18:21:12.274Z",
+        "name": "Other",
+        "value": 20
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 1,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.710Z",
+        "updated_at": "2025-02-07T19:36:37.710Z",
+        "name": "Вінниця",
+        "value": 1,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 2,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.752Z",
+        "updated_at": "2025-02-07T19:36:37.752Z",
+        "name": "Жмеринка",
+        "value": 27,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 3,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.758Z",
+        "updated_at": "2025-02-07T19:36:37.758Z",
+        "name": "Козятин",
+        "value": 30,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 4,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.763Z",
+        "updated_at": "2025-02-07T19:36:37.763Z",
+        "name": "Крижопіль",
+        "value": 31,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 5,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.768Z",
+        "updated_at": "2025-02-07T19:36:37.768Z",
+        "name": "Липовець",
+        "value": 32,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 6,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.778Z",
+        "updated_at": "2025-02-07T19:36:37.778Z",
+        "name": "Літин",
+        "value": 33,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 7,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.783Z",
+        "updated_at": "2025-02-07T19:36:37.783Z",
+        "name": "Могилів-Подільський",
+        "value": 34,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 8,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.787Z",
+        "updated_at": "2025-02-07T19:36:37.787Z",
+        "name": "Муровані Курилівці",
+        "value": 35,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 9,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.793Z",
+        "updated_at": "2025-02-07T19:36:37.793Z",
+        "name": "Немирів",
+        "value": 36,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 10,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.797Z",
+        "updated_at": "2025-02-07T19:36:37.797Z",
+        "name": "Оратів",
+        "value": 37,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 11,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.802Z",
+        "updated_at": "2025-02-07T19:36:37.802Z",
+        "name": "Піщанка",
+        "value": 38,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 12,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.807Z",
+        "updated_at": "2025-02-07T19:36:37.807Z",
+        "name": "Погребище",
+        "value": 39,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 13,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.812Z",
+        "updated_at": "2025-02-07T19:36:37.812Z",
+        "name": "Теплик",
+        "value": 40,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 14,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.817Z",
+        "updated_at": "2025-02-07T19:36:37.817Z",
+        "name": "Тиврів",
+        "value": 41,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 15,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.823Z",
+        "updated_at": "2025-02-07T19:36:37.823Z",
+        "name": "Томашпіль",
+        "value": 42,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 16,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.828Z",
+        "updated_at": "2025-02-07T19:36:37.828Z",
+        "name": "Тростянець",
+        "value": 43,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 17,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.833Z",
+        "updated_at": "2025-02-07T19:36:37.833Z",
+        "name": "Тульчин",
+        "value": 44,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 18,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.837Z",
+        "updated_at": "2025-02-07T19:36:37.837Z",
+        "name": "Хмільник",
+        "value": 45,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 19,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.842Z",
+        "updated_at": "2025-02-07T19:36:37.842Z",
+        "name": "Чернівці",
+        "value": 46,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 20,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.847Z",
+        "updated_at": "2025-02-07T19:36:37.847Z",
+        "name": "Чечельник",
+        "value": 47,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 21,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.851Z",
+        "updated_at": "2025-02-07T19:36:37.851Z",
+        "name": "Шаргород",
+        "value": 48,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 22,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.879Z",
+        "updated_at": "2025-02-07T19:36:37.879Z",
+        "name": "Ямпіль",
+        "value": 49,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 23,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.884Z",
+        "updated_at": "2025-02-07T19:36:37.884Z",
+        "name": "Бар",
+        "value": 597,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 24,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.889Z",
+        "updated_at": "2025-02-07T19:36:37.889Z",
+        "name": "Бершадь",
+        "value": 599,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 25,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.894Z",
+        "updated_at": "2025-02-07T19:36:37.894Z",
+        "name": "Гайсин",
+        "value": 602,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 26,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.899Z",
+        "updated_at": "2025-02-07T19:36:37.899Z",
+        "name": "Іллінці",
+        "value": 603,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 27,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.903Z",
+        "updated_at": "2025-02-07T19:36:37.903Z",
+        "name": "Калинівка",
+        "value": 604,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 28,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.909Z",
+        "updated_at": "2025-02-07T19:36:37.909Z",
+        "name": "Гнівань",
+        "value": 609,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 29,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.913Z",
+        "updated_at": "2025-02-07T19:36:37.913Z",
+        "name": "Ладижин",
+        "value": 644,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 30,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.917Z",
+        "updated_at": "2025-02-07T19:36:37.917Z",
+        "name": "Якушинці",
+        "value": 12680,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 31,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.921Z",
+        "updated_at": "2025-02-07T19:36:37.921Z",
+        "name": "Браїлів",
+        "value": 17992,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 32,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.926Z",
+        "updated_at": "2025-02-07T19:36:37.926Z",
+        "name": "Брацлав",
+        "value": 17993,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 33,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.930Z",
+        "updated_at": "2025-02-07T19:36:37.930Z",
+        "name": "Бродецьке",
+        "value": 17994,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 34,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.934Z",
+        "updated_at": "2025-02-07T19:36:37.934Z",
+        "name": "Вапнярка",
+        "value": 17995,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 35,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.939Z",
+        "updated_at": "2025-02-07T19:36:37.939Z",
+        "name": "Велика Бушинка",
+        "value": 17996,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 36,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.944Z",
+        "updated_at": "2025-02-07T19:36:37.944Z",
+        "name": "Вендичани",
+        "value": 17997,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 37,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.948Z",
+        "updated_at": "2025-02-07T19:36:37.948Z",
+        "name": "Вороновиця",
+        "value": 17998,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 38,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.953Z",
+        "updated_at": "2025-02-07T19:36:37.953Z",
+        "name": "Вищеольчедаїв",
+        "value": 17999,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 39,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.958Z",
+        "updated_at": "2025-02-07T19:36:37.958Z",
+        "name": "Городківка",
+        "value": 18000,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 40,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.963Z",
+        "updated_at": "2025-02-07T19:36:37.963Z",
+        "name": "Дашів",
+        "value": 18001,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 41,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.968Z",
+        "updated_at": "2025-02-07T19:36:37.968Z",
+        "name": "Десна",
+        "value": 18002,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 42,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.974Z",
+        "updated_at": "2025-02-07T19:36:37.974Z",
+        "name": "Джулинка",
+        "value": 18003,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 43,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.979Z",
+        "updated_at": "2025-02-07T19:36:37.979Z",
+        "name": "Джурин",
+        "value": 18004,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 44,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.983Z",
+        "updated_at": "2025-02-07T19:36:37.983Z",
+        "name": "Дяківці",
+        "value": 18005,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 45,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.988Z",
+        "updated_at": "2025-02-07T19:36:37.988Z",
+        "name": "Іванів",
+        "value": 18006,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 46,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.992Z",
+        "updated_at": "2025-02-07T19:36:37.992Z",
+        "name": "Кирнасівка",
+        "value": 18008,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 47,
+    "fields": {
+        "created_at": "2025-02-07T19:36:37.996Z",
+        "updated_at": "2025-02-07T19:36:37.996Z",
+        "name": "Клембівка",
+        "value": 18009,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 48,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.001Z",
+        "updated_at": "2025-02-07T19:36:38.001Z",
+        "name": "Копайгород",
+        "value": 18010,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 49,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.006Z",
+        "updated_at": "2025-02-07T19:36:38.006Z",
+        "name": "Лука-Мелешківська",
+        "value": 18012,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 50,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.011Z",
+        "updated_at": "2025-02-07T19:36:38.011Z",
+        "name": "Мазурівка",
+        "value": 18013,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 51,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.016Z",
+        "updated_at": "2025-02-07T19:36:38.016Z",
+        "name": "Михайлівці",
+        "value": 18014,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 52,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.021Z",
+        "updated_at": "2025-02-07T19:36:38.021Z",
+        "name": "Монастирок",
+        "value": 18015,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 53,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.026Z",
+        "updated_at": "2025-02-07T19:36:38.026Z",
+        "name": "Мурафа",
+        "value": 18016,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 54,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.030Z",
+        "updated_at": "2025-02-07T19:36:38.030Z",
+        "name": "Нестерварка",
+        "value": 18017,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 55,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.035Z",
+        "updated_at": "2025-02-07T19:36:38.035Z",
+        "name": "Нова Ободівка",
+        "value": 18018,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 56,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.040Z",
+        "updated_at": "2025-02-07T19:36:38.040Z",
+        "name": "Ободівка",
+        "value": 18019,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 57,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.045Z",
+        "updated_at": "2025-02-07T19:36:38.045Z",
+        "name": "Озаринці",
+        "value": 18020,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 58,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.049Z",
+        "updated_at": "2025-02-07T19:36:38.049Z",
+        "name": "Ольгопіль",
+        "value": 18021,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 59,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.054Z",
+        "updated_at": "2025-02-07T19:36:38.054Z",
+        "name": "Павлівка",
+        "value": 18022,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 60,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.059Z",
+        "updated_at": "2025-02-07T19:36:38.059Z",
+        "name": "Писарівка",
+        "value": 18023,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 61,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.063Z",
+        "updated_at": "2025-02-07T19:36:38.063Z",
+        "name": "Сальник",
+        "value": 18024,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 62,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.068Z",
+        "updated_at": "2025-02-07T19:36:38.068Z",
+        "name": "Селище",
+        "value": 18025,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 63,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.072Z",
+        "updated_at": "2025-02-07T19:36:38.072Z",
+        "name": "Ситківці",
+        "value": 18026,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 64,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.077Z",
+        "updated_at": "2025-02-07T19:36:38.077Z",
+        "name": "Слобода-Шаргородська",
+        "value": 18027,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 65,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.082Z",
+        "updated_at": "2025-02-07T19:36:38.082Z",
+        "name": "Соболівка",
+        "value": 18028,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 66,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.085Z",
+        "updated_at": "2025-02-07T19:36:38.085Z",
+        "name": "Сутиски",
+        "value": 18029,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 67,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.090Z",
+        "updated_at": "2025-02-07T19:36:38.090Z",
+        "name": "Турбів",
+        "value": 18030,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 68,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.095Z",
+        "updated_at": "2025-02-07T19:36:38.095Z",
+        "name": "Тютьки",
+        "value": 18031,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 69,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.099Z",
+        "updated_at": "2025-02-07T19:36:38.099Z",
+        "name": "Уланів",
+        "value": 18032,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 70,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.104Z",
+        "updated_at": "2025-02-07T19:36:38.104Z",
+        "name": "Хижинці",
+        "value": 18033,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 71,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.108Z",
+        "updated_at": "2025-02-07T19:36:38.108Z",
+        "name": "Цвіліхівка",
+        "value": 18034,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 72,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.113Z",
+        "updated_at": "2025-02-07T19:36:38.113Z",
+        "name": "Черепашинці",
+        "value": 18035,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 73,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.118Z",
+        "updated_at": "2025-02-07T19:36:38.118Z",
+        "name": "Шляхова",
+        "value": 18036,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 74,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.122Z",
+        "updated_at": "2025-02-07T19:36:38.122Z",
+        "name": "Шпиків",
+        "value": 18037,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 75,
+    "fields": {
+        "created_at": "2025-02-07T19:36:38.127Z",
+        "updated_at": "2025-02-07T19:36:38.127Z",
+        "name": "Щітки",
+        "value": 18038,
+        "region": 1
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 91,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.048Z",
+        "updated_at": "2025-02-07T19:45:33.048Z",
+        "name": "Житомир",
+        "value": 2,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 92,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.090Z",
+        "updated_at": "2025-02-07T19:45:33.090Z",
+        "name": "Андрушівка",
+        "value": 131,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 93,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.095Z",
+        "updated_at": "2025-02-07T19:45:33.096Z",
+        "name": "Баранівка",
+        "value": 132,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 94,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.101Z",
+        "updated_at": "2025-02-07T19:45:33.101Z",
+        "name": "Бердичів",
+        "value": 133,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 95,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.107Z",
+        "updated_at": "2025-02-07T19:45:33.108Z",
+        "name": "Брусилів",
+        "value": 134,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 96,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.117Z",
+        "updated_at": "2025-02-07T19:45:33.117Z",
+        "name": "Хорошів (Володарськ-Волинський)",
+        "value": 135,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 97,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.122Z",
+        "updated_at": "2025-02-07T19:45:33.122Z",
+        "name": "Ємільчине",
+        "value": 137,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 98,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.127Z",
+        "updated_at": "2025-02-07T19:45:33.127Z",
+        "name": "Коростень",
+        "value": 140,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 99,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.131Z",
+        "updated_at": "2025-02-07T19:45:33.131Z",
+        "name": "Коростишів",
+        "value": 141,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 100,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.137Z",
+        "updated_at": "2025-02-07T19:45:33.137Z",
+        "name": "Лугини",
+        "value": 142,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 101,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.142Z",
+        "updated_at": "2025-02-07T19:45:33.142Z",
+        "name": "Любар",
+        "value": 143,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 102,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.147Z",
+        "updated_at": "2025-02-07T19:45:33.147Z",
+        "name": "Малин",
+        "value": 144,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 103,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.151Z",
+        "updated_at": "2025-02-07T19:45:33.151Z",
+        "name": "Народичі",
+        "value": 145,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 104,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.156Z",
+        "updated_at": "2025-02-07T19:45:33.156Z",
+        "name": "Звягель",
+        "value": 146,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 105,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.161Z",
+        "updated_at": "2025-02-07T19:45:33.161Z",
+        "name": "Овруч",
+        "value": 147,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 106,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.165Z",
+        "updated_at": "2025-02-07T19:45:33.165Z",
+        "name": "Олевськ",
+        "value": 148,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 107,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.169Z",
+        "updated_at": "2025-02-07T19:45:33.169Z",
+        "name": "Попільня",
+        "value": 149,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 108,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.173Z",
+        "updated_at": "2025-02-07T19:45:33.173Z",
+        "name": "Радомишль",
+        "value": 150,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 109,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.178Z",
+        "updated_at": "2025-02-07T19:45:33.178Z",
+        "name": "Ружин",
+        "value": 151,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 110,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.182Z",
+        "updated_at": "2025-02-07T19:45:33.183Z",
+        "name": "Пулини (Червоноармійськ)",
+        "value": 152,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 111,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.187Z",
+        "updated_at": "2025-02-07T19:45:33.187Z",
+        "name": "Черняхів",
+        "value": 153,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 112,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.193Z",
+        "updated_at": "2025-02-07T19:45:33.193Z",
+        "name": "Чуднів",
+        "value": 154,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 113,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.197Z",
+        "updated_at": "2025-02-07T19:45:33.197Z",
+        "name": "Романів",
+        "value": 606,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 114,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.201Z",
+        "updated_at": "2025-02-07T19:45:33.201Z",
+        "name": "Нова Борова",
+        "value": 17495,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 115,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.206Z",
+        "updated_at": "2025-02-07T19:45:33.206Z",
+        "name": "Іршанськ",
+        "value": 17496,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 116,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.210Z",
+        "updated_at": "2025-02-07T19:45:33.211Z",
+        "name": "Барашівка",
+        "value": 17958,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 117,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.215Z",
+        "updated_at": "2025-02-07T19:45:33.215Z",
+        "name": "Барвінки",
+        "value": 17959,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 118,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.220Z",
+        "updated_at": "2025-02-07T19:45:33.220Z",
+        "name": "Білилівка",
+        "value": 17960,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 119,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.224Z",
+        "updated_at": "2025-02-07T19:45:33.224Z",
+        "name": "Броники",
+        "value": 17961,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 120,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.227Z",
+        "updated_at": "2025-02-07T19:45:33.227Z",
+        "name": "Биківка",
+        "value": 17962,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 121,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.232Z",
+        "updated_at": "2025-02-07T19:45:33.232Z",
+        "name": "Вереси",
+        "value": 17963,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 122,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.236Z",
+        "updated_at": "2025-02-07T19:45:33.236Z",
+        "name": "Глибочиця",
+        "value": 17964,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 123,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.240Z",
+        "updated_at": "2025-02-07T19:45:33.240Z",
+        "name": "Городниця",
+        "value": 17965,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 124,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.244Z",
+        "updated_at": "2025-02-07T19:45:33.244Z",
+        "name": "Гришківці",
+        "value": 17966,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 125,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.248Z",
+        "updated_at": "2025-02-07T19:45:33.248Z",
+        "name": "Довбиш",
+        "value": 17967,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 126,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.252Z",
+        "updated_at": "2025-02-07T19:45:33.252Z",
+        "name": "Довжик",
+        "value": 17968,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 127,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.256Z",
+        "updated_at": "2025-02-07T19:45:33.256Z",
+        "name": "Зарічани",
+        "value": 17969,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 128,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.259Z",
+        "updated_at": "2025-02-07T19:45:33.259Z",
+        "name": "Іванівка",
+        "value": 17970,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 129,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.263Z",
+        "updated_at": "2025-02-07T19:45:33.263Z",
+        "name": "Кам’янка",
+        "value": 17971,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 130,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.268Z",
+        "updated_at": "2025-02-07T19:45:33.268Z",
+        "name": "Корнин",
+        "value": 17972,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 131,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.271Z",
+        "updated_at": "2025-02-07T19:45:33.271Z",
+        "name": "Левків",
+        "value": 17973,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 132,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.275Z",
+        "updated_at": "2025-02-07T19:45:33.275Z",
+        "name": "Ліщин",
+        "value": 17974,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 133,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.279Z",
+        "updated_at": "2025-02-07T19:45:33.279Z",
+        "name": "Мамрин",
+        "value": 17975,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 134,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.282Z",
+        "updated_at": "2025-02-07T19:45:33.282Z",
+        "name": "Миропіль",
+        "value": 17976,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 135,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.286Z",
+        "updated_at": "2025-02-07T19:45:33.286Z",
+        "name": "Новогуйвинське",
+        "value": 17977,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 136,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.290Z",
+        "updated_at": "2025-02-07T19:45:33.290Z",
+        "name": "Озерне",
+        "value": 17978,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 137,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.294Z",
+        "updated_at": "2025-02-07T19:45:33.294Z",
+        "name": "Оліївка",
+        "value": 17979,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 138,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.297Z",
+        "updated_at": "2025-02-07T19:45:33.297Z",
+        "name": "Першотравенськ",
+        "value": 17980,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 139,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.302Z",
+        "updated_at": "2025-02-07T19:45:33.302Z",
+        "name": "Радовель",
+        "value": 17981,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 140,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.305Z",
+        "updated_at": "2025-02-07T19:45:33.305Z",
+        "name": "Сінгури",
+        "value": 17982,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 141,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.310Z",
+        "updated_at": "2025-02-07T19:45:33.310Z",
+        "name": "Сонячне",
+        "value": 17983,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 142,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.314Z",
+        "updated_at": "2025-02-07T19:45:33.314Z",
+        "name": "Ставище",
+        "value": 17984,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 143,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.318Z",
+        "updated_at": "2025-02-07T19:45:33.318Z",
+        "name": "Станишівка",
+        "value": 17985,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 144,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.322Z",
+        "updated_at": "2025-02-07T19:45:33.322Z",
+        "name": "Таращанка",
+        "value": 17986,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 145,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.326Z",
+        "updated_at": "2025-02-07T19:45:33.326Z",
+        "name": "Тетерівка",
+        "value": 17987,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 146,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.330Z",
+        "updated_at": "2025-02-07T19:45:33.330Z",
+        "name": "Троковичі",
+        "value": 17988,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 147,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.333Z",
+        "updated_at": "2025-02-07T19:45:33.333Z",
+        "name": "Троянів",
+        "value": 17989,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 148,
+    "fields": {
+        "created_at": "2025-02-07T19:45:33.336Z",
+        "updated_at": "2025-02-07T19:45:33.336Z",
+        "name": "Шатрище",
+        "value": 17990,
+        "region": 2
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 149,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.108Z",
+        "updated_at": "2025-02-07T19:46:17.108Z",
+        "name": "Тернопіль",
+        "value": 3,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 150,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.120Z",
+        "updated_at": "2025-02-07T19:46:17.120Z",
+        "name": "Бережани",
+        "value": 425,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 151,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.125Z",
+        "updated_at": "2025-02-07T19:46:17.125Z",
+        "name": "Борщів",
+        "value": 426,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 152,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.129Z",
+        "updated_at": "2025-02-07T19:46:17.129Z",
+        "name": "Бучач",
+        "value": 427,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 153,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.133Z",
+        "updated_at": "2025-02-07T19:46:17.133Z",
+        "name": "Гусятин",
+        "value": 428,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 154,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.137Z",
+        "updated_at": "2025-02-07T19:46:17.137Z",
+        "name": "Заліщики",
+        "value": 429,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 155,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.142Z",
+        "updated_at": "2025-02-07T19:46:17.142Z",
+        "name": "Збараж",
+        "value": 430,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 156,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.146Z",
+        "updated_at": "2025-02-07T19:46:17.146Z",
+        "name": "Зборів",
+        "value": 431,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 157,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.151Z",
+        "updated_at": "2025-02-07T19:46:17.151Z",
+        "name": "Козова",
+        "value": 432,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 158,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.155Z",
+        "updated_at": "2025-02-07T19:46:17.155Z",
+        "name": "Кременець",
+        "value": 433,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 159,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.159Z",
+        "updated_at": "2025-02-07T19:46:17.159Z",
+        "name": "Монастириська",
+        "value": 435,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 160,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.163Z",
+        "updated_at": "2025-02-07T19:46:17.163Z",
+        "name": "Підволочиськ",
+        "value": 436,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 161,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.167Z",
+        "updated_at": "2025-02-07T19:46:17.167Z",
+        "name": "Підгайці",
+        "value": 437,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 162,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.171Z",
+        "updated_at": "2025-02-07T19:46:17.171Z",
+        "name": "Теребовля",
+        "value": 438,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 163,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.175Z",
+        "updated_at": "2025-02-07T19:46:17.175Z",
+        "name": "Чортків",
+        "value": 441,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 164,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.179Z",
+        "updated_at": "2025-02-07T19:46:17.179Z",
+        "name": "Шумськ",
+        "value": 442,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 165,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.183Z",
+        "updated_at": "2025-02-07T19:46:17.183Z",
+        "name": "Ланівці",
+        "value": 697,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 166,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.187Z",
+        "updated_at": "2025-02-07T19:46:17.187Z",
+        "name": "Копичинці",
+        "value": 14952,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 167,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.190Z",
+        "updated_at": "2025-02-07T19:46:17.190Z",
+        "name": "Байківці",
+        "value": 18185,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 168,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.194Z",
+        "updated_at": "2025-02-07T19:46:17.194Z",
+        "name": "Біла",
+        "value": 18186,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 169,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.197Z",
+        "updated_at": "2025-02-07T19:46:17.197Z",
+        "name": "Велика Березовиця",
+        "value": 18187,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 170,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.201Z",
+        "updated_at": "2025-02-07T19:46:17.201Z",
+        "name": "Великі Гаї",
+        "value": 18188,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 171,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.204Z",
+        "updated_at": "2025-02-07T19:46:17.204Z",
+        "name": "Вишнівець",
+        "value": 18189,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 172,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.208Z",
+        "updated_at": "2025-02-07T19:46:17.208Z",
+        "name": "Гаї-Гречинські",
+        "value": 18190,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 173,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.211Z",
+        "updated_at": "2025-02-07T19:46:17.211Z",
+        "name": "Дорофіївка",
+        "value": 18191,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 174,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.215Z",
+        "updated_at": "2025-02-07T19:46:17.215Z",
+        "name": "Дружба",
+        "value": 18192,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 175,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.219Z",
+        "updated_at": "2025-02-07T19:46:17.219Z",
+        "name": "Загороддя",
+        "value": 18193,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 176,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.223Z",
+        "updated_at": "2025-02-07T19:46:17.223Z",
+        "name": "Іква",
+        "value": 18194,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 177,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.227Z",
+        "updated_at": "2025-02-07T19:46:17.227Z",
+        "name": "Косів",
+        "value": 18195,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 178,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.231Z",
+        "updated_at": "2025-02-07T19:46:17.231Z",
+        "name": "Котівка",
+        "value": 18196,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 179,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.234Z",
+        "updated_at": "2025-02-07T19:46:17.234Z",
+        "name": "Ліски",
+        "value": 18197,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 180,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.238Z",
+        "updated_at": "2025-02-07T19:46:17.238Z",
+        "name": "Мельниця-Подільська",
+        "value": 18198,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 181,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.242Z",
+        "updated_at": "2025-02-07T19:46:17.242Z",
+        "name": "Микулинці",
+        "value": 18199,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 182,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.246Z",
+        "updated_at": "2025-02-07T19:46:17.246Z",
+        "name": "Озеряни",
+        "value": 18200,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 183,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.250Z",
+        "updated_at": "2025-02-07T19:46:17.250Z",
+        "name": "Онишківці",
+        "value": 18201,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 184,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.254Z",
+        "updated_at": "2025-02-07T19:46:17.254Z",
+        "name": "Петриків",
+        "value": 18202,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 185,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.258Z",
+        "updated_at": "2025-02-07T19:46:17.258Z",
+        "name": "Підгородне",
+        "value": 18203,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 186,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.262Z",
+        "updated_at": "2025-02-07T19:46:17.262Z",
+        "name": "Почаїв",
+        "value": 18204,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 187,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.267Z",
+        "updated_at": "2025-02-07T19:46:17.267Z",
+        "name": "Пробіжна",
+        "value": 18205,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 188,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.270Z",
+        "updated_at": "2025-02-07T19:46:17.270Z",
+        "name": "Скала-Подільська",
+        "value": 18206,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 189,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.276Z",
+        "updated_at": "2025-02-07T19:46:17.276Z",
+        "name": "Скалат",
+        "value": 18207,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 190,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.280Z",
+        "updated_at": "2025-02-07T19:46:17.280Z",
+        "name": "Смиківці",
+        "value": 18208,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 191,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.283Z",
+        "updated_at": "2025-02-07T19:46:17.283Z",
+        "name": "Старий Вишнівець",
+        "value": 18209,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 192,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.286Z",
+        "updated_at": "2025-02-07T19:46:17.286Z",
+        "name": "Сухостав",
+        "value": 18210,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 193,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.290Z",
+        "updated_at": "2025-02-07T19:46:17.290Z",
+        "name": "Товсте",
+        "value": 18211,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 194,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.293Z",
+        "updated_at": "2025-02-07T19:46:17.293Z",
+        "name": "Трибухівці",
+        "value": 18212,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 195,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.297Z",
+        "updated_at": "2025-02-07T19:46:17.297Z",
+        "name": "Хоростків",
+        "value": 18213,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 196,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.300Z",
+        "updated_at": "2025-02-07T19:46:17.300Z",
+        "name": "Чистилів",
+        "value": 18214,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 197,
+    "fields": {
+        "created_at": "2025-02-07T19:46:17.303Z",
+        "updated_at": "2025-02-07T19:46:17.303Z",
+        "name": "Шляхтинці",
+        "value": 18215,
+        "region": 3
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 198,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.129Z",
+        "updated_at": "2025-02-07T19:50:02.129Z",
+        "name": "Хмельницький",
+        "value": 4,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 199,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.141Z",
+        "updated_at": "2025-02-07T19:50:02.141Z",
+        "name": "Білогір'я",
+        "value": 491,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 200,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.147Z",
+        "updated_at": "2025-02-07T19:50:02.147Z",
+        "name": "Віньківці",
+        "value": 492,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 201,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.153Z",
+        "updated_at": "2025-02-07T19:50:02.153Z",
+        "name": "Волочиськ",
+        "value": 493,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 202,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.158Z",
+        "updated_at": "2025-02-07T19:50:02.158Z",
+        "name": "Городок",
+        "value": 494,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 203,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.164Z",
+        "updated_at": "2025-02-07T19:50:02.164Z",
+        "name": "Деражня",
+        "value": 495,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 204,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.169Z",
+        "updated_at": "2025-02-07T19:50:02.169Z",
+        "name": "Дунаївці",
+        "value": 496,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 205,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.174Z",
+        "updated_at": "2025-02-07T19:50:02.174Z",
+        "name": "Ізяслав",
+        "value": 497,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 206,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.180Z",
+        "updated_at": "2025-02-07T19:50:02.180Z",
+        "name": "Кам'янець-Подільський",
+        "value": 498,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 207,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.186Z",
+        "updated_at": "2025-02-07T19:50:02.186Z",
+        "name": "Красилів",
+        "value": 499,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 208,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.191Z",
+        "updated_at": "2025-02-07T19:50:02.191Z",
+        "name": "Летичів",
+        "value": 500,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 209,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.196Z",
+        "updated_at": "2025-02-07T19:50:02.196Z",
+        "name": "Нетішин",
+        "value": 501,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 210,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.200Z",
+        "updated_at": "2025-02-07T19:50:02.200Z",
+        "name": "Нова Ушиця",
+        "value": 502,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 211,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.205Z",
+        "updated_at": "2025-02-07T19:50:02.206Z",
+        "name": "Полонне",
+        "value": 503,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 212,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.210Z",
+        "updated_at": "2025-02-07T19:50:02.210Z",
+        "name": "Славута",
+        "value": 504,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 213,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.215Z",
+        "updated_at": "2025-02-07T19:50:02.215Z",
+        "name": "Старокостянтинів",
+        "value": 505,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 214,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.220Z",
+        "updated_at": "2025-02-07T19:50:02.220Z",
+        "name": "Стара Синява",
+        "value": 506,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 215,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.225Z",
+        "updated_at": "2025-02-07T19:50:02.225Z",
+        "name": "Теофіполь",
+        "value": 507,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 216,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.229Z",
+        "updated_at": "2025-02-07T19:50:02.229Z",
+        "name": "Чемерівці",
+        "value": 510,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 217,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.234Z",
+        "updated_at": "2025-02-07T19:50:02.234Z",
+        "name": "Шепетівка",
+        "value": 511,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 218,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.238Z",
+        "updated_at": "2025-02-07T19:50:02.239Z",
+        "name": "Ярмолинці",
+        "value": 512,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 219,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.244Z",
+        "updated_at": "2025-02-07T19:50:02.244Z",
+        "name": "Антоніни",
+        "value": 18040,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 220,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.249Z",
+        "updated_at": "2025-02-07T19:50:02.249Z",
+        "name": "Вовковинці",
+        "value": 18041,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 221,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.254Z",
+        "updated_at": "2025-02-07T19:50:02.254Z",
+        "name": "Гриців",
+        "value": 18042,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 222,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.259Z",
+        "updated_at": "2025-02-07T19:50:02.259Z",
+        "name": "Давидківці",
+        "value": 18043,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 223,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.264Z",
+        "updated_at": "2025-02-07T19:50:02.264Z",
+        "name": "Жванець",
+        "value": 18044,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 224,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.271Z",
+        "updated_at": "2025-02-07T19:50:02.271Z",
+        "name": "Зіньків",
+        "value": 18045,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 225,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.276Z",
+        "updated_at": "2025-02-07T19:50:02.276Z",
+        "name": "Зіньківці",
+        "value": 18046,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 226,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.282Z",
+        "updated_at": "2025-02-07T19:50:02.282Z",
+        "name": "Кам’янка",
+        "value": 18047,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 227,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.287Z",
+        "updated_at": "2025-02-07T19:50:02.287Z",
+        "name": "Коров’є",
+        "value": 18048,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 228,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.291Z",
+        "updated_at": "2025-02-07T19:50:02.291Z",
+        "name": "Кременчуки",
+        "value": 18049,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 229,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.296Z",
+        "updated_at": "2025-02-07T19:50:02.296Z",
+        "name": "Лошківці",
+        "value": 18050,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 230,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.302Z",
+        "updated_at": "2025-02-07T19:50:02.302Z",
+        "name": "Міцівці",
+        "value": 18051,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 231,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.308Z",
+        "updated_at": "2025-02-07T19:50:02.308Z",
+        "name": "Олешин",
+        "value": 18052,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 232,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.313Z",
+        "updated_at": "2025-02-07T19:50:02.313Z",
+        "name": "Оринин",
+        "value": 18053,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 233,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.319Z",
+        "updated_at": "2025-02-07T19:50:02.319Z",
+        "name": "Понінка",
+        "value": 18054,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 234,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.323Z",
+        "updated_at": "2025-02-07T19:50:02.323Z",
+        "name": "Ружичанка",
+        "value": 18055,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 235,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.328Z",
+        "updated_at": "2025-02-07T19:50:02.328Z",
+        "name": "Сатанів",
+        "value": 18056,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 236,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.334Z",
+        "updated_at": "2025-02-07T19:50:02.334Z",
+        "name": "Слобідка-Гуменецька",
+        "value": 18057,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 237,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.340Z",
+        "updated_at": "2025-02-07T19:50:02.340Z",
+        "name": "Слобідка-Кульчієвецька",
+        "value": 18058,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 238,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.345Z",
+        "updated_at": "2025-02-07T19:50:02.345Z",
+        "name": "Смотрич",
+        "value": 18059,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 239,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.350Z",
+        "updated_at": "2025-02-07T19:50:02.350Z",
+        "name": "Соколівка",
+        "value": 18060,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 240,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.356Z",
+        "updated_at": "2025-02-07T19:50:02.356Z",
+        "name": "Стріхівці",
+        "value": 18061,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 241,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.360Z",
+        "updated_at": "2025-02-07T19:50:02.360Z",
+        "name": "Судилків",
+        "value": 18062,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 242,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.366Z",
+        "updated_at": "2025-02-07T19:50:02.366Z",
+        "name": "Чорний Острів",
+        "value": 18063,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 243,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.371Z",
+        "updated_at": "2025-02-07T19:50:02.371Z",
+        "name": "Шаровечка",
+        "value": 18064,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 244,
+    "fields": {
+        "created_at": "2025-02-07T19:50:02.376Z",
+        "updated_at": "2025-02-07T19:50:02.376Z",
+        "name": "Ямпіль",
+        "value": 18065,
+        "region": 4
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 245,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.435Z",
+        "updated_at": "2025-02-07T19:50:42.435Z",
+        "name": "Львів",
+        "value": 5,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 246,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.477Z",
+        "updated_at": "2025-02-07T19:50:42.477Z",
+        "name": "Борислав",
+        "value": 287,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 247,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.483Z",
+        "updated_at": "2025-02-07T19:50:42.483Z",
+        "name": "Броди",
+        "value": 288,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 248,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.489Z",
+        "updated_at": "2025-02-07T19:50:42.489Z",
+        "name": "Буськ",
+        "value": 289,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 249,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.501Z",
+        "updated_at": "2025-02-07T19:50:42.501Z",
+        "name": "Городок",
+        "value": 290,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 250,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.516Z",
+        "updated_at": "2025-02-07T19:50:42.516Z",
+        "name": "Дрогобич",
+        "value": 291,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 251,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.521Z",
+        "updated_at": "2025-02-07T19:50:42.521Z",
+        "name": "Жидачів",
+        "value": 292,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 252,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.526Z",
+        "updated_at": "2025-02-07T19:50:42.527Z",
+        "name": "Жовква",
+        "value": 293,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 253,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.532Z",
+        "updated_at": "2025-02-07T19:50:42.532Z",
+        "name": "Золочів",
+        "value": 294,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 254,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.537Z",
+        "updated_at": "2025-02-07T19:50:42.537Z",
+        "name": "Кам'янка-Бузька",
+        "value": 295,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 255,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.542Z",
+        "updated_at": "2025-02-07T19:50:42.542Z",
+        "name": "Миколаїв",
+        "value": 297,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 256,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.547Z",
+        "updated_at": "2025-02-07T19:50:42.547Z",
+        "name": "Мостиська",
+        "value": 298,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 257,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.551Z",
+        "updated_at": "2025-02-07T19:50:42.551Z",
+        "name": "Перемишляни",
+        "value": 299,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 258,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.555Z",
+        "updated_at": "2025-02-07T19:50:42.556Z",
+        "name": "Пустомити",
+        "value": 300,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 259,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.559Z",
+        "updated_at": "2025-02-07T19:50:42.559Z",
+        "name": "Радехів",
+        "value": 301,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 260,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.564Z",
+        "updated_at": "2025-02-07T19:50:42.564Z",
+        "name": "Самбір",
+        "value": 302,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 261,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.570Z",
+        "updated_at": "2025-02-07T19:50:42.570Z",
+        "name": "Сколе",
+        "value": 303,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 262,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.574Z",
+        "updated_at": "2025-02-07T19:50:42.574Z",
+        "name": "Сокаль",
+        "value": 304,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 263,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.579Z",
+        "updated_at": "2025-02-07T19:50:42.579Z",
+        "name": "Старий Самбір",
+        "value": 305,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 264,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.583Z",
+        "updated_at": "2025-02-07T19:50:42.583Z",
+        "name": "Стрий",
+        "value": 306,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 265,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.587Z",
+        "updated_at": "2025-02-07T19:50:42.587Z",
+        "name": "Трускавець",
+        "value": 307,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 266,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.591Z",
+        "updated_at": "2025-02-07T19:50:42.591Z",
+        "name": "Турка",
+        "value": 308,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 267,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.596Z",
+        "updated_at": "2025-02-07T19:50:42.596Z",
+        "name": "Червоноград",
+        "value": 309,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 268,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.601Z",
+        "updated_at": "2025-02-07T19:50:42.601Z",
+        "name": "Яворів",
+        "value": 310,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 269,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.605Z",
+        "updated_at": "2025-02-07T19:50:42.605Z",
+        "name": "Соснівка",
+        "value": 614,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 270,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.609Z",
+        "updated_at": "2025-02-07T19:50:42.609Z",
+        "name": "Славське",
+        "value": 617,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 271,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.613Z",
+        "updated_at": "2025-02-07T19:50:42.613Z",
+        "name": "Новий Розділ",
+        "value": 632,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 272,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.618Z",
+        "updated_at": "2025-02-07T19:50:42.618Z",
+        "name": "Моршин",
+        "value": 646,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 273,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.623Z",
+        "updated_at": "2025-02-07T19:50:42.623Z",
+        "name": "Новояворівськ",
+        "value": 649,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 274,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.627Z",
+        "updated_at": "2025-02-07T19:50:42.628Z",
+        "name": "Ходорів",
+        "value": 651,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 275,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.631Z",
+        "updated_at": "2025-02-07T19:50:42.631Z",
+        "name": "Рава-Руська",
+        "value": 14949,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 276,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.636Z",
+        "updated_at": "2025-02-07T19:50:42.636Z",
+        "name": "Стебник",
+        "value": 14951,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 277,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.639Z",
+        "updated_at": "2025-02-07T19:50:42.640Z",
+        "name": "Лопатин",
+        "value": 14953,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 278,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.643Z",
+        "updated_at": "2025-02-07T19:50:42.643Z",
+        "name": "Рудки",
+        "value": 17408,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 279,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.647Z",
+        "updated_at": "2025-02-07T19:50:42.647Z",
+        "name": "Бартатів",
+        "value": 17666,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 280,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.650Z",
+        "updated_at": "2025-02-07T19:50:42.650Z",
+        "name": "Белз",
+        "value": 17667,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 281,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.654Z",
+        "updated_at": "2025-02-07T19:50:42.654Z",
+        "name": "Бірки",
+        "value": 17668,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 282,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.658Z",
+        "updated_at": "2025-02-07T19:50:42.658Z",
+        "name": "Бібрка",
+        "value": 17669,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 283,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.661Z",
+        "updated_at": "2025-02-07T19:50:42.661Z",
+        "name": "Брожки",
+        "value": 17670,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 284,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.664Z",
+        "updated_at": "2025-02-07T19:50:42.664Z",
+        "name": "Брюховичі",
+        "value": 17671,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 285,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.668Z",
+        "updated_at": "2025-02-07T19:50:42.668Z",
+        "name": "Великі Глібовичі",
+        "value": 17672,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 286,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.672Z",
+        "updated_at": "2025-02-07T19:50:42.672Z",
+        "name": "Великі Мости",
+        "value": 17673,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 287,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.675Z",
+        "updated_at": "2025-02-07T19:50:42.675Z",
+        "name": "Великосілки",
+        "value": 17674,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 288,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.679Z",
+        "updated_at": "2025-02-07T19:50:42.679Z",
+        "name": "Верхнє Синьовидне",
+        "value": 17675,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 289,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.683Z",
+        "updated_at": "2025-02-07T19:50:42.683Z",
+        "name": "Винники (Львів)",
+        "value": 17676,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 290,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.687Z",
+        "updated_at": "2025-02-07T19:50:42.687Z",
+        "name": "Вороняки",
+        "value": 17677,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 291,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.690Z",
+        "updated_at": "2025-02-07T19:50:42.690Z",
+        "name": "Глиниці",
+        "value": 17678,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 292,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.694Z",
+        "updated_at": "2025-02-07T19:50:42.694Z",
+        "name": "Глиняни",
+        "value": 17679,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 293,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.698Z",
+        "updated_at": "2025-02-07T19:50:42.698Z",
+        "name": "Горішній",
+        "value": 17680,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 294,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.701Z",
+        "updated_at": "2025-02-07T19:50:42.701Z",
+        "name": "Деревач",
+        "value": 17682,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 295,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.705Z",
+        "updated_at": "2025-02-07T19:50:42.705Z",
+        "name": "Добромиль",
+        "value": 17683,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 296,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.708Z",
+        "updated_at": "2025-02-07T19:50:42.708Z",
+        "name": "Добросин",
+        "value": 17684,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 297,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.712Z",
+        "updated_at": "2025-02-07T19:50:42.712Z",
+        "name": "Добротвір",
+        "value": 17685,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 298,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.715Z",
+        "updated_at": "2025-02-07T19:50:42.715Z",
+        "name": "Добряни",
+        "value": 17686,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 299,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.718Z",
+        "updated_at": "2025-02-07T19:50:42.718Z",
+        "name": "Добрячин",
+        "value": 17687,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 300,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.723Z",
+        "updated_at": "2025-02-07T19:50:42.723Z",
+        "name": "Дубляни",
+        "value": 17688,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 301,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.726Z",
+        "updated_at": "2025-02-07T19:50:42.726Z",
+        "name": "Жвирка",
+        "value": 17689,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 302,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.730Z",
+        "updated_at": "2025-02-07T19:50:42.730Z",
+        "name": "Жовтанці",
+        "value": 17690,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 303,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.733Z",
+        "updated_at": "2025-02-07T19:50:42.734Z",
+        "name": "Журавно",
+        "value": 17692,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 304,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.738Z",
+        "updated_at": "2025-02-07T19:50:42.738Z",
+        "name": "Задвір’я",
+        "value": 17693,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 305,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.741Z",
+        "updated_at": "2025-02-07T19:50:42.741Z",
+        "name": "Задністря",
+        "value": 17694,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 306,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.745Z",
+        "updated_at": "2025-02-07T19:50:42.745Z",
+        "name": "Збиранка",
+        "value": 17695,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 307,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.748Z",
+        "updated_at": "2025-02-07T19:50:42.748Z",
+        "name": "Зелів",
+        "value": 17696,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 308,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.752Z",
+        "updated_at": "2025-02-07T19:50:42.752Z",
+        "name": "Зубра",
+        "value": 17697,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 309,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.756Z",
+        "updated_at": "2025-02-07T19:50:42.756Z",
+        "name": "Івано-Франкове",
+        "value": 17698,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 310,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.759Z",
+        "updated_at": "2025-02-07T19:50:42.759Z",
+        "name": "Катина",
+        "value": 17699,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 311,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.763Z",
+        "updated_at": "2025-02-07T19:50:42.763Z",
+        "name": "Ков’ярі",
+        "value": 17700,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 312,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.767Z",
+        "updated_at": "2025-02-07T19:50:42.767Z",
+        "name": "Когути",
+        "value": 17701,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 313,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.770Z",
+        "updated_at": "2025-02-07T19:50:42.770Z",
+        "name": "Комарно",
+        "value": 17702,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 314,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.774Z",
+        "updated_at": "2025-02-07T19:50:42.774Z",
+        "name": "Конопниця",
+        "value": 17703,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 315,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.777Z",
+        "updated_at": "2025-02-07T19:50:42.777Z",
+        "name": "Краковець",
+        "value": 17704,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 316,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.781Z",
+        "updated_at": "2025-02-07T19:50:42.781Z",
+        "name": "Красне",
+        "value": 17705,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 317,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.785Z",
+        "updated_at": "2025-02-07T19:50:42.785Z",
+        "name": "Куликів",
+        "value": 17706,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 318,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.788Z",
+        "updated_at": "2025-02-07T19:50:42.788Z",
+        "name": "Лапаївка",
+        "value": 17707,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 319,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.792Z",
+        "updated_at": "2025-02-07T19:50:42.792Z",
+        "name": "Лісопотік",
+        "value": 17708,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 320,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.796Z",
+        "updated_at": "2025-02-07T19:50:42.796Z",
+        "name": "Липники",
+        "value": 17709,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 321,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.799Z",
+        "updated_at": "2025-02-07T19:50:42.799Z",
+        "name": "Лисиничі",
+        "value": 17710,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 322,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.803Z",
+        "updated_at": "2025-02-07T19:50:42.803Z",
+        "name": "Малехів",
+        "value": 17711,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 323,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.808Z",
+        "updated_at": "2025-02-07T19:50:42.808Z",
+        "name": "Малі Ланки",
+        "value": 17712,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 324,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.812Z",
+        "updated_at": "2025-02-07T19:50:42.812Z",
+        "name": "Меденичі",
+        "value": 17713,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 325,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.816Z",
+        "updated_at": "2025-02-07T19:50:42.817Z",
+        "name": "Мервичі",
+        "value": 17714,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 326,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.820Z",
+        "updated_at": "2025-02-07T19:50:42.820Z",
+        "name": "Модричі",
+        "value": 17715,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 327,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.823Z",
+        "updated_at": "2025-02-07T19:50:42.823Z",
+        "name": "Муроване",
+        "value": 17716,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 328,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.830Z",
+        "updated_at": "2025-02-07T19:50:42.830Z",
+        "name": "Наварія",
+        "value": 17717,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 329,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.834Z",
+        "updated_at": "2025-02-07T19:50:42.834Z",
+        "name": "Надичі",
+        "value": 17718,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 330,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.838Z",
+        "updated_at": "2025-02-07T19:50:42.838Z",
+        "name": "Нежухів",
+        "value": 17719,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 331,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.841Z",
+        "updated_at": "2025-02-07T19:50:42.841Z",
+        "name": "Немирів",
+        "value": 17720,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 332,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.844Z",
+        "updated_at": "2025-02-07T19:50:42.844Z",
+        "name": "Нижанковичі",
+        "value": 17721,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 333,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.848Z",
+        "updated_at": "2025-02-07T19:50:42.848Z",
+        "name": "Новий Калинів",
+        "value": 17722,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 334,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.852Z",
+        "updated_at": "2025-02-07T19:50:42.852Z",
+        "name": "Новий Яричів",
+        "value": 17723,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 335,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.855Z",
+        "updated_at": "2025-02-07T19:50:42.855Z",
+        "name": "Оброшине",
+        "value": 17724,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 336,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.859Z",
+        "updated_at": "2025-02-07T19:50:42.859Z",
+        "name": "Пасіки-Зубрицькі",
+        "value": 17725,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 337,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.863Z",
+        "updated_at": "2025-02-07T19:50:42.863Z",
+        "name": "Підбуж",
+        "value": 17726,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 338,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.867Z",
+        "updated_at": "2025-02-07T19:50:42.867Z",
+        "name": "Підгородне",
+        "value": 17727,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 339,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.871Z",
+        "updated_at": "2025-02-07T19:50:42.871Z",
+        "name": "Підкамінь",
+        "value": 17728,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 340,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.874Z",
+        "updated_at": "2025-02-07T19:50:42.874Z",
+        "name": "Підрясне",
+        "value": 17729,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 341,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.877Z",
+        "updated_at": "2025-02-07T19:50:42.877Z",
+        "name": "Почаєвичі",
+        "value": 17730,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 342,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.881Z",
+        "updated_at": "2025-02-07T19:50:42.881Z",
+        "name": "Раневичі",
+        "value": 17731,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 343,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.885Z",
+        "updated_at": "2025-02-07T19:50:42.885Z",
+        "name": "Ременів",
+        "value": 17732,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 344,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.890Z",
+        "updated_at": "2025-02-07T19:50:42.890Z",
+        "name": "Рихтичі",
+        "value": 17733,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 345,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.895Z",
+        "updated_at": "2025-02-07T19:50:42.895Z",
+        "name": "Рудники",
+        "value": 17734,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 346,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.899Z",
+        "updated_at": "2025-02-07T19:50:42.899Z",
+        "name": "Селець",
+        "value": 17735,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 347,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.902Z",
+        "updated_at": "2025-02-07T19:50:42.902Z",
+        "name": "Сихів",
+        "value": 17736,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 348,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.906Z",
+        "updated_at": "2025-02-07T19:50:42.906Z",
+        "name": "Скнилів",
+        "value": 17737,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 349,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.909Z",
+        "updated_at": "2025-02-07T19:50:42.909Z",
+        "name": "Словіта",
+        "value": 17738,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 350,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.914Z",
+        "updated_at": "2025-02-07T19:50:42.914Z",
+        "name": "Сможе",
+        "value": 17739,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 351,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.918Z",
+        "updated_at": "2025-02-07T19:50:42.918Z",
+        "name": "Созань",
+        "value": 17740,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 352,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.921Z",
+        "updated_at": "2025-02-07T19:50:42.921Z",
+        "name": "Сокільники",
+        "value": 17741,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 353,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.925Z",
+        "updated_at": "2025-02-07T19:50:42.925Z",
+        "name": "Солонка",
+        "value": 17742,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 354,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.929Z",
+        "updated_at": "2025-02-07T19:50:42.929Z",
+        "name": "Сопошин",
+        "value": 17743,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 355,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.933Z",
+        "updated_at": "2025-02-07T19:50:42.933Z",
+        "name": "Старичі",
+        "value": 17744,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 356,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.937Z",
+        "updated_at": "2025-02-07T19:50:42.937Z",
+        "name": "Стрілки",
+        "value": 17745,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 357,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.942Z",
+        "updated_at": "2025-02-07T19:50:42.942Z",
+        "name": "Судова Вишня",
+        "value": 17746,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 358,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.945Z",
+        "updated_at": "2025-02-07T19:50:42.946Z",
+        "name": "Суховоля",
+        "value": 17747,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 359,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.950Z",
+        "updated_at": "2025-02-07T19:50:42.950Z",
+        "name": "Східниця",
+        "value": 17748,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 360,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.955Z",
+        "updated_at": "2025-02-07T19:50:42.955Z",
+        "name": "Труханів",
+        "value": 17749,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 361,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.959Z",
+        "updated_at": "2025-02-07T19:50:42.959Z",
+        "name": "Вузлове",
+        "value": 17750,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 362,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.963Z",
+        "updated_at": "2025-02-07T19:50:42.963Z",
+        "name": "Холодновідка",
+        "value": 17751,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 363,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.967Z",
+        "updated_at": "2025-02-07T19:50:42.967Z",
+        "name": "Хирів",
+        "value": 17752,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 364,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.971Z",
+        "updated_at": "2025-02-07T19:50:42.971Z",
+        "name": "Черляни",
+        "value": 17753,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 365,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.974Z",
+        "updated_at": "2025-02-07T19:50:42.974Z",
+        "name": "Чішки",
+        "value": 17754,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 366,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.979Z",
+        "updated_at": "2025-02-07T19:50:42.979Z",
+        "name": "Шегині",
+        "value": 17755,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 367,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.983Z",
+        "updated_at": "2025-02-07T19:50:42.983Z",
+        "name": "Шоломинь",
+        "value": 17756,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 368,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.987Z",
+        "updated_at": "2025-02-07T19:50:42.987Z",
+        "name": "Щирець",
+        "value": 17757,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 369,
+    "fields": {
+        "created_at": "2025-02-07T19:50:42.991Z",
+        "updated_at": "2025-02-07T19:50:42.991Z",
+        "name": "Ясениця-Замкова",
+        "value": 17759,
+        "region": 5
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 370,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.504Z",
+        "updated_at": "2025-02-07T19:51:23.504Z",
+        "name": "Чернігів",
+        "value": 6,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 371,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.549Z",
+        "updated_at": "2025-02-07T19:51:23.549Z",
+        "name": "Бахмач",
+        "value": 546,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 372,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.557Z",
+        "updated_at": "2025-02-07T19:51:23.557Z",
+        "name": "Бобровиця",
+        "value": 547,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 373,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.562Z",
+        "updated_at": "2025-02-07T19:51:23.562Z",
+        "name": "Борзна",
+        "value": 548,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 374,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.572Z",
+        "updated_at": "2025-02-07T19:51:23.572Z",
+        "name": "Варва",
+        "value": 549,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 375,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.578Z",
+        "updated_at": "2025-02-07T19:51:23.578Z",
+        "name": "Городня",
+        "value": 550,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 376,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.583Z",
+        "updated_at": "2025-02-07T19:51:23.583Z",
+        "name": "Ічня",
+        "value": 551,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 377,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.588Z",
+        "updated_at": "2025-02-07T19:51:23.588Z",
+        "name": "Козелець",
+        "value": 552,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 378,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.593Z",
+        "updated_at": "2025-02-07T19:51:23.593Z",
+        "name": "Короп",
+        "value": 553,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 379,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.597Z",
+        "updated_at": "2025-02-07T19:51:23.597Z",
+        "name": "Корюківка",
+        "value": 554,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 380,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.602Z",
+        "updated_at": "2025-02-07T19:51:23.602Z",
+        "name": "Куликівка",
+        "value": 555,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 381,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.608Z",
+        "updated_at": "2025-02-07T19:51:23.608Z",
+        "name": "Мена",
+        "value": 556,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 382,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.612Z",
+        "updated_at": "2025-02-07T19:51:23.612Z",
+        "name": "Ніжин",
+        "value": 557,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 383,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.616Z",
+        "updated_at": "2025-02-07T19:51:23.616Z",
+        "name": "Новгород-Сіверський",
+        "value": 558,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 384,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.621Z",
+        "updated_at": "2025-02-07T19:51:23.621Z",
+        "name": "Носівка",
+        "value": 559,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 385,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.625Z",
+        "updated_at": "2025-02-07T19:51:23.625Z",
+        "name": "Прилуки",
+        "value": 560,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 386,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.629Z",
+        "updated_at": "2025-02-07T19:51:23.629Z",
+        "name": "Ріпки",
+        "value": 561,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 387,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.633Z",
+        "updated_at": "2025-02-07T19:51:23.633Z",
+        "name": "Семенівка",
+        "value": 562,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 388,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.637Z",
+        "updated_at": "2025-02-07T19:51:23.637Z",
+        "name": "Сосниця",
+        "value": 563,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 389,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.642Z",
+        "updated_at": "2025-02-07T19:51:23.642Z",
+        "name": "Срібне",
+        "value": 564,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 390,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.646Z",
+        "updated_at": "2025-02-07T19:51:23.646Z",
+        "name": "Талалаївка",
+        "value": 565,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 391,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.650Z",
+        "updated_at": "2025-02-07T19:51:23.650Z",
+        "name": "Сновськ (Щорс)",
+        "value": 568,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 392,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.653Z",
+        "updated_at": "2025-02-07T19:51:23.653Z",
+        "name": "Остер",
+        "value": 14948,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 393,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.658Z",
+        "updated_at": "2025-02-07T19:51:23.658Z",
+        "name": "Батурин",
+        "value": 17760,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 394,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.663Z",
+        "updated_at": "2025-02-07T19:51:23.663Z",
+        "name": "Березна",
+        "value": 17761,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 395,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.667Z",
+        "updated_at": "2025-02-07T19:51:23.667Z",
+        "name": "Гончарівське",
+        "value": 17762,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 396,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.672Z",
+        "updated_at": "2025-02-07T19:51:23.672Z",
+        "name": "Гужівка",
+        "value": 17763,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 397,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.676Z",
+        "updated_at": "2025-02-07T19:51:23.676Z",
+        "name": "Десна",
+        "value": 17764,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 398,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.681Z",
+        "updated_at": "2025-02-07T19:51:23.681Z",
+        "name": "Лихолітки",
+        "value": 17765,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 399,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.685Z",
+        "updated_at": "2025-02-07T19:51:23.685Z",
+        "name": "Лосинівка",
+        "value": 17766,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 400,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.690Z",
+        "updated_at": "2025-02-07T19:51:23.690Z",
+        "name": "Нова Басань",
+        "value": 17767,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 401,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.695Z",
+        "updated_at": "2025-02-07T19:51:23.695Z",
+        "name": "Новоселівка",
+        "value": 17768,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 402,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.700Z",
+        "updated_at": "2025-02-07T19:51:23.700Z",
+        "name": "Новий Білоус",
+        "value": 17769,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 403,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.705Z",
+        "updated_at": "2025-02-07T19:51:23.705Z",
+        "name": "Полуботки",
+        "value": 17770,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 404,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.709Z",
+        "updated_at": "2025-02-07T19:51:23.709Z",
+        "name": "Понорниця",
+        "value": 17771,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 405,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.713Z",
+        "updated_at": "2025-02-07T19:51:23.713Z",
+        "name": "Старий Білоус",
+        "value": 17772,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 406,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.717Z",
+        "updated_at": "2025-02-07T19:51:23.717Z",
+        "name": "Трисвятська Слобода",
+        "value": 17773,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 407,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.721Z",
+        "updated_at": "2025-02-07T19:51:23.721Z",
+        "name": "Хвилівка",
+        "value": 17774,
+        "region": 6
+    }
+},
+{
+    "model": "city.citymodel",
+    "pk": 408,
+    "fields": {
+        "created_at": "2025-02-07T19:51:23.725Z",
+        "updated_at": "2025-02-07T19:51:23.726Z",
+        "name": "Холми",
+        "value": 17775,
+        "region": 6
+    }
+},
+{
+    "model": "region.regionmodel",
+    "pk": 1,
+    "fields": {
+        "created_at": "2025-02-07T19:11:21.489Z",
+        "updated_at": "2025-02-07T19:11:21.489Z",
+        "name": "Київська",
+        "value": 10
+    }
+},
+{
+    "model": "region.regionmodel",
+    "pk": 2,
+    "fields": {
+        "created_at": "2025-02-07T19:11:21.530Z",
+        "updated_at": "2025-02-07T19:11:21.530Z",
+        "name": "Вінницька",
+        "value": 1
+    }
+},
+{
+    "model": "region.regionmodel",
+    "pk": 3,
+    "fields": {
+        "created_at": "2025-02-07T19:11:21.535Z",
+        "updated_at": "2025-02-07T19:11:21.535Z",
+        "name": "Волинська",
+        "value": 18
+    }
+},
+{
+    "model": "region.regionmodel",
+    "pk": 4,
+    "fields": {
+        "created_at": "2025-02-07T19:11:21.540Z",
+        "updated_at": "2025-02-07T19:11:21.540Z",
+        "name": "Дніпропетровська",
+        "value": 11
+    }
+},
+{
+    "model": "region.regionmodel",
+    "pk": 5,
+    "fields": {
+        "created_at": "2025-02-07T19:11:21.546Z",
+        "updated_at": "2025-02-07T19:11:21.546Z",
+        "name": "Донецька",
+        "value": 13
+    }
+},
+{
+    "model": "region.regionmodel",
+    "pk": 6,
+    "fields": {
+        "created_at": "2025-02-07T19:11:21.557Z",
+        "updated_at": "2025-02-07T19:11:21.557Z",
+        "name": "Житомирська",
+        "value": 2
+    }
+},
+{
+    "model": "region.regionmodel",
+    "pk": 7,
+    "fields": {
+        "created_at": "2025-02-07T19:11:21.561Z",
+        "updated_at": "2025-02-07T19:11:21.561Z",
+        "name": "Закарпатська",
+        "value": 22
+    }
+},
+{
+    "model": "region.regionmodel",
+    "pk": 8,
+    "fields": {
+        "created_at": "2025-02-07T19:11:21.566Z",
+        "updated_at": "2025-02-07T19:11:21.566Z",
+        "name": "Запорізька",
+        "value": 14
+    }
+},
+{
+    "model": "region.regionmodel",
+    "pk": 9,
+    "fields": {
+        "created_at": "2025-02-07T19:11:21.571Z",
+        "updated_at": "2025-02-07T19:11:21.571Z",
+        "name": "Івано-Франківська",
+        "value": 15
+    }
+},
+{
+    "model": "region.regionmodel",
+    "pk": 10,
+    "fields": {
+        "created_at": "2025-02-07T19:11:21.575Z",
+        "updated_at": "2025-02-07T19:11:21.575Z",
+        "name": "Кіровоградська",
+        "value": 16
+    }
+},
+{
+    "model": "region.regionmodel",
+    "pk": 11,
+    "fields": {
+        "created_at": "2025-02-07T19:11:21.580Z",
+        "updated_at": "2025-02-07T19:11:21.580Z",
+        "name": "Луганська",
+        "value": 17
+    }
+},
+{
+    "model": "region.regionmodel",
+    "pk": 12,
+    "fields": {
+        "created_at": "2025-02-07T19:11:21.584Z",
+        "updated_at": "2025-02-07T19:11:21.585Z",
+        "name": "Львівська",
+        "value": 5
+    }
+},
+{
+    "model": "region.regionmodel",
+    "pk": 13,
+    "fields": {
+        "created_at": "2025-02-07T19:11:21.590Z",
+        "updated_at": "2025-02-07T19:11:21.590Z",
+        "name": "Миколаївська",
+        "value": 19
+    }
+},
+{
+    "model": "region.regionmodel",
+    "pk": 14,
+    "fields": {
+        "created_at": "2025-02-07T19:11:21.595Z",
+        "updated_at": "2025-02-07T19:11:21.595Z",
+        "name": "Одеська",
+        "value": 12
+    }
+},
+{
+    "model": "region.regionmodel",
+    "pk": 15,
+    "fields": {
+        "created_at": "2025-02-07T19:11:21.600Z",
+        "updated_at": "2025-02-07T19:11:21.600Z",
+        "name": "Полтавська",
+        "value": 20
+    }
+},
+{
+    "model": "region.regionmodel",
+    "pk": 16,
+    "fields": {
+        "created_at": "2025-02-07T19:11:21.605Z",
+        "updated_at": "2025-02-07T19:11:21.605Z",
+        "name": "Рівненська",
+        "value": 9
+    }
+},
+{
+    "model": "region.regionmodel",
+    "pk": 17,
+    "fields": {
+        "created_at": "2025-02-07T19:11:21.609Z",
+        "updated_at": "2025-02-07T19:11:21.610Z",
+        "name": "Сумська",
+        "value": 8
+    }
+},
+{
+    "model": "region.regionmodel",
+    "pk": 18,
+    "fields": {
+        "created_at": "2025-02-07T19:11:21.614Z",
+        "updated_at": "2025-02-07T19:11:21.614Z",
+        "name": "Тернопільська",
+        "value": 3
+    }
+},
+{
+    "model": "region.regionmodel",
+    "pk": 19,
+    "fields": {
+        "created_at": "2025-02-07T19:11:21.617Z",
+        "updated_at": "2025-02-07T19:11:21.617Z",
+        "name": "Харківська",
+        "value": 7
+    }
+},
+{
+    "model": "region.regionmodel",
+    "pk": 20,
+    "fields": {
+        "created_at": "2025-02-07T19:11:21.622Z",
+        "updated_at": "2025-02-07T19:11:21.622Z",
+        "name": "Херсонська",
+        "value": 23
+    }
+},
+{
+    "model": "region.regionmodel",
+    "pk": 21,
+    "fields": {
+        "created_at": "2025-02-07T19:11:21.627Z",
+        "updated_at": "2025-02-07T19:11:21.627Z",
+        "name": "Хмельницька",
+        "value": 4
+    }
+},
+{
+    "model": "region.regionmodel",
+    "pk": 22,
+    "fields": {
+        "created_at": "2025-02-07T19:11:21.631Z",
+        "updated_at": "2025-02-07T19:11:21.631Z",
+        "name": "Черкаська",
+        "value": 24
+    }
+},
+{
+    "model": "region.regionmodel",
+    "pk": 23,
+    "fields": {
+        "created_at": "2025-02-07T19:11:21.636Z",
+        "updated_at": "2025-02-07T19:11:21.636Z",
+        "name": "Чернівецька",
+        "value": 25
+    }
+},
+{
+    "model": "region.regionmodel",
+    "pk": 24,
+    "fields": {
+        "created_at": "2025-02-07T19:11:21.641Z",
+        "updated_at": "2025-02-07T19:11:21.641Z",
+        "name": "Чернігівська",
+        "value": 6
+    }
+}
+]

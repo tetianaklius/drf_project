@@ -9,7 +9,7 @@ class RegexEnum(Enum):
     )
 
     NAME = (
-        r"^[A-Z][a-z]{,19}$",
+        r"^[A-Za-zА-Яа-яїЇйєю -]{,30}$",
         "Only alpha characters are allowed"
     )
 

@@ -60,18 +60,16 @@ class UserModelSerializer(serializers.ModelSerializer):
         EmailService.registration(user)
         return user
 
-#
-# class ProfileNameSerializer(serializers.Serializer):
-#     class Meta:
-#         model = ProfileModel
-#         fields = ("name", "surname",)
-#
-#
-# class UserNameSerializer(serializers.ModelSerializer):
-#     profile = ProfileNameSerializer()
-#
-#     class Meta:
-#         model = UserModel
-#         fields = (
-#             "profile", "id",
-#         )
+
+
+class AuthUserSerializer(serializers.ModelSerializer):
+    profile = ProfileModelSerializer()
+    class Meta:
+        model = UserModel
+        fields =  (
+            "id", "profile",
+        )
+        read_only_fields = (
+            "id",
+        )
+        depth = 1

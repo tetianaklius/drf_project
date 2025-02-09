@@ -1,7 +1,7 @@
 from django.shortcuts import get_object_or_404
 from rest_framework import status
 from rest_framework.generics import ListAPIView, CreateAPIView, RetrieveUpdateDestroyAPIView, UpdateAPIView
-from rest_framework.permissions import AllowAny, IsAuthenticated
+from rest_framework.permissions import AllowAny, IsAuthenticated,IsAuthenticatedOrReadOnly
 from rest_framework.response import Response
 
 from apps.post.filters import PostsFilter
@@ -68,7 +68,7 @@ class PostRetrieveUpdateDestroyView(RetrieveUpdateDestroyAPIView):
     queryset = PostModel.objects.all()
     serializer_class = PostUpdateSerializer
     http_method_names = ["get", "patch", "delete"]
-    permission_classes = (AllowAny, IsAuthenticated,)  # todo
+    permission_classes = (IsAuthenticatedOrReadOnly,)
 
     def patch(self, request, *args, **kwargs):
         user = self.request.user
@@ -105,6 +105,7 @@ class PostRetrieveUpdateDestroyView(RetrieveUpdateDestroyAPIView):
             return Response(serializer.data, status=status.HTTP_200_OK)
         else:
             raise PropertyCheckException
+
 
     def delete(self, request, *args, **kwargs):
         user = self.request.user

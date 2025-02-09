@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background: linear-gradient(rgba(199,171,138, 0.6), 80%, rgb(255, 255, 255, 0.1));
+    background: linear-gradient(rgba(225, 202, 176, 0.9), 50%, rgb(255, 255, 255, 0.6));
 }
 
 .post_box:hover {
@@ -17,7 +17,7 @@
 .btn_details {
     border: none;
     border-radius: 3px;
-    background: rgba(89, 62, 32, 0.2);
+    background: rgba(89, 62, 32, 0.3);
     height: 50px;
     width: 100px;
     max-height: 200px;

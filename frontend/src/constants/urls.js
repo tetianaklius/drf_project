@@ -9,6 +9,7 @@ export const urls = {
     },
     users: {
         all: "/users",
+        my_profile: "/users/me",
         search: (params) => `/users${params}`,
         byId: (id) => `/users/${id}`,
         block: (id) => `/users/${id}/block`,
