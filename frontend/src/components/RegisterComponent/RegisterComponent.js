@@ -20,7 +20,7 @@ export const RegisterComponent = ({user}) => {
     console.log((user?.profile?.age.toString()));
 
 // regions--------------------------------------------------------------------
-    const [regions, setRegions] = useState([ ""])
+    const [regions, setRegions] = useState([""])
     const getNameRegion = (value) => regions.find(region => region?.value === value)
     useEffect(() => {
         regionService.getAll().then(values => setRegions(values))
@@ -60,7 +60,7 @@ export const RegisterComponent = ({user}) => {
 
             } else {
 
-                await authService.register(new_user).then(data => {
+                await userService.create(new_user).then(data => {
                     const msg = "Check your email to confirm registration "
                     alert(msg + data.email)
                     setError(msg + data.email)
@@ -90,9 +90,11 @@ export const RegisterComponent = ({user}) => {
                                {...register("profile.surname")}/>
                     </label>
                     <label>
-                        <input type="text" placeholder={"profession"} defaultValue={user?.profile?.profession} {...register("profile.profession")}/>
+                        <input type="text" placeholder={"profession"}
+                               defaultValue={user?.profile?.profession} {...register("profile.profession")}/>
                     </label>
-                    <input type="text" placeholder={"interests"} defaultValue={user?.profile?.interests} {...register("profile.interests")}/>
+                    <input type="text" placeholder={"interests"}
+                           defaultValue={user?.profile?.interests} {...register("profile.interests")}/>
                 </div>
                 <div className={styles.selects_box}>
                     <label className={styles.select_city}>City

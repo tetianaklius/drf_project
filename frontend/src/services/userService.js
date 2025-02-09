@@ -1,8 +1,12 @@
-import {apiService} from "./apiService";
+import {apiService, apiServiceAllowAny} from "./apiService";
 import {urls} from "../constants/urls";
 
 
 const userService = {
+    create: async (user) => {
+        const {data} = await apiServiceAllowAny.post(urls.users.create, user)
+        return data
+    },
     getAll: async () => {
         const response = await apiService.get(urls.users.all)
         return response.data;

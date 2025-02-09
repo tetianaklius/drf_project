@@ -1,6 +1,6 @@
 from rest_framework import status
 from rest_framework.generics import ListCreateAPIView
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
 
 from apps.post_label.models import PostLabelModel
@@ -15,7 +15,7 @@ class PostLabelListCreateView(ListCreateAPIView):
         get all post labels;
     """
     queryset = PostLabelModel.objects.all()
-    permission_classes = (IsAuthenticated,)
+    permission_classes = (AllowAny,)
     serializer_class = PostLabelModelSerializer
     http_method_names = ["post", "get"]
 

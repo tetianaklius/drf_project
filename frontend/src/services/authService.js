@@ -18,11 +18,6 @@ const refreshService = {
 }
 
 const authService = {
-    async register(user) {
-        const {data} = await apiServiceAllowAny.post(urls.auth.register, user)
-        return data
-    },
-
     async activate(token) {
         const {data} = await apiServiceAllowAny.patch(urls.auth.activate + token)
         return data;

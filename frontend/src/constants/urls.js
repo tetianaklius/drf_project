@@ -2,12 +2,12 @@ export const baseURL = "/api"
 
 export const urls = {
     auth: {
-        register: "/users/create",
         activate: "/auth/activate/",
         login: "/auth",
         refresh: "/auth/refresh"
     },
     users: {
+        create: "/users/create",
         all: "/users",
         my_profile: "/users/me",
         search: (params) => `/users${params}`,

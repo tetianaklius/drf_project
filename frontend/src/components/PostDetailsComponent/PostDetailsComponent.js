@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {useParams} from "react-router-dom";
+import {useNavigate, useParams} from "react-router-dom";
 
 import {postService} from "../../services/postService";
 import {PostFormComponent} from "../PostFormComponent/PostFormComponent";
@@ -9,6 +9,7 @@ import styles from "./PostDetailsComponent.module.css"
 export const PostDetailsComponent = () => {
     const {id} = useParams();
     const [post, setPost] = useState({})
+    const navigate = useNavigate()
 
     const [formVisible, setFormVisible] = useState(false)
     const [error, setError] = useState(false)
@@ -28,6 +29,9 @@ export const PostDetailsComponent = () => {
 
     return (
         <div className={styles.post_box}>
+            <div className={styles.back_button}>
+                <div onClick={() => navigate(-1)}>Back<br/>&#8592;</div>
+            </div>
             <div className={styles.post_form}>
                 {formVisible ? (<PostFormComponent data={data_props}/>) : <div></div>}
                 <div className={styles.error_msg}>
@@ -46,7 +50,6 @@ export const PostDetailsComponent = () => {
                 </div>
                 <div className={styles.post_author}>
                     post id: {post.id}
-                    by user: {post.user_id}
                 </div>
                 <div className={styles.post_text}>
                     {post.text}
