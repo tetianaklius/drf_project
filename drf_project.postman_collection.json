@@ -1,0 +1,1062 @@
+{
+	"info": {
+		"_postman_id": "2e755574-dc93-4548-b9e4-00f5b70d4fb0",
+		"name": "drf_project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28729187"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"res = pm.response.json()\r",
+									"pm.environment.set(\"access\", res.access);\r",
+									"pm.environment.set(\"refresh\", res.refresh)\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "tetianaklius@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "user",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "1234567@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "ivan@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "oliaolia@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "user25@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "12345@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "user1@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost/api/auth"
+					},
+					"response": []
+				},
+				{
+					"name": "refresh",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "refresh",
+									"value": "{{refresh}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost/api/auth/refresh"
+					},
+					"response": []
+				},
+				{
+					"name": "activate_user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{access}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost/api/auth/activate/:token",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"auth",
+								"activate",
+								":token"
+							],
+							"variable": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWN0aXZhdGUiLCJleHAiOjE3MzkwMTI3OTgsImlhdCI6MTczOTAwOTE5OCwianRpIjoiODMyYTM1ZGI0ZTA0NDZiNWIwMWVhZTMwZTkxMDQwZTgiLCJ1c2VyX2lkIjoxMn0.B0DukNpBMVhd-h1lR1zkNN_XKe851kojN6aERNcOlJE"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "recovery_request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{access}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "tetianaklius@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost/api/auth/recovery"
+					},
+					"response": []
+				},
+				{
+					"name": "recovery_password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{access}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "password",
+									"value": "superuser1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/api/auth/recovery/:token",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"auth",
+								"recovery",
+								":token"
+							],
+							"variable": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVjb3ZlcnkiLCJleHAiOjE3MzkwMTA1NDksImlhdCI6MTczOTAwOTk0OSwianRpIjoiZWE4ZmQ3MTBiYzNjNDljZGI0ODExNzNmODE5YTZiNzUiLCJ1c2VyX2lkIjoxMn0.gBJJcY7SVQm445xxsVUM-MWMlEMDoppTuOeUPPiUFqE"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "users_filters",
+					"item": [
+						{
+							"name": "by_age",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{access}}"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost/api/users?age_min=25&age_max=28",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"users"
+									],
+									"query": [
+										{
+											"key": "age_min",
+											"value": "25"
+										},
+										{
+											"key": "age_max",
+											"value": "28"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "by_name",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{access}}"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost/api/users?name=Hanna",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"users"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Hanna"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "by_city",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{access}}"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost/api/users?city=5",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"users"
+									],
+									"query": [
+										{
+											"key": "city",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "by_profession",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{access}}"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost/api/users?profession=doctor",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"users"
+									],
+									"query": [
+										{
+											"key": "profession",
+											"value": "doctor"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "search_user",
+					"item": [
+						{
+							"name": "search_user_by_id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{access}}"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost/api/users?pk=48",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"users"
+									],
+									"query": [
+										{
+											"key": "pk",
+											"value": "48"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "search_user_by_email",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{access}}"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost/api/users?email=oliaolia@gmail.com",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"users"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "oliaolia@gmail.com"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "create_user",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"vasyl@gmail.com\",\r\n    \"password\": \"user\",\r\n    \"profile\": {\r\n        \"name\": \"Vasyl\",\r\n        \"age\": 35,\r\n        \"surname\": \"Skrypnyk\",\r\n        \"city\": 2,\r\n        \"phone\": \"0669235559\",\r\n        \"profession\": \"ecologist\",\r\n        \"interests\": \"nature, photo, travels\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost/api/users/create"
+					},
+					"response": []
+				},
+				{
+					"name": "all_users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{access}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "localhost/api/users"
+					},
+					"response": []
+				},
+				{
+					"name": "user_by_id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{access}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/api/users/:pk",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"users",
+								":pk"
+							],
+							"variable": [
+								{
+									"key": "pk",
+									"value": "55"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{access}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"age\":27,\r\n    \"phone\":\"+380985635887\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/api/users/:pk",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"users",
+								":pk"
+							],
+							"variable": [
+								{
+									"key": "pk",
+									"value": "44"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{access}}"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost/api/users/:pk",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"users",
+								":pk"
+							],
+							"variable": [
+								{
+									"key": "pk",
+									"value": "45"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "my_profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{access}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "localhost/api/users/me"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "posts",
+			"item": [
+				{
+					"name": "labels",
+					"item": [
+						{
+							"name": "create_label",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{access}}"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n    {\r\n    \"name\":\"Travels\",\r\n    \"value\":1\r\n    },\r\n    {\r\n    \"name\":\"Food\",\r\n    \"value\":2\r\n    },\r\n    {\r\n    \"name\":\"Routine\",\r\n    \"value\":3\r\n    },\r\n    {\r\n    \"name\":\"Technics\",\r\n    \"value\":4\r\n    },\r\n    {\r\n    \"name\":\"Health\",\r\n    \"value\":5\r\n    },\r\n    {\r\n    \"name\":\"Education\",\r\n    \"value\":6\r\n    },\r\n    {\r\n    \"name\":\"Story Of The Day\",\r\n    \"value\":7\r\n    },\r\n    {\r\n    \"name\":\"Work\",\r\n    \"value\":8\r\n    },\r\n    {\r\n    \"name\":\"Home\",\r\n    \"value\":9\r\n    },\r\n    {\r\n    \"name\":\"Presents\",\r\n    \"value\":10\r\n    },\r\n    {\r\n    \"name\":\"Decor\",\r\n    \"value\":11\r\n    },\r\n    {\r\n    \"name\":\"Handmade\",\r\n    \"value\":12\r\n    },\r\n    {\r\n    \"name\":\"Social\",\r\n    \"value\":13\r\n    },\r\n    {\r\n    \"name\":\"Politics\",\r\n    \"value\":14\r\n    },\r\n    {\r\n    \"name\":\"Arts\",\r\n    \"value\":15\r\n    },\r\n    {\r\n    \"name\":\"Literature\",\r\n    \"value\":16\r\n    },\r\n    {\r\n    \"name\":\"Movies\",\r\n    \"value\":17\r\n    },\r\n    {\r\n    \"name\":\"Hobby\",\r\n    \"value\":18\r\n    },\r\n    {\r\n    \"name\":\"Self Development\",\r\n    \"value\":19\r\n    },\r\n    {\r\n    \"name\":\"Other\",\r\n    \"value\":20\r\n    }\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost/api/post_labels"
+							},
+							"response": []
+						},
+						{
+							"name": "all_labels",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{access}}"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": "localhost/api/post_labels"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "posts_filters",
+					"item": [
+						{
+							"name": "by_label",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost/api/posts?label=1",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"posts"
+									],
+									"query": [
+										{
+											"key": "label",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "by_date",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost/api/posts?date_from=2025-02-09",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"api",
+										"posts"
+									],
+									"query": [
+										{
+											"key": "date_from",
+											"value": "2025-02-09"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "create_post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{access}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Den bruger en\",\r\n    \"text\":\"Den bruger en ordbog på over 200 ord på latin kombineret med en håndfuld sætningsstrukturer til at generere sætninger.\",\r\n    \"label\":7\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost/api/posts/create"
+					},
+					"response": []
+				},
+				{
+					"name": "all_posts",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": "localhost/api/posts"
+					},
+					"response": []
+				},
+				{
+					"name": "post_by_id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/api/posts/:pk",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"posts",
+								":pk"
+							],
+							"variable": [
+								{
+									"key": "pk",
+									"value": "50"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "posts_by_user_id",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/api/posts/user/:pk",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"posts",
+								"user",
+								":pk"
+							],
+							"variable": [
+								{
+									"key": "pk",
+									"value": "48"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post_add_image",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{access}}"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/PC/Downloads/pexels-nichitean-dumitrita-veronica-77753667-8880299.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/api/posts/:pk/image",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"posts",
+								":pk",
+								"image"
+							],
+							"variable": [
+								{
+									"key": "pk",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{access}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Some Updated Title\",\r\n    \"text\": \"some updated text\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/api/posts/:pk",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"posts",
+								":pk"
+							],
+							"variable": [
+								{
+									"key": "pk",
+									"value": "50"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{access}}"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost/api/posts/:pk",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"posts",
+								":pk"
+							],
+							"variable": [
+								{
+									"key": "pk",
+									"value": "50"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cities",
+			"item": [
+				{
+					"name": "all_cities",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{access}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/api/cities/region/:pk",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"cities",
+								"region",
+								":pk"
+							],
+							"variable": [
+								{
+									"key": "pk",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create_city",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{access}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"name\": \"Чернігів\",\r\n        \"value\": 6\r\n    },\r\n    {\r\n        \"name\": \"Бахмач\",\r\n        \"value\": 546\r\n    },\r\n    {\r\n        \"name\": \"Бобровиця\",\r\n        \"value\": 547\r\n    },\r\n    {\r\n        \"name\": \"Борзна\",\r\n        \"value\": 548\r\n    },\r\n    {\r\n        \"name\": \"Варва\",\r\n        \"value\": 549\r\n    },\r\n    {\r\n        \"name\": \"Городня\",\r\n        \"value\": 550\r\n    },\r\n    {\r\n        \"name\": \"Ічня\",\r\n        \"value\": 551\r\n    },\r\n    {\r\n        \"name\": \"Козелець\",\r\n        \"value\": 552\r\n    },\r\n    {\r\n        \"name\": \"Короп\",\r\n        \"value\": 553\r\n    },\r\n    {\r\n        \"name\": \"Корюківка\",\r\n        \"value\": 554\r\n    },\r\n    {\r\n        \"name\": \"Куликівка\",\r\n        \"value\": 555\r\n    },\r\n    {\r\n        \"name\": \"Мена\",\r\n        \"value\": 556\r\n    },\r\n    {\r\n        \"name\": \"Ніжин\",\r\n        \"value\": 557\r\n    },\r\n    {\r\n        \"name\": \"Новгород-Сіверський\",\r\n        \"value\": 558\r\n    },\r\n    {\r\n        \"name\": \"Носівка\",\r\n        \"value\": 559\r\n    },\r\n    {\r\n        \"name\": \"Прилуки\",\r\n        \"value\": 560\r\n    },\r\n    {\r\n        \"name\": \"Ріпки\",\r\n        \"value\": 561\r\n    },\r\n    {\r\n        \"name\": \"Семенівка\",\r\n        \"value\": 562\r\n    },\r\n    {\r\n        \"name\": \"Сосниця\",\r\n        \"value\": 563\r\n    },\r\n    {\r\n        \"name\": \"Срібне\",\r\n        \"value\": 564\r\n    },\r\n    {\r\n        \"name\": \"Талалаївка\",\r\n        \"value\": 565\r\n    },\r\n    {\r\n        \"name\": \"Сновськ (Щорс)\",\r\n        \"value\": 568\r\n    },\r\n    {\r\n        \"name\": \"Остер\",\r\n        \"value\": 14948\r\n    },\r\n    {\r\n        \"name\": \"Батурин\",\r\n        \"value\": 17760\r\n    },\r\n    {\r\n        \"name\": \"Березна\",\r\n        \"value\": 17761\r\n    },\r\n    {\r\n        \"name\": \"Гончарівське\",\r\n        \"value\": 17762\r\n    },\r\n    {\r\n        \"name\": \"Гужівка\",\r\n        \"value\": 17763\r\n    },\r\n    {\r\n        \"name\": \"Десна\",\r\n        \"value\": 17764\r\n    },\r\n    {\r\n        \"name\": \"Лихолітки\",\r\n        \"value\": 17765\r\n    },\r\n    {\r\n        \"name\": \"Лосинівка\",\r\n        \"value\": 17766\r\n    },\r\n    {\r\n        \"name\": \"Нова Басань\",\r\n        \"value\": 17767\r\n    },\r\n    {\r\n        \"name\": \"Новоселівка\",\r\n        \"value\": 17768\r\n    },\r\n    {\r\n        \"name\": \"Новий Білоус\",\r\n        \"value\": 17769\r\n    },\r\n    {\r\n        \"name\": \"Полуботки\",\r\n        \"value\": 17770\r\n    },\r\n    {\r\n        \"name\": \"Понорниця\",\r\n        \"value\": 17771\r\n    },\r\n    {\r\n        \"name\": \"Старий Білоус\",\r\n        \"value\": 17772\r\n    },\r\n    {\r\n        \"name\": \"Трисвятська Слобода\",\r\n        \"value\": 17773\r\n    },\r\n    {\r\n        \"name\": \"Хвилівка\",\r\n        \"value\": 17774\r\n    },\r\n    {\r\n        \"name\": \"Холми\",\r\n        \"value\": 17775\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/api/cities/region/:pk",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"cities",
+								"region",
+								":pk"
+							],
+							"variable": [
+								{
+									"key": "pk",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "regions",
+			"item": [
+				{
+					"name": "create_region",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{access}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"name\": \"Київська\",\r\n        \"value\": 10\r\n    },\r\n    {\r\n        \"name\": \"Вінницька\",\r\n        \"value\": 1\r\n    },\r\n    {\r\n        \"name\": \"Волинська\",\r\n        \"value\": 18\r\n    },\r\n    {\r\n        \"name\": \"Дніпропетровська\",\r\n        \"value\": 11\r\n    },\r\n    {\r\n        \"name\": \"Донецька\",\r\n        \"value\": 13\r\n    },\r\n    {\r\n        \"name\": \"Житомирська\",\r\n        \"value\": 2\r\n    },\r\n    {\r\n        \"name\": \"Закарпатська\",\r\n        \"value\": 22\r\n    },\r\n    {\r\n        \"name\": \"Запорізька\",\r\n        \"value\": 14\r\n    },\r\n    {\r\n        \"name\": \"Івано-Франківська\",\r\n        \"value\": 15\r\n    },\r\n    {\r\n        \"name\": \"Кіровоградська\",\r\n        \"value\": 16\r\n    },\r\n    {\r\n        \"name\": \"Луганська\",\r\n        \"value\": 17\r\n    },\r\n    {\r\n        \"name\": \"Львівська\",\r\n        \"value\": 5\r\n    },\r\n    {\r\n        \"name\": \"Миколаївська\",\r\n        \"value\": 19\r\n    },\r\n    {\r\n        \"name\": \"Одеська\",\r\n        \"value\": 12\r\n    },\r\n    {\r\n        \"name\": \"Полтавська\",\r\n        \"value\": 20\r\n    },\r\n    {\r\n        \"name\": \"Рівненська\",\r\n        \"value\": 9\r\n    },\r\n    {\r\n        \"name\": \"Сумська\",\r\n        \"value\": 8\r\n    },\r\n    {\r\n        \"name\": \"Тернопільська\",\r\n        \"value\": 3\r\n    },\r\n    {\r\n        \"name\": \"Харківська\",\r\n        \"value\": 7\r\n    },\r\n    {\r\n        \"name\": \"Херсонська\",\r\n        \"value\": 23\r\n    },\r\n    {\r\n        \"name\": \"Хмельницька\",\r\n        \"value\": 4\r\n    },\r\n    {\r\n        \"name\": \"Черкаська\",\r\n        \"value\": 24\r\n    },\r\n    {\r\n        \"name\": \"Чернівецька\",\r\n        \"value\": 25\r\n    },\r\n    {\r\n        \"name\": \"Чернігівська\",\r\n        \"value\": 6\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost/api/regions"
+					},
+					"response": []
+				},
+				{
+					"name": "all_regions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{access}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "localhost/api/regions"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
