@@ -87,7 +87,9 @@
     font-size: larger;
     border: none;
     border-radius: 3px;
-    background: rgba(89, 62, 32, 0.2);
+    background: rgba(89, 62, 32, 0.6);
+    color: white;
+    /*font-weight: bolder;*/
 }
 
 .error_msg {
