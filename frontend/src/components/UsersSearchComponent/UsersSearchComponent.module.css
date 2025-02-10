@@ -31,6 +31,9 @@
 }
 
 .users_wrap {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
     background: rgba(220, 196, 168, 0.62);
     padding: 10px;
 }
@@ -48,6 +51,10 @@
     font-size: larger;
 }
 
+.search_button:hover {
+    background: rgba(220, 196, 168, 0.9);
+}
+
 .permission_message {
     margin-top: 5vh;
     background: rgba(89, 62, 32, 0.1);
@@ -60,9 +67,15 @@
 }
 
 .pag_button {
+    margin-top: 2vh;
     height: 5vh;
     width: 7vw;
     background: rgba(220, 196, 168, 0.62);
     border-radius: 3px;
     border: none;
+    cursor: pointer;
+}
+
+.pag_button:hover {
+    background: rgba(220, 196, 168, 0.9);
 }

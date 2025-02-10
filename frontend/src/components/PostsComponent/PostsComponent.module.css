@@ -49,10 +49,20 @@
     font-size: medium;
 }
 
-.pag_button {
+.pag_button_r {
     height: 5vh;
     width: 12vw;
-    background: rgba(220, 196, 168);
+    background: linear-gradient(to right, rgba(220, 196, 168), rgba(255, 255, 255, 0.8));
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    font-size: x-large;
+}
+
+.pag_button_l {
+    height: 5vh;
+    width: 12vw;
+    background: linear-gradient(to left, rgba(220, 196, 168), rgba(255, 255, 255, 0.8));
     border-radius: 3px;
     border: none;
     cursor: pointer;

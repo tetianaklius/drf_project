@@ -78,14 +78,14 @@ export const PostsComponent = () => {
                     </button>
                 </div>
                 <div className={styles.pag_buttons_wrap}>
-                    <button className={styles.pag_button} disabled={!paginator.prev} onClick={() => {
+                    <button className={styles.pag_button_l} disabled={!paginator.prev} onClick={() => {
                         if (paginator.prev) {
                             setPage(prevState => prevState - 1
                             )
                         }
                     }}>&#8592;
                     </button>
-                    <button className={styles.pag_button} disabled={!paginator.next} onClick={() => {
+                    <button className={styles.pag_button_r} disabled={!paginator.next} onClick={() => {
                         if (paginator.next) {
                             setPage(prevState => prevState + 1)
                         }

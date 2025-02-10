@@ -74,7 +74,9 @@ export const RegisterComponent = ({user}) => {
 
     return (
         <div className={styles.register_box}>
-            <h2>Registration</h2>
+            {(user) ? <h2>My profile</h2>
+                :
+                <h2>Registration</h2>}
             <form onSubmit={handleSubmit(registerUser)} className={styles.register_form}>
                 <div className={styles.inputs_box}>
                     <input type="text" placeholder={"email"} disabled={user} {...register("email")}/>

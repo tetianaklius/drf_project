@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react';
+import {useNavigate} from "react-router-dom";
 
 import {userService} from "../../services/userService";
 import {refreshService} from "../../services/authService";
 import {RegisterComponent} from "../../components/RegisterComponent/RegisterComponent";
-import {useNavigate} from "react-router-dom";
+import styles from "./ProfilePage.module.css";
 
 
 export const ProfilePage = () => {
@@ -44,7 +45,7 @@ export const ProfilePage = () => {
 
 
     return (
-        <div>
+        <div className={styles.main}>
             <RegisterComponent user={user}/>
         </div>
     );
