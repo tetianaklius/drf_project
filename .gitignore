@@ -1,0 +1,10 @@
+.env
+.idea
+.venv
+mysql
+/backend/apps/region/migrations/
+/backend/apps/auth/migrations/
+/backend/apps/city/migrations/
+/backend/apps/post/migrations/
+/backend/apps/post_label/migrations/
+/backend/apps/user/migrations/

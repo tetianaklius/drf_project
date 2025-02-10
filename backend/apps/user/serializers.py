@@ -23,7 +23,7 @@ class ProfileModelSerializer(serializers.ModelSerializer):
             "created_at",
             "updated_at"
         )
-        read_only_fields = ("id", "created_at", "updated_at")
+        read_only_fields = ("id", "created_at", "updated_at", "city",)
 
 
 class UserModelSerializer(serializers.ModelSerializer):
@@ -52,6 +52,13 @@ class UserModelSerializer(serializers.ModelSerializer):
             }
         }
 
+    def validate(self, attrs):
+        attrs = super().validate(attrs)
+        print("attr", attrs)
+        if "city" in self.context:
+            attrs["profile"]["city"] = self.context["city"]
+        return attrs
+
     @atomic
     def create(self, validated_data: dict):
         profile = validated_data.pop("profile")
@@ -61,12 +68,12 @@ class UserModelSerializer(serializers.ModelSerializer):
         return user
 
 
-
 class AuthUserSerializer(serializers.ModelSerializer):
     profile = ProfileModelSerializer()
+
     class Meta:
         model = UserModel
-        fields =  (
+        fields = (
             "id", "profile",
         )
         read_only_fields = (

@@ -1,9 +1,11 @@
 from django.contrib.auth import get_user_model
 from rest_framework import status
-from rest_framework.generics import GenericAPIView, ListAPIView, CreateAPIView, RetrieveUpdateDestroyAPIView
+from rest_framework.generics import GenericAPIView, ListAPIView, CreateAPIView, RetrieveUpdateDestroyAPIView, \
+    get_object_or_404
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 
+from apps.city.models import CityModel
 from apps.user.filters import UsersFilter
 from apps.user.models import ProfileModel
 from apps.user.serializers import UserModelSerializer, ProfileModelSerializer, AuthUserSerializer
@@ -47,7 +49,7 @@ class UsersListView(ListAPIView):
         return super().get(request, *args, **kwargs)
 
 
-class UserCreateView(CreateAPIView):
+class UserCreateView(GenericAPIView):
     """
     post:
         create new user;
@@ -55,6 +57,20 @@ class UserCreateView(CreateAPIView):
     queryset = UserModel.objects.all()
     serializer_class = UserModelSerializer
     permission_classes = (AllowAny,)
+
+    def post(self, *args, **kwargs):
+        data = self.request.data
+        context_ = {}
+
+        if "city" in data["profile"]:
+            city_obj = get_object_or_404(CityModel, value=data["profile"]["city"])
+            context_["city"] = city_obj
+
+        serializer = UserModelSerializer(data=data, context=context_)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+
+        return Response(serializer.data, status.HTTP_201_CREATED)
 
 
 class UserRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
