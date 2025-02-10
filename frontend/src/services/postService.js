@@ -4,9 +4,9 @@ import {apiService} from "./apiService";
 
 export const postService = {
 
-    getAll: async () => {
+    getAll: async (page) => {
         try {
-            const response = await apiService.get(urls.posts.all)
+            const response = await apiService.get(urls.posts.all(page))
             return response.data;
         } catch (err) {
             return err.response

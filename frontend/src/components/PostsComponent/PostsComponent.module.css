@@ -48,3 +48,21 @@
     font-weight: bold;
     font-size: medium;
 }
+
+.pag_button {
+    height: 5vh;
+    width: 12vw;
+    background: rgba(220, 196, 168);
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    font-size: x-large;
+}
+
+.pag_buttons_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1vh;
+}

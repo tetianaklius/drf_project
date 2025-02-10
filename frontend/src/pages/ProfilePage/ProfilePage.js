@@ -3,11 +3,11 @@ import React, {useEffect, useState} from 'react';
 import {userService} from "../../services/userService";
 import {refreshService} from "../../services/authService";
 import {RegisterComponent} from "../../components/RegisterComponent/RegisterComponent";
-
+import {useNavigate} from "react-router-dom";
 
 
 export const ProfilePage = () => {
-
+    const navigate = useNavigate()
     const [error, setError] = useState(false)
     const [user, setUser] = useState()
 
@@ -27,7 +27,11 @@ export const ProfilePage = () => {
                     }
                     if (status === 401) {
                         refreshService.refresh().then(data => {
-                            setError(prevState => !prevState)
+                            if (status === 401 && error) {
+                                navigate("/login")
+                            } else {
+                                setError(true)
+                            }
                         })
                     }
                 })

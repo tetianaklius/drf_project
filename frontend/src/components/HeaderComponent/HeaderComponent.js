@@ -17,10 +17,10 @@ export const HeaderComponent = () => {
     return (
         <div className={styles.main}>
             <header className={styles.navbar}>
-                <Link to="/register"> RegisterPage </Link>
-                <Link to="/login"> LoginPage </Link>
+                <Link to="/register"> Registration </Link>
+                <Link to="/login"> Login </Link>
                 <Link to="/posts"> Posts </Link>
-                <Link to="/users"> UsersPage </Link>
+                <Link to="/users"> Users </Link>
                 <Link to="/profile"> Profile </Link>
                 <button onClick={logOut}> LogOut</button>
             </header>

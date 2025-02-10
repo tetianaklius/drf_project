@@ -1,12 +1,11 @@
 import {useForm} from "react-hook-form";
 import {useEffect, useState} from "react";
+import {useLocation} from "react-router-dom";
 
-import {authService} from "../../services/authService";
 import {regionService} from "../../services/regionService";
 import {cityService} from "../../services/cityService";
-import styles from "./RegisterComponent.module.css"
-import {useLocation} from "react-router-dom";
 import {userService} from "../../services/userService";
+import styles from "./RegisterComponent.module.css"
 
 
 export const RegisterComponent = ({user}) => {

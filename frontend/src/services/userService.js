@@ -12,9 +12,9 @@ const userService = {
         return response.data;
     },
 
-    search: async (params) => {
+    search: async (page, params) => {
         try {
-            const response = await apiService.get(urls.users.search(params))
+            const response = await apiService.get(urls.users.search(page, params))
             return response.data;
         } catch (err) {
             return err.response
@@ -29,7 +29,7 @@ const userService = {
             return err.response
         }
     },
-    my_profile: async (params) => {
+    my_profile: async () => {
         try {
             const response = await apiService.get(urls.users.my_profile)
             return response.data;

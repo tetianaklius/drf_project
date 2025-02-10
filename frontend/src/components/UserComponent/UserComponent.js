@@ -4,7 +4,7 @@ import React from "react";
 const UserComponent = ({user}) => {
     return (
         <div>
-            {user.email}
+            User {user.id}: {user.email}
         </div>
     );
 };

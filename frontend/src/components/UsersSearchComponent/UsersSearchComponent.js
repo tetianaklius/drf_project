@@ -12,7 +12,15 @@ import styles from "./UsersSearchComponent.module.css";
 export const UsersSearchComponent = () => {
     const {register, handleSubmit, reset} = useForm({});
     const [users, setUsers] = useState([])
-    const [searchParams, setSearchParams] = useState('')
+    const [searchParams, setSearchParams] = useState("")
+    const [paginator, setPaginator] = useState({
+            "total_items": 0,
+            "total_pages": 0,
+            "prev": false,
+            "next": false
+        }
+    )
+    const [page, setPage] = useState(1)
 
     const [error, setError] = useState(false);
     useEffect(() => {
@@ -20,12 +28,18 @@ export const UsersSearchComponent = () => {
 
     useEffect(() => {
         try {
-            userService.search(searchParams).then((response) => {
+            userService.search(page, searchParams).then((response) => {
                 const data = response?.data
                 const status = response["status"]
                 if (!status) {
                     if (data) {
                         setUsers(data)
+                        setPaginator({
+                            total_items: response.total_items,
+                            total_pages: response.total_pages,
+                            next: response.next,
+                            prev: response.prev,
+                        })
                     } else {
                         setUsers([response])
                     }
@@ -39,7 +53,7 @@ export const UsersSearchComponent = () => {
         } catch (err) {
             console.log(err.data)
         }
-    }, [searchParams]);
+    }, [searchParams, page]);
 
 
 // age--------------------------------------------------------------------
@@ -103,7 +117,7 @@ export const UsersSearchComponent = () => {
             .replaceAll('"', "")
             .split(",")
 
-        let queryString = "?"
+        let queryString = ""
 
         for (let i = 0; i < queryArr.length - 1; i += 2) {
             queryString = queryString + queryArr[i] + "=" + queryArr[i + 1] + "&"
@@ -113,9 +127,9 @@ export const UsersSearchComponent = () => {
     }
 
 
-    return (<div>
-        <div className={styles.selects_wrap}>
-            <div>
+    return (<div className={styles.main}>
+        {/*{users ?*/}
+            <div className={styles.selects_wrap}>
                 <div className={styles.form_wrap}>
                     <div>
 
@@ -129,7 +143,7 @@ export const UsersSearchComponent = () => {
                                 <input type="text" placeholder={"Email"} {...register("email")}/>
                             </label>
                             <label className={styles.input_wrap}>Name
-                                <input type="text" placeholder={"name"} {...register("name")}/>
+                                <input type="text" placeholder={"Name"} {...register("name")}/>
                             </label>
                             <label className={styles.input_wrap}>Profession
                                 <input type="text" placeholder={"Profession"}
@@ -165,10 +179,27 @@ export const UsersSearchComponent = () => {
                         </select>
                     </label>
                 </div>
+                <div className={styles.users_wrap}>
+                    {users.map(user => <UserComponent key={user.id} user={user}/>)}
+                </div>
             </div>
-            <div className={styles.users_wrap}>
-                {users.map(user => <UserComponent key={user.id} user={user}/>)}
-            </div>
+            {/*:*/}
+            {/*<div className={styles.permission_message}>Please login to view users</div>}*/}
+
+        <div>
+            <button className={styles.pag_button} disabled={!paginator.prev} onClick={() => {
+                if (paginator.prev) {
+                    setPage(prevState => prevState - 1
+                    )
+                }
+            }}>&#8592;
+            </button>
+            <button className={styles.pag_button} disabled={!paginator.next} onClick={() => {
+                if (paginator.next) {
+                    setPage(prevState => prevState + 1)
+                }
+            }}>&#8594;
+            </button>
         </div>
     </div>);
 };
